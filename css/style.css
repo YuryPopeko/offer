@@ -1,0 +1,223 @@
+@import "reset.css";
+:root {
+	--green: rgb(33,214,97);
+	--red: rgb(255,65,65);
+	--dark: rgb(38,34,33);
+	--orange: rgb(254,176,28);
+	--blue: rgb(36,80,169);
+	--brown: rgb(155,121,93);
+	--light-blue: rgb(74,148,193);
+	--violet: rgb(200,55,182);
+	--gray: rgb(247,247,247);
+	--white: white;
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: local('Gilroy Light'), local('Gilroy-Light'), url('../fonts/Gilroylight.woff2') format('woff2'), url('../fonts/Gilroylight.woff') format('woff'), url('../fonts/Gilroylight.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), url('../fonts/Gilroyextrabold.woff2') format('woff2'), url('../fonts/Gilroyextrabold.woff') format('woff'), url('../fonts/Gilroyextrabold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+*, *::before, *::after {
+	box-sizing: border-box
+}
+[hidden] {
+	display: none
+}
+html {
+	scroll-behavior: smooth
+}
+body {
+	font-family: "Gilroy";
+	font-size: 16px;
+	line-height: 1.4;
+	background-color: var(--white)
+}
+.wrapper {
+	max-width: 1298px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 64px;
+	padding-left: 64px;
+}
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+.header {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	background-color: var(--white)
+}
+.header__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	white-space: nowrap
+}
+.header__info {
+	display: flex
+}
+.header__info-address {
+	text-transform: uppercase
+}
+.btn {
+	display: inline-block;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 30px;
+	padding-right: 30px;
+	padding-left: 30px;
+	color: var(--white);
+	font-weight: bold
+}
+.btn_green {
+	background-color: var(--green)
+}
+.btn_red {
+	background-color: var(--red)
+}
+.solve {
+	background-color: var(--gray);
+	background-image: url("../images/solve.png");
+	background-repeat: no-repeat;
+	background-position-y: 100%;
+	background-size: contain
+}
+.title {
+	font-weight: bold
+}
+.solve__icon-wave {
+	width: 130px;
+	color: var(--green);
+	margin-bottom: 20px
+}
+.solve__text {
+	font-size: 1.25em
+}
+.solve__btn {
+	margin-bottom: 20px
+}
+.choose-plan {
+	display: flex;
+	align-items: center
+}
+.choose-plan__arrow {
+	font-size: 110px;
+	color: var(--red);
+	transform: translate(30px, -10px)
+}
+.choose-plan__img {
+	margin-right: 15px
+}
+.choose-plan__text {
+	display: inline-block;
+	width: 100px
+}
+
+@media all and (min-width: 1299px) {
+	.header__container {
+		height: 135px
+	}
+	.logo-img {
+		width: 50px;
+		margin-right: 20px
+	}
+	.header__info {
+		justify-content: space-between;
+		flex-basis: 655px
+	}
+	.header__info-tel {
+		font-size: 1.375em
+	}
+	.header__info-address {
+		position: relative;
+		padding-left: 55px
+	}
+	.header__icon-hotel {
+		font-size: 40px;
+		position: absolute;
+		bottom: 0;
+		left: 0
+	}
+	.solve {
+		padding-top: 160px;
+		padding-bottom: 100px;
+		background-position-x: 80%
+	}
+	.title {
+		font-size: 2.75em
+	}
+	.solve__title {
+		width: 700px;
+		margin-bottom: 35px
+	}
+	.solve__icon-wave,
+	.solve__text {
+		transform: translateX(45px)
+	}
+	.solve__text {
+		width: 450px;
+		margin-bottom: 85px
+	}
+	.choose-plan__img {
+		width: 150px
+	}
+}
+
+@media all and (max-width: 1298px) {
+	.for-desktop {
+		display: none
+	}
+	.header__container {
+		height: 110px
+	}
+	.logo {
+		flex-direction: column
+	}
+	.logo-img {
+		width: 41px;
+		margin-bottom: 5px
+	}
+	.header__info {
+		flex-direction: column
+	}
+	.header__info-tel {
+		font-size: 1.125em
+	}
+	.solve {
+		padding-top: 100px;
+		padding-bottom: 50px;
+		background-position-x: 100%;
+	}
+	.title {
+		font-size: 1.875em
+	}
+	.solve__title {
+		width: 360px;
+		margin-bottom: 10px
+	}
+	.solve__icon-wave,
+	.solve__text {
+		transform: translateX(20px)
+	}
+	.solve__text {
+		width: 320px;
+		margin-bottom: 25px
+	}
+	.choose-plan__img {
+		width: 120px
+	}
+}

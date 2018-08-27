@@ -5,9 +5,44 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header></header>
+	<header id="top" class="header">
+		<div class="wrapper header__container">
+			<div class="logo">
+				<img src="images/logo.png" class="logo-img">
+				<b>Wide-Web</b>
+			</div>
+			<div class="header__info">
+				<small class="header__info-address">
+					<svg class="icon for-desktop header__icon-hotel"><use xlink:href="#icon-hotel"></use></svg>
+					30 июля, гостиница Беларусь, <br class="for-desktop">9:30 - 20:00
+				</small>
+				<a href="tel:+375257112356" class="header__info-tel">
+					<b>+375 (25) 711-23-56</b>
+				</a>
+			</div>
+			<button type="button" class="btn btn_green">Обратный звонок</button>
+		</div>
+	</header>
+	<section class="solve">
+		<div class="wrapper solve__content">
+			<h1 class="title solve__title">Как решать проблемы в бизнесе с помощью современных интернет-технологий</h1>
+			<svg class="icon solve__icon-wave"><use xlink:href="#icon-wave"></use></svg>
+			<p class="solve__text">10-часовой семинар по интернет-маркетингу для руководителей и собственников бизнеса</p>
+			<a href="#plans" class="btn btn_red solve__btn">Принять участие</a>
+			<div class="choose-plan">
+				<svg class="icon choose-plan__arrow"><use xlink:href="#icon-choose-plan__arrow"></use></svg>
+				<img src="images/plan__standart.png" alt="Пекат участия" class="choose-plan__img">
+				<span class="choose-plan__text">Выберите подходящий пакет участия</span>
+			</div>
+		</div>
+	</section>
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" hidden>
+		<symbol id="icon-hotel" viewBox="0 0 512 512"><path d="M154.52,145.73h-48a10,10,0,0,0-10,10v56a10,10,0,0,0,10,10h48a10,10,0,0,0,10-10v-56A10,10,0,0,0,154.52,145.73Zm-10,56h-28v-36h28Z"/><path d="M154.52,257.73h-48a10,10,0,0,0-10,10v56a10,10,0,0,0,10,10h48a10,10,0,0,0,10-10v-56A10,10,0,0,0,154.52,257.73Zm-10,56h-28v-36h28Z"/><path d="M154.52,369.73h-48a10,10,0,0,0-10,10v56a10,10,0,0,0,10,10h48a10,10,0,0,0,10-10v-56A10,10,0,0,0,154.52,369.73Zm-10,56h-28v-36h28Z"/><path d="M415.5,369.73h-48a10,10,0,0,0-10,10v56a10,10,0,0,0,10,10h48a10,10,0,0,0,10-10v-56A10,10,0,0,0,415.5,369.73Zm-10,56h-28v-36h28Z"/><path d="M241.51,145.73h-48a10,10,0,0,0-10,10v56a10,10,0,0,0,10,10h48a10,10,0,0,0,10-10v-56A10,10,0,0,0,241.51,145.73Zm-10,56h-28v-36h28Z"/><path d="M328.5,145.73h-48a10,10,0,0,0-10,10v56a10,10,0,0,0,10,10h48a10,10,0,0,0,10-10v-56A10,10,0,0,0,328.5,145.73Zm-10,56h-28v-36h28Z"/><path d="M241.51,257.73h-48a10,10,0,0,0-10,10v56a10,10,0,0,0,10,10h48a10,10,0,0,0,10-10v-56A10,10,0,0,0,241.51,257.73Zm-10,56h-28v-36h28Z"/><path d="M328.5,257.73h-48a10,10,0,0,0-10,10v56a10,10,0,0,0,10,10h48a10,10,0,0,0,10-10v-56A10,10,0,0,0,328.5,257.73Zm-10,56h-28v-36h28Z"/><path d="M415.5,145.73h-48a10,10,0,0,0-10,10v56a10,10,0,0,0,10,10h48a10,10,0,0,0,10-10v-56A10,10,0,0,0,415.5,145.73Zm-10,56h-28v-36h28Z"/><path d="M415.5,257.73h-48a10,10,0,0,0-10,10v56a10,10,0,0,0,10,10h48a10,10,0,0,0,10-10v-56A10,10,0,0,0,415.5,257.73Zm-10,56h-28v-36h28Z"/><path d="M502,492H464.49V104.06a10,10,0,0,0-10-10H399V58a10,10,0,0,0-10-10H334V10A10,10,0,0,0,324,0H188a10,10,0,0,0-10,10V48H123a10,10,0,0,0-10,10V94.06H57.51a10,10,0,0,0-10,10V492H10a10,10,0,0,0,0,20H502a10,10,0,0,0,0-20ZM198,20H314V48H198ZM298,492H228.81L298,422.81Zm0-97.41c-.22.19-.44.38-.65.59L214,478.52V436.14L278.14,372H298Zm-84,13.27V372h35.86ZM444.49,492H318V372h3.5a10,10,0,0,0,0-20h-131a10,10,0,0,0,0,20H194V492H67.51V114.06h111a10,10,0,1,0,0-20H133V68H379V94.06H257.52a10,10,0,1,0,0,20h187V492Z"/><path d="M224.58,97a10,10,0,1,0,2.93,7.07A10.08,10.08,0,0,0,224.58,97Z"/></symbol>
+		<symbol id="icon-wave" viewBox="0 0 405 28"><path d="M401,28c-10.77,0-16.18-6-21-11.3-4.38-4.86-7.85-8.7-15.13-8.7s-10.72,3.83-15.08,8.68C345,22,339.63,28,328.81,28s-16.24-6-21-11.32C303.43,11.83,300,8,292.72,8S282,11.83,277.65,16.68C272.87,22,267.46,28,256.63,28s-16.24-6-21-11.32C231.25,11.83,227.8,8,220.54,8s-10.71,3.83-15.07,8.68C200.69,22,195.28,28,184.45,28s-16.24-6-21-11.32C159.07,11.83,155.62,8,148.36,8s-10.71,3.83-15.07,8.68C128.51,22,123.1,28,112.27,28S96,22,91.25,16.68C86.89,11.83,83.44,8,76.18,8s-10.71,3.83-15.07,8.68C56.33,22,50.92,28,40.09,28S23.82,22,19,16.66C14.66,11.82,11.21,8,4,8A4,4,0,0,1,4,0C14.77,0,20.18,6,25,11.3c4.38,4.86,7.85,8.7,15.13,8.7s10.71-3.83,15.07-8.68C59.94,6,65.35,0,76.18,0s16.24,6,21,11.32C101.56,16.17,105,20,112.27,20s10.71-3.83,15.07-8.68C132.12,6,137.53,0,148.36,0s16.24,6,21,11.32c4.36,4.85,7.81,8.68,15.07,8.68s10.71-3.83,15.07-8.68C204.3,6,209.71,0,220.54,0s16.24,6,21,11.32c4.36,4.85,7.81,8.68,15.07,8.68s10.71-3.83,15.07-8.68C276.48,6,281.89,0,292.72,0s16.24,6,21,11.32c4.36,4.85,7.81,8.68,15.07,8.68s10.71-3.83,15.07-8.67C348.66,6,354.08,0,364.91,0S381.19,6,386,11.34c4.36,4.84,7.81,8.66,15,8.66a4,4,0,0,1,0,8Z"/></symbol>
+		<symbol id="icon-choose-plan__arrow" viewBox="0 0 97.78 107.74"><rect x="1.72" y="-0.05" width="1.94" height="6.47" transform="translate(2.39 -0.97) rotate(36.11)"/><rect x="4.88" y="-0.53" width="1.94" height="6.47" transform="translate(0.22 5.84) rotate(-53.89)"/><rect x="3.73" y="2.79" width="1.94" height="6.47" transform="translate(-1.15 1.11) rotate(-12.05)"/><rect x="6.12" y="12.55" width="1.94" height="6.47" transform="translate(-3.14 1.83) rotate(-12.05)"/><rect x="9.21" y="23.72" width="1.94" height="6.47" transform="translate(-8.82 5.29) rotate(-20.57)"/><rect x="14.16" y="34.44" width="1.94" height="6.47" transform="translate(-14.16 9.56) rotate(-24.29)"/><rect x="20.24" y="45.88" width="1.94" height="6.47" transform="translate(-22.82 18.72) rotate(-32.03)"/><rect x="26.99" y="55.26" width="1.94" height="6.47" transform="translate(-26.77 23.73) rotate(-32.03)"/><rect x="34.06" y="64.41" width="1.94" height="6.47" transform="translate(-34.85 37.3) rotate(-39.15)"/><rect x="42.4" y="72.88" width="1.94" height="6.47" transform="translate(-40.14 49.62) rotate(-42.73)"/><rect x="51.28" y="80.57" width="1.94" height="6.47" transform="translate(-45.89 72.72) rotate(-51.62)"/><rect x="61.06" y="87.48" width="1.94" height="6.47" transform="translate(-47.13 103.37) rotate(-62.25)"/><rect x="71.47" y="93.33" width="1.94" height="6.47" transform="translate(-45.29 123.24) rotate(-65.89)"/><rect x="82.7" y="98.35" width="1.94" height="6.47" transform="translate(-41.61 141.9) rotate(-68.37)"/><rect x="93.45" y="102.41" width="1.94" height="6.47" transform="translate(-38.6 154.46) rotate(-68.37)"/></symbol>
+	</svg>
 </body>
 </html>
