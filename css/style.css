@@ -54,13 +54,14 @@ body {
 .header {
 	position: sticky;
 	top: 0;
-	z-index: 1;
+	z-index: 2;
 	background-color: var(--white)
 }
 .header__container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	height: 110px
 }
 .logo {
 	display: flex;
@@ -90,13 +91,16 @@ body {
 	background-color: var(--red)
 }
 .solve {
+	padding-top: 100px;
+	padding-bottom: 50px;
 	background-color: var(--gray);
 	background-image: url("../images/solve.png");
 	background-repeat: no-repeat;
-	background-position-y: 100%;
-	background-size: contain
+	background-position: 100% 100%;
+	background-size: auto 90%
 }
 .title {
+	font-size: 1.875em;
 	font-weight: bold
 }
 .solve__icon-wave {
@@ -105,6 +109,8 @@ body {
 	margin-bottom: 20px
 }
 .solve__text {
+	width: 320px;
+	margin-bottom: 25px;
 	font-size: 1.25em
 }
 .solve__btn {
@@ -120,11 +126,134 @@ body {
 	transform: translate(30px, -10px)
 }
 .choose-plan__img {
-	margin-right: 15px
+	width: 120px;
+	margin-right: 15px;
+	position: relative
 }
 .choose-plan__text {
 	display: inline-block;
 	width: 100px
+}
+.invitation-video {
+	padding-top: 75px;
+	padding-bottom: 135px;
+	position: relative;
+	overflow: hidden
+}
+.invitation-video__title {
+	padding-left: 80px
+}
+.invitation-video__text {
+	font-size: 1.25em;
+	width: 480px;
+	padding-left: 200px;
+	margin-bottom: 50px
+}
+.invitation-video__container {
+	width: 480px;
+	height: 350px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	background-color: black
+}
+.video__img,
+.video__play {
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	margin: auto
+}
+.video__img {
+	width: 100%
+}
+.video__play {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	background-color: var(--red);
+	z-index: 1
+}
+.invitation-video__frame {
+	width: 100%;
+	height: 100%
+}
+.video__play-triangle {
+	font-size: 26px;
+	color: var(--white);
+	vertical-align: middle
+}
+.invitation-video__wrist {
+	width: 45vw;
+	height: 225px;
+	background-image: url("../images/invitation-video__wrist.png");
+	background-repeat: no-repeat;
+	background-position: right 0;
+	background-size: contain;
+	position: absolute;
+	right: 0;
+	bottom: 70px;
+	z-index: 1;
+	transition-property: transform;
+	transition-duration: .2s
+}
+.invitation-video__touch {
+	transform: translate(100%, 20%)
+}
+.seven {
+	text-align: center;
+	color: var(--white);
+	padding-top: 60px;
+	padding-bottom: 55px;
+	background-color: black;
+	background-image: linear-gradient(-45deg, rgba(243,178,21,.5), rgba(59,217,205,.5)), url("../images/seven.png");
+	background-repeat: no-repeat;
+	background-position: center, 50% 90%;
+	background-size: auto, 50% auto
+}
+.seven__title {
+	margin-bottom: 40px
+}
+.seven__mark {
+	display: inline-block;
+	background-color: var(--orange);
+	padding-right: 10px;
+	padding-left: 10px;
+	transform: skewX(-15deg)
+}
+.seven__items {
+	position: relative;
+	height: 470px;
+	margin-bottom: 390px
+}
+.seven__mark-text {
+	display: inline-block;
+	transform: skewX(15deg)
+}
+.text_orange {
+	color: var(--orange)
+}
+.seven__text {
+	width: 330px;
+	position: absolute
+}
+.seven__five {
+	display: block;
+	font-size: 2.25em
+}
+.seven__end-text {
+	display: inline-block;
+	width: 430px;
+	font-size: 1.125em
+}
+.seven__text-line {
+	stroke-dasharray: 300;
+	stroke-dashoffset: 300;
+	animation: seven__dash 2s linear;
+	animation-fill-mode: forwards
+}
+@keyframes seven__dash {
+	0% {stroke-dashoffset: 300}
+	to {stroke-dashoffset: 0}
 }
 
 @media all and (min-width: 1299px) {
@@ -175,35 +304,66 @@ body {
 	.choose-plan__img {
 		width: 150px
 	}
+	.invitation-video {
+		padding-top: 150px;
+		padding-bottom: 180px;
+		background-image: url("../images/iPad.png"), url("../images/invitation-video__figures-desktop.png"), url("../images/invitation-video.png");
+		background-repeat: no-repeat, no-repeat, repeat;
+		background-position: 50% 427px, 50%, 50%;
+		background-size: auto, 90% auto, auto;
+	}
+	.invitation-video__title {
+		padding-left: 450px
+	}
+	.invitation-video__text {
+		width: 900px;
+		padding-left: 620px;
+		margin-bottom: 110px;
+		position: relative;
+	}
+	.invitation-video__text-line {
+		font-size: 380px;
+		position: absolute;
+		top: 60%;
+		right: 220px;
+		z-index: 1;
+		color: var(--red)
+	}
+	.video__play {
+		width: 180px;
+		height: 180px
+	}
+	.video__play-triangle {
+		font-size: 50px
+	}
+	.invitation-video__container {
+		width: 769px;
+		height: 576px
+	}
+	.invitation-video__wrist {
+		height: 670px;
+		bottom: -200px
+	}
+	.seven__five {
+		font-size: 2.625em
+	}
+
 }
 
 @media all and (max-width: 1298px) {
 	.for-desktop {
 		display: none
 	}
-	.header__container {
-		height: 110px
-	}
-	.logo {
+	.logo,
+	.header__info {
 		flex-direction: column
 	}
 	.logo-img {
 		width: 41px;
 		margin-bottom: 5px
 	}
-	.header__info {
-		flex-direction: column
-	}
 	.header__info-tel {
 		font-size: 1.125em
-	}
-	.solve {
-		padding-top: 100px;
-		padding-bottom: 50px;
-		background-position-x: 100%;
-	}
-	.title {
-		font-size: 1.875em
 	}
 	.solve__title {
 		width: 360px;
@@ -213,11 +373,40 @@ body {
 	.solve__text {
 		transform: translateX(20px)
 	}
-	.solve__text {
-		width: 320px;
-		margin-bottom: 25px
+	.choose-plan__arrow {
+		margin-right: -70px
 	}
-	.choose-plan__img {
-		width: 120px
+	.invitation-video {
+		background-image: url("../images/invitation-video__figures-tablet.png"), url("../images/invitation-video.png");
+		background-repeat: no-repeat, repeat;
+		background-position: 50%, 50%
+	}
+	.invitation-video__container {
+		border-radius: 25px;
+		overflow: hidden
+	}
+	.seven__text:nth-child(odd) {
+		right: 53%
+	}
+	.seven__text:nth-child(even) {
+		left: 53%
+	}
+	.seven__text:first-of-type,
+	.seven__text:nth-of-type(2) {
+		top: 0
+	}
+	.seven__text:nth-of-type(3),
+	.seven__text:nth-of-type(4) {
+		top: 160px
+	}
+	.seven__text:nth-of-type(5),
+	.seven__text:nth-of-type(6) {
+		top: 290px
+	}
+	.seven__text:last-of-type {
+		top: 420px;
+		left: 0; right: 0;
+		margin-right: auto;
+		margin-left: auto
 	}
 }
