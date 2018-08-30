@@ -194,16 +194,17 @@ body {
 	bottom: 70px;
 	z-index: 1;
 	transition-property: transform;
-	transition-duration: .2s
+	transition-duration: .3s
 }
 .invitation-video__touch {
 	transform: translate(100%, 20%)
 }
 .seven {
 	text-align: center;
-	color: var(--white);
 	padding-top: 60px;
 	padding-bottom: 55px;
+	overflow-x: hidden;
+	color: var(--white);
 	background-color: black;
 	background-image: linear-gradient(-45deg, rgba(243,178,21,.5), rgba(59,217,205,.5)), url("../images/seven.png");
 	background-repeat: no-repeat;
@@ -223,7 +224,7 @@ body {
 .seven__items {
 	position: relative;
 	height: 470px;
-	margin-bottom: 390px
+	margin-bottom: 390px;
 }
 .seven__mark-text {
 	display: inline-block;
@@ -245,18 +246,97 @@ body {
 	width: 430px;
 	font-size: 1.125em
 }
-.seven__text-line {
-	stroke-dasharray: 300;
-	stroke-dashoffset: 300;
+.seven__text-line_move {
+	stroke-dasharray: var(--dash);
+	stroke-dashoffset: var(--dash);
 	animation: seven__dash 2s linear;
 	animation-fill-mode: forwards
 }
 @keyframes seven__dash {
-	0% {stroke-dashoffset: 300}
+	0% {stroke-dashoffset: var(--dash-move, var(--dash))}
 	to {stroke-dashoffset: 0}
+}
+.seven__line-svg {
+	position: absolute;
+	fill: none;
+	stroke: var(--white);
+	stroke-width: .75px
+}
+.after {
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 100px;
+	background-image: url(../images/figures.png)
+}
+.after__title {
+	margin-bottom: 60px
+}
+.after__items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	counter-reset: after
+}
+.after__item {
+	flex-basis: 50%;
+	position: relative;
+	margin-bottom: 70px
+}
+.after__item::before {
+	content: '0'counter(after);
+	counter-increment: after;
+	position: absolute;
+	top: -.35em;
+	right: 47%;
+	font-size: 7.5em;
+	line-height: 1;
+	font-weight: bold
+}
+.after__item:nth-of-type(3n) {
+	flex-basis: 100%
+}
+.after__img {
+	width: 200px;
+	margin-bottom: 20px;
+	position: relative
+}
+.after__text {
+	width: 260px;
+	margin-right: auto;
+	margin-left: auto
+}
+.after__arrow {
+	position: absolute;
+	width: 260px
+}
+.after__arrow,
+.after__line {
+	fill: none;
+	stroke: var(--dark);
+	stroke-miterlimit:10;
+	stroke-width:2px
+}
+.after__line {
+	stroke-dasharray: 12 6
+}
+.after__item:first-child .after__arrow {
+		top: 30px;
+		right: -22%;
+		width: 260px
+}
+.after__item:nth-child(2) .after__arrow {
+		bottom: 0;
+		right: -22%;
 }
 
 @media all and (min-width: 1299px) {
+	:root {
+		--dash: 300;
+		--dash-move: -300
+	}
+	.for-tablet {
+		display: none
+	}
 	.header__container {
 		height: 135px
 	}
@@ -307,7 +387,7 @@ body {
 	.invitation-video {
 		padding-top: 150px;
 		padding-bottom: 180px;
-		background-image: url("../images/iPad.png"), url("../images/invitation-video__figures-desktop.png"), url("../images/invitation-video.png");
+		background-image: url("../images/iPad.png"), url("../images/invitation-video__figures-desktop.png"), url("../images/figures.png");
 		background-repeat: no-repeat, no-repeat, repeat;
 		background-position: 50% 427px, 50%, 50%;
 		background-size: auto, 90% auto, auto;
@@ -344,13 +424,90 @@ body {
 		height: 670px;
 		bottom: -200px
 	}
+	.seven {
+		background-position: center, 50% 100%;
+		background-size: auto, 62% auto
+	}
 	.seven__five {
 		font-size: 2.625em
 	}
-
+	.seven__text {
+		width: 300px
+	}
+	.seven__text:first-child {
+		top: 100px;
+		right: 55%
+	}
+	.seven__text:first-child .seven__line-svg {
+		top: -70%;
+		left: 50%;
+		width: 230px
+	}
+	.seven__text:nth-child(2) {
+		top: 400px;
+		right: 65%
+	}
+	.seven__text:nth-child(2) .seven__line-svg,
+	.seven__text:nth-child(3) .seven__line-svg {
+		top: -100%;
+		left: 60%;
+		width: 180px
+	}
+	.seven__text:nth-child(3) {
+		top: 650px;
+		right: 65%
+	}
+	.seven__text:nth-child(4) {
+		top: 50px;
+		left: 54%
+	}
+	.seven__text:nth-child(4) .seven__line-svg,
+	.seven__text:nth-child(5) .seven__line-svg {
+		top: 110%;
+		left: 20%;
+		width: 110px
+	}
+	.seven__text:nth-child(5) {
+		top: 240px;
+		left: 70%
+	}
+	.seven__text:nth-child(5) .seven__line-svg {
+		left: -30%
+	}
+	.seven__text:nth-child(6) {
+		top: 400px;
+		left: 66%
+	}
+	.seven__text:nth-child(6) .seven__line-svg {
+		top: 105%;
+		left: -20%;
+		width: 100px
+	}
+	.seven__text:last-child {
+		top: 600px;
+		left: 70%
+	}
+	.seven__text:last-child .seven__line-svg {
+		top: -80%;
+		left: -35%;
+		width: 100px
+	}
+	.after {
+		padding-top: 110px;
+		padding-bottom: 130px
+	}
+	.after__img {
+		width: 300px
+	}
+	.after__text {
+		font-size: 1.125em
+	}
 }
 
 @media all and (max-width: 1298px) {
+	:root {
+		--dash: 620
+	}
 	.for-desktop {
 		display: none
 	}
@@ -377,13 +534,20 @@ body {
 		margin-right: -70px
 	}
 	.invitation-video {
-		background-image: url("../images/invitation-video__figures-tablet.png"), url("../images/invitation-video.png");
+		background-image: url("../images/invitation-video__figures-tablet.png"), url("../images/figures.png");
 		background-repeat: no-repeat, repeat;
 		background-position: 50%, 50%
 	}
 	.invitation-video__container {
 		border-radius: 25px;
 		overflow: hidden
+	}
+	.seven__text:nth-child(odd) .seven__line-svg {
+		left: 0
+	}
+	.seven__text:nth-child(even) .seven__line-svg {
+		right: 0;
+		transform: scaleX(-1)
 	}
 	.seven__text:nth-child(odd) {
 		right: 53%
@@ -408,5 +572,24 @@ body {
 		left: 0; right: 0;
 		margin-right: auto;
 		margin-left: auto
+	}
+	.seven__line-svg {
+		top: 100%
+	}
+	.seven__text:first-of-type .seven__line-svg,
+	.seven__text:nth-of-type(2) .seven__line-svg {
+		width: 270px
+	}
+	.seven__text:nth-of-type(3) .seven__line-svg,
+	.seven__text:nth-of-type(4) .seven__line-svg {
+		width: 200px
+	}
+	.seven__text:nth-of-type(5) .seven__line-svg,
+	.seven__text:nth-of-type(6) .seven__line-svg {
+		width: 80px
+	}
+	.seven__text:last-of-type .seven__line-svg {
+		left: 80%;
+		width: 90px
 	}
 }

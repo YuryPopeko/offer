@@ -34,8 +34,12 @@ document.addEventListener('scroll', () => {
 
 	let scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
-	if (scrolled >= document.querySelector('.seven__items').getBoundingClientRect().top + scrolled - document.documentElement.clientHeight) {
-		console.log(1)
+	if (onScreen(document.querySelector('.seven__items'))) {
+		document.querySelectorAll('.seven__text-line').forEach(item => item.classList.add('seven__text-line_move'))
+	}
+
+	function onScreen(elem) {
+		return scrolled >= elem.getBoundingClientRect().top + scrolled - document.documentElement.clientHeight
 	}
 
 })
@@ -53,11 +57,6 @@ function playIframe(btn) {
 	btn.hidden = true;
 	document.querySelector('.invitation-video__text-line').style.display= 'none'
 
-}
-
-
-function isVisible(elem) {
-	return
 }
 
 
