@@ -617,11 +617,11 @@ body {
 		z-index: 1;
 		color: var(--red)
 	}
-	.video__play {
+	.invitation-video__play-btn {
 		width: 180px;
 		height: 180px
 	}
-	.video__play-triangle {
+	.invitation-video__play-btn .video__play-triangle {
 		font-size: 50px
 	}
 	.invitation-video__container {
@@ -650,7 +650,7 @@ body {
 	}
 	.seven__text:first-child {
 		top: 100px;
-		right: 55%
+		left: 11%
 	}
 	.seven__text:first-child .seven__line-svg {
 		top: -70%;
@@ -659,21 +659,17 @@ body {
 	}
 	.seven__text:nth-child(2) {
 		top: 290px;
-		right: 60%
+		left: 5%
 	}
-	.seven__text:nth-child(2) .seven__line-svg {
+	.seven__text:nth-child(2) .seven__line-svg,
+	.seven__text:nth-child(3) .seven__line-svg {
 		top: -90%;
 		left: 70%;
 		width: 140px
 	}
 	.seven__text:nth-child(3) {
-		top: 470px;
-		right: 58%
-	}
-	.seven__text:nth-child(3) .seven__line-svg {
-		top: -70%;
-		left: 55%;
-		width: 140px
+		top: 480px;
+		left: 6%
 	}
 	.seven__text:nth-child(4) {
 		top: 40px;
@@ -687,26 +683,27 @@ body {
 	}
 	.seven__text:nth-child(5) {
 		top: 190px;
-		left: 62%
+		right: 0%
 	}
 	.seven__text:nth-child(5) .seven__line-svg {
 		left: -20%
 	}
 	.seven__text:nth-child(6) {
 		top: 330px;
-		left: 60%
+		right: 3%
 	}
 	.seven__text:nth-child(6) .seven__line-svg {
-		top: 100%;
+		top: 90%;
 		left: -10%;
-		width: 100px
+		width: 100px;
+		transform: rotate(22deg)
 	}
 	.seven__text:last-child {
 		top: 520px;
-		left: 63%
+		right: 0
 	}
 	.seven__text:last-child .seven__line-svg {
-		top: -40%;
+		top: -70%;
 		left: -25%;
 		width: 100px
 	}
@@ -795,20 +792,21 @@ body {
 		width: 540px;
 		height: 370px;
 		margin-bottom: 20px;
-		box-shadow: -20px 20px 0 0 var(--green)
 	}
 	.program__item {
 		flex-direction: column;
 		padding-bottom: 90px
 	}
 	.program__item:nth-child(odd) .program__video {
-		right: 0
+		right: 0;
+		box-shadow: -20px 20px 0 0 var(--green)
 	}
 	.program__item:nth-child(even) {
 		align-items: flex-end
 	}
 	.program__item:nth-child(even) .program__video {
-		left: 0
+		left: 0;
+		box-shadow: 20px 20px 0 0 var(--green)
 	}
 	.program__list,
 	.program__resume-text {
