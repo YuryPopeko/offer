@@ -30,19 +30,23 @@ document.addEventListener('click', e => {
 });
 
 
+let scrolled = window.pageYOffset || document.documentElement.scrollTop;
+
+
 document.addEventListener('scroll', () => {
 
-	let scrolled = window.pageYOffset || document.documentElement.scrollTop;
+	scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
 	if (onScreen(document.querySelector('.seven__items'))) {
 		document.querySelectorAll('.seven__text-line').forEach(item => item.classList.add('seven__text-line_move'))
 	}
 
-	function onScreen(elem) {
-		return scrolled >= elem.getBoundingClientRect().top + scrolled - document.documentElement.clientHeight
-	}
-
 })
+
+
+function onScreen(elem) {
+	return scrolled >= elem.getBoundingClientRect().top + scrolled - document.documentElement.clientHeight
+}
 
 
 function playIframe(btn) {

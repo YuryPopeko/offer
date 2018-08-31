@@ -492,12 +492,13 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	position: relative;
+	min-height: 460px;
 	text-align: initial;
-	padding-bottom: 35px;
-	border-bottom: 3px dashed var(--gray)
+	padding-bottom: 35px
 }
 .program__item:not(:last-of-type) {
-	margin-bottom: 85px
+	margin-bottom: 85px;
+	border-bottom: 3px dashed var(--gray)
 }
 .program__item::before {
 	content: '0'counter(program);
@@ -784,8 +785,12 @@ body {
 	}
 	.program__item-title,
 	.program__resume {
-		width: 48%;
+		width: 45%;
 		font-size: 1.5em
+	}
+	.program__list,
+	.program__resume-text {
+		width: 45%
 	}
 	.program__video {
 		position: absolute;
@@ -795,6 +800,7 @@ body {
 	}
 	.program__item {
 		flex-direction: column;
+		justify-content: flex-start;
 		padding-bottom: 90px
 	}
 	.program__item:nth-child(odd) .program__video {
@@ -808,9 +814,59 @@ body {
 		left: 0;
 		box-shadow: 20px 20px 0 0 var(--green)
 	}
+	.program__item:nth-child(even)::before {
+		left: 55%
+	}
+	.program__item::after {
+		content: 'МОДУЛЬ 'counter(program);
+		position: absolute;
+		top: 130px;
+		left: -130px;
+		font-size: 1.25em;
+		font-weight: bold;
+		letter-spacing: 10px;
+		transform: rotate(-90deg)
+	}
+	.program__item:nth-child(even)::after {
+		left: 44%
+	}
 	.program__list,
 	.program__resume-text {
 		font-size: 1.125em
+	}
+	.program__list {
+		position: relative;
+		padding-left: 100px
+	}
+	.program__resume,
+	.program__resume-text {
+		padding-left: 80px
+	}
+	.program__list::before {
+		content: '';
+		position: absolute;
+		top: -50px;
+		left: 0;
+		width: 110px;
+		height: 110px;
+		border-top: 2px solid transparent;
+		border-bottom: 2px solid transparent;
+		border-left: 3px solid var(--dark);
+		border-radius: 50%;
+		transform: rotate(-40deg)
+	}
+	.clock {
+		width: 210px;
+		height: 315px;
+		background-image: url("../images/clock.png");
+		background-repeat: no-repeat;
+		background-size: contain
+	}
+	.program__clock {
+		float: right;
+		position: sticky;
+		top: 150px;
+		transform: translate(-30%) rotate(-20deg)
 	}
 }
 
