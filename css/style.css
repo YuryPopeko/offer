@@ -866,7 +866,22 @@ body {
 		float: right;
 		position: sticky;
 		top: 150px;
+		z-index: 1;
 		transform: translate(-30%) rotate(-20deg)
+	}
+	.clock__h {
+		position: absolute;
+		top: 113.5px;
+		left: 90px;
+		width: 14px;
+		transform-origin: 50% 82%
+	}
+	.clock__m {
+		position: absolute;
+		top: 96px;
+		left: 89.4px;
+		width: 15px;
+		transform-origin: 50% 87%
 	}
 }
 

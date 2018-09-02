@@ -30,22 +30,32 @@ document.addEventListener('click', e => {
 });
 
 
-let scrolled = window.pageYOffset || document.documentElement.scrollTop;
-
-
 document.addEventListener('scroll', () => {
 
-	scrolled = window.pageYOffset || document.documentElement.scrollTop;
+	let scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
-	if (onScreen(document.querySelector('.seven__items'))) {
+	if (onScreen(document.querySelector('.seven__items'), scrolled)) {
 		document.querySelectorAll('.seven__text-line').forEach(item => item.classList.add('seven__text-line_move'))
 	}
+
+	const programItemPos = document.querySelector('.program__item').getBoundingClientRect().top + scrolled - document.querySelector('.header').clientHeight;
+
+	if (scrolled >= programItemPos) clock(scrolled - programItemPos, document.querySelector('.program').scrollHeight)
 
 })
 
 
-function onScreen(elem) {
+function onScreen(elem, scrolled) {
 	return scrolled >= elem.getBoundingClientRect().top + scrolled - document.documentElement.clientHeight
+}
+
+
+function clock(progress, path) {
+
+	let turn = progress / path * 100;
+	document.querySelector(".clock__h").style.transform = "rotate("+ turn + "deg)";
+	document.querySelector(".clock__m").style.transform = "rotate("+ turn + "deg)";
+
 }
 
 
