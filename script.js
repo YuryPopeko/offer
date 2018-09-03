@@ -21,6 +21,10 @@
 	}
 })();
 
+
+let scrolled;
+
+
 document.addEventListener('click', e => {
 
 	const target = e.target;
@@ -30,31 +34,39 @@ document.addEventListener('click', e => {
 });
 
 
+const programPath = document.querySelector('.program__item:last-of-type').getBoundingClientRect().bottom - document.querySelector('.program__item').getBoundingClientRect().top;
+
+
 document.addEventListener('scroll', () => {
 
-	let scrolled = window.pageYOffset || document.documentElement.scrollTop;
+	scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
-	if (onScreen(document.querySelector('.seven__items'), scrolled)) {
+	if (onScreen(document.querySelector('.seven__items'))) {
 		document.querySelectorAll('.seven__text-line').forEach(item => item.classList.add('seven__text-line_move'))
 	}
 
-	const programItemPos = document.querySelector('.program__item').getBoundingClientRect().top + scrolled - document.querySelector('.header').clientHeight;
+	const programItemStartPath = document.querySelector('.program__item').getBoundingClientRect().top + scrolled - document.querySelector('.header').clientHeight,
+				programItemEndPath = document.querySelector('.program__item:last-of-type').getBoundingClientRect().bottom + scrolled - document.querySelector('.header').clientHeight;
 
-	if (scrolled >= programItemPos) clock(scrolled - programItemPos, document.querySelector('.program').scrollHeight)
+	if (scrolled >= programItemStartPath  && scrolled <= programItemEndPath) clock(scrolled - programItemStartPath, programPath)
+
+	if (onScreen(document.querySelector('.terms__signature'))) document.querySelector('.terms').classList.add('show-terms')
 
 })
 
 
-function onScreen(elem, scrolled) {
+function onScreen(elem) {
 	return scrolled >= elem.getBoundingClientRect().top + scrolled - document.documentElement.clientHeight
 }
 
 
 function clock(progress, path) {
 
-	let turn = progress / path * 100;
-	document.querySelector(".clock__h").style.transform = "rotate("+ turn + "deg)";
-	document.querySelector(".clock__m").style.transform = "rotate("+ turn + "deg)";
+	let hOffset = progress / path * 480 - 65,
+			mOffset = progress / path * 5760 - 5;
+
+	document.querySelector(".clock__h").style.transform = "rotate("+ hOffset + "deg)";
+	document.querySelector(".clock__m").style.transform = "rotate("+ mOffset + "deg)";
 
 }
 
@@ -72,6 +84,3 @@ function playIframe(btn) {
 	document.querySelector('.invitation-video__text-line').style.display= 'none'
 
 }
-
-
-// console.log
