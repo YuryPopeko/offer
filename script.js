@@ -73,7 +73,8 @@ function clock(progress, path) {
 
 function playIframe(btn) {
 
-	if (btn.closest('.invitation-video')) document.querySelector('.invitation-video__wrist').classList.add('invitation-video__touch');
+	if (btn.closest('.invitation-video')) document.querySelector('.invitation-video__wrist').classList.add('away');
+	if (btn.closest('.report__video')) document.querySelector('.report__hand').classList.add('away');
 
 	const video = btn.parentElement;
 	const iframe =video.querySelector('iframe');
