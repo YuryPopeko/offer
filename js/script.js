@@ -1,5 +1,4 @@
-// closest polyfill
-(() => {
+(() => { // closest polyfill
 	if (!Element.prototype.closest) {
 		Element.prototype.closest = function(css) {
 			var node = this;
@@ -11,8 +10,7 @@
 		};
 	}
 })();
-// matches polyfill
-(() => {
+(() => { // matches polyfill
 	if (!Element.prototype.matches) {
 		Element.prototype.matches = Element.prototype.matchesSelector ||
 			Element.prototype.webkitMatchesSelector ||
@@ -46,9 +44,9 @@ document.addEventListener('scroll', () => {
 	}
 
 	const programItemStartPath = document.querySelector('.program__item').getBoundingClientRect().top + scrolled - document.querySelector('.header').clientHeight,
-				programItemEndPath = document.querySelector('.program__item:last-of-type').getBoundingClientRect().bottom + scrolled - document.querySelector('.header').clientHeight;
+		programItemEndPath = document.querySelector('.program__item:last-of-type').getBoundingClientRect().bottom + scrolled - document.querySelector('.header').clientHeight;
 
-	if (scrolled >= programItemStartPath  && scrolled <= programItemEndPath) clock(scrolled - programItemStartPath, programPath)
+	if (scrolled >= programItemStartPath && scrolled <= programItemEndPath) clock(scrolled - programItemStartPath, programPath)
 
 	if (onScreen(document.querySelector('.terms__signature'))) document.querySelector('.terms').classList.add('show-terms')
 
@@ -62,11 +60,11 @@ function onScreen(elem) {
 
 function clock(progress, path) {
 
-	let hOffset = progress / path * 480 - 65,
-			mOffset = progress / path * 5760 - 5;
+	let hOffset = progress / path * 240 - 65,
+		mOffset = progress / path * 2880 - 5;
 
-	document.querySelector(".clock__h").style.transform = "rotate("+ hOffset + "deg)";
-	document.querySelector(".clock__m").style.transform = "rotate("+ mOffset + "deg)";
+	document.querySelector(".clock__h").style.transform = "rotate(" + hOffset + "deg)";
+	document.querySelector(".clock__m").style.transform = "rotate(" + mOffset + "deg)";
 
 }
 
@@ -77,11 +75,43 @@ function playIframe(btn) {
 	if (btn.closest('.report__video')) document.querySelector('.report__hand').classList.add('away');
 
 	const video = btn.parentElement;
-	const iframe =video.querySelector('iframe');
+	const iframe = video.querySelector('iframe');
 
 	iframe.src = iframe.dataset.play;
 	video.querySelector('.video__img').hidden = true;
 	btn.hidden = true;
-	document.querySelector('.invitation-video__text-line').style.display= 'none'
+	document.querySelector('.invitation-video__text-line').style.display = 'none'
 
 }
+
+
+class Map {
+
+	constructor() {
+		ymaps.ready(this.init)
+	}
+
+	init() {
+
+		const map = new ymaps.Map("map", {
+			center: [52.092879, 23.698087],
+			zoom: 15
+		});
+
+		const marker = new ymaps.Placemark([52.092879, 23.698087], {
+			hintContent: 'ВАЙДВЭБ ООО'
+		});
+
+		map.geoObjects.add(marker)
+	}
+
+}
+
+const map = new Map();
+
+
+$('.owl-carousel').owlCarousel({
+	items: 1,
+	nav: true,
+	navText: ['<svg class="icon"><use xlink:href="#icon-left-arrow"></use></svg>', '<svg class="icon"><use xlink:href="#icon-right-arrow"></use></svg>']
+})
