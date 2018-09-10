@@ -18,6 +18,17 @@
 			Element.prototype.msMatchesSelector
 	}
 })();
+(() => { // foreach polyfill
+	if ('NodeList' in window && !NodeList.prototype.forEach) {
+		NodeList.prototype.forEach = function (callback, thisArg) {
+			thisArg = thisArg || window;
+			for (var i = 0; i < this.length; i++) {
+				callback.call(thisArg, this[i], i, this);
+			}
+		};
+	}
+})();
+
 
 
 let scrolled;
@@ -40,7 +51,11 @@ document.addEventListener('scroll', () => {
 	scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
 	if (onScreen(document.querySelector('.seven__items'))) {
-		document.querySelectorAll('.seven__text-line').forEach(item => item.classList.add('seven__text-line_move'))
+		document.querySelectorAll('.seven__text-line').forEach(item => {
+			try {
+				item.classList.add('seven__text-line_move')
+			} catch(e) {}
+		})
 	}
 
 	const programItemStartPath = document.querySelector('.program__item').getBoundingClientRect().top + scrolled - document.querySelector('.header').clientHeight,
@@ -63,8 +78,8 @@ function clock(progress, path) {
 	let hOffset = progress / path * 240 - 65,
 		mOffset = progress / path * 2880 - 5;
 
-	document.querySelector(".clock__h").style.transform = "rotate(" + hOffset + "deg)";
-	document.querySelector(".clock__m").style.transform = "rotate(" + mOffset + "deg)";
+	document.querySelector(".clock__h").style.transform = `rotate(${hOffset}deg)`;
+	document.querySelector(".clock__m").style.transform = `rotate(${mOffset}deg)`;
 
 }
 
@@ -145,7 +160,7 @@ class Popup {
 		document.addEventListener('click', e => {
 			const target = e.target;
 			if(target === this.btn) this.openPopup(this.btn);
-			if (target === this.overlay || target.closest('.popup__close-btn')) this.closePopup()
+			if (target === this.overlay || target.closest('.popup__close-btn')) this.closePopup();
 		})
 
 	}

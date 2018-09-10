@@ -28,6 +28,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   }
 })();
 
+(function () {
+  // foreach polyfill
+  if ('NodeList' in window && !NodeList.prototype.forEach) {
+    NodeList.prototype.forEach = function (callback, thisArg) {
+      thisArg = thisArg || window;
+
+      for (var i = 0; i < this.length; i++) {
+        callback.call(thisArg, this[i], i, this);
+      }
+    };
+  }
+})();
+
 var scrolled;
 document.addEventListener('click', function (e) {
   var target = e.target;
@@ -39,7 +52,9 @@ document.addEventListener('scroll', function () {
 
   if (onScreen(document.querySelector('.seven__items'))) {
     document.querySelectorAll('.seven__text-line').forEach(function (item) {
-      return item.classList.add('seven__text-line_move');
+      try {
+        item.classList.add('seven__text-line_move');
+      } catch (e) {}
     });
   }
 
@@ -56,8 +71,8 @@ function onScreen(elem) {
 function clock(progress, path) {
   var hOffset = progress / path * 240 - 65,
       mOffset = progress / path * 2880 - 5;
-  document.querySelector(".clock__h").style.transform = "rotate(" + hOffset + "deg)";
-  document.querySelector(".clock__m").style.transform = "rotate(" + mOffset + "deg)";
+  document.querySelector(".clock__h").style.transform = "rotate(".concat(hOffset, "deg)");
+  document.querySelector(".clock__m").style.transform = "rotate(".concat(mOffset, "deg)");
 }
 
 var Clock =

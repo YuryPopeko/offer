@@ -276,7 +276,7 @@ body {
 	height: 470px;
 	margin-bottom: 390px
 }
-.seven__mark-text {
+.seven__mark-txt {
 	display: inline-block;
 	-webkit-transform: skewX(15deg);
 	transform: skewX(15deg)
@@ -292,7 +292,7 @@ body {
 	display: block;
 	font-size: 2.25em
 }
-.seven__end-text {
+.seven__end-txt {
 	display: inline-block;
 	width: 430px;
 	font-size: 1.125em
@@ -587,7 +587,7 @@ body {
 	justify-content: space-between;
 	position: relative;
 	min-height: 460px;
-	text-align: initial;
+	text-align: left;
 	padding-bottom: 35px
 }
 .program__item:not(:last-of-type) {
@@ -620,7 +620,7 @@ body {
 	box-shadow: -11px 11px 0 0 rgb(33,214,97)
 }
 .program__list,
-.program__resume-text {
+.program__resume-txt {
 	width: 48%
 }
 .program__list-item:not(:last-of-type) {
@@ -691,6 +691,10 @@ body {
 }
 .terms__signature-title {
 	font-size: 1.375em
+}
+.terms__signature-txt,
+.how__item-txt {
+	width: 100%
 }
 .terms__item {
 	position: absolute;
@@ -824,7 +828,7 @@ body {
 .mc__watch-btn {
 	margin-right: 15px
 }
-.mc__watch-text {
+.mc__watch-txt {
 	width: 220px
 }
 .for-whom {
@@ -905,6 +909,7 @@ body {
 	margin-bottom: 20px
 }
 .for-whom__directions-item::before {
+	display: block;
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
@@ -1132,7 +1137,7 @@ body {
 	background-position: 50px 25px;
 	background-size: 100px auto
 }
-.hear__item-text {
+.hear__item-txt {
 	padding: 35px 45px
 }
 .reasone {
@@ -1207,7 +1212,7 @@ body {
 	border: 30px solid rgb(254,176,28);
 	border-radius: 45px
 }
-.price__question-text {
+.price__question-txt {
 	display: block;
 	margin-bottom: 25px
 }
@@ -1331,7 +1336,7 @@ body {
 	background-color: #615f71;
 	color: white
 }
-.plans__help-text {
+.plans__help-txt {
 	font-size: 1.5em
 }
 .bonus {
@@ -1503,7 +1508,7 @@ body {
 .popup-open {
 	-webkit-transform: translate(-50%, -50%) scale(1);
 	transform: translate(-50%, -50%) scale(1);
-	opacity: initial
+	opacity: 1
 }
 .popup__close-btn {
 	position: absolute;
@@ -1558,7 +1563,7 @@ body {
 	margin-bottom: 20px;
 	text-align: left
 }
-.popup__form-label-text {
+.popup__form-label-txt {
 	display: inline-block;
 	margin-bottom: 10px
 }
@@ -1833,11 +1838,12 @@ body {
 		font-size: 1.5em
 	}
 	.program__list,
-	.program__resume-text {
+	.program__resume-txt {
 		width: 45%
 	}
 	.program__video {
 		position: absolute;
+		top: 0;
 		width: 540px;
 		height: 304px;
 		margin-bottom: 20px;
@@ -1885,7 +1891,7 @@ body {
 		left: 44%
 	}
 	.program__list,
-	.program__resume-text {
+	.program__resume-txt {
 		font-size: 1.125em
 	}
 	.program__list {
@@ -1893,7 +1899,7 @@ body {
 		padding-left: 100px
 	}
 	.program__resume,
-	.program__resume-text {
+	.program__resume-txt {
 		padding-left: 80px
 	}
 	.program__list::before {
@@ -2055,7 +2061,7 @@ body {
 	.mc__watch-btn .play-btn-triangle {
 		font-size: 50px
 	}
-	.mc__watch-text {
+	.mc__watch-txt {
 		width: 300px;
 		font-size: 1.5em
 	}
@@ -2232,7 +2238,7 @@ body {
 		border-right: 2px dashed rgb(247,247,247);
 		background-position: 90px 50px
 	}
-	.hear__item-text {
+	.hear__item-txt {
 		-ms-flex-preferred-size: 60%;
 		flex-basis: 60%;
 		padding-top: 55px;
@@ -2286,7 +2292,7 @@ body {
 		margin-right: auto;
 		margin-left: auto
 	}
-	.price__question-text {
+	.price__question-txt {
 		font-size: 1.25em
 	}
 	.price__range {
