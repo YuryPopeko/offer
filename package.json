@@ -2,7 +2,7 @@
   "name": "offer",
   "version": "1.0.0",
   "description": "wide-web",
-  "main": "index.js",
+  "main": "index.thml",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/YuryPopeko/offer/issues"
   },
-  "homepage": "https://github.com/YuryPopeko/offer#readme"
+  "homepage": "https://github.com/YuryPopeko/offer#readme",
+  "dependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "postcss": "^7.0.2",
+    "postcss-css-variables": "^0.9.0"
+  }
 }

@@ -69,6 +69,17 @@ function clock(progress, path) {
 }
 
 
+class Clock {
+
+	constructor(clock) {
+		this.clock = clock
+	}
+
+	ticks() {}
+
+}
+
+
 function playIframe(btn) {
 
 	if (btn.closest('.invitation-video')) document.querySelector('.invitation-video__wrist').classList.add('away');
@@ -108,6 +119,42 @@ class Map {
 }
 
 const map = new Map();
+
+
+class Popup {
+
+	constructor(btn) {
+
+		this.btn = btn;
+		this.popup = document.querySelector(`.${this.btn.dataset.popup}`);
+		this.popupInsert = this.popup.querySelector('.popup__insert');
+		this.overlay = document.querySelector('.overlay');
+
+		this.openPopup = function(btn) {
+			if (btn.hasAttribute('title') && this.popupInsert) this.popupInsert.textContent = btn.title;
+
+			this.popup.classList.add('popup-open');
+			this.overlay.classList.add('overlay-open')
+		}
+
+		this.closePopup = function() {
+			this.popup.classList.remove('popup-open');
+			this.overlay.classList.remove('overlay-open')
+		}
+
+		document.addEventListener('click', e => {
+			const target = e.target;
+			if(target === this.btn) this.openPopup(this.btn);
+			if (target === this.overlay || target.closest('.popup__close-btn')) this.closePopup()
+		})
+
+	}
+
+}
+
+document.querySelectorAll('[data-popup]').forEach(item => {
+	new Popup(item)
+});
 
 
 $('.owl-carousel').owlCarousel({
