@@ -13,9 +13,10 @@ gulp.task('babel', () =>
 const postcss = require('postcss');
 const cssvariables = require('postcss-css-variables');
 const autoprefixer = require('gulp-autoprefixer');
+let cleanCSS = require('gulp-clean-css');
 const fs = require('fs');
 
-gulp.task('css-variables-autoprefixer', () => {
+gulp.task('css', () => {
 	const css = fs.readFileSync('css/style.css', 'utf8');
 	const output = postcss([cssvariables()])
 		.process(css)
@@ -28,11 +29,12 @@ gulp.task('css-variables-autoprefixer', () => {
 			browsers: ['last 2 versions'],
 			cascade: false
 		}))
+		.pipe(cleanCSS({compatibility: 'ie8'}))
 		.pipe(gulp.dest('./'))
 });
 
 
 gulp.task('watch', () => {
 	gulp.watch('js/script.js', ['babel']);
-	gulp.watch('css/style.css', ['css-variables-autoprefixer'])
+	gulp.watch('css/style.css', ['css'])
 });

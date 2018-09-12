@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Оффер</title>
+	<title>Главная</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<header id="top" class="header">
+	<header class="header">
 		<div class="wrapper header__container">
-			<div class="logo">
+			<a href="index.html" class="logo">
 				<img src="images/logo.png" class="logo-img">
 				<b>Wide-Web</b>
-			</div>
+			</a>
 			<div class="header__info">
-				<small class="header__info-address">
-					<svg class="icon for-desktop header__icon-hotel"><use xlink:href="#icon-hotel"></use></svg>
-					30 июля, гостиница Беларусь, <br class="for-desktop">9:30 - 20:00
-				</small>
 				<a href="tel:+375257112356" class="header__info-tel">
 					<b>+375 (25) 711-23-56</b>
 				</a>
@@ -26,612 +22,118 @@
 			<button type="button" class="btn btn_green" data-popup="popup-feedback">Обратный звонок</button>
 		</div>
 	</header>
-	<section class="solve">
-		<div class="wrapper solve__content">
-			<h1 class="title solve__title">Как решать проблемы в бизнесе с помощью современных интернет-технологий</h1>
-			<svg class="icon solve__icon-wave"><use xlink:href="#icon-wave"></use></svg>
-			<p class="solve__text">10-часовой семинар по интернет-маркетингу для руководителей и собственников бизнеса</p>
-			<a href="#plans" class="btn btn_red solve__btn">Принять участие</a>
-			<div class="choose-plan">
-				<svg class="icon choose-plan__arrow"><use xlink:href="#choose-plan__arrow"></use></svg>
-				<img src="images/plan__standart.png" alt="Пекат участия" class="choose-plan__img">
-				<span class="choose-plan__text">Выберите подходящий пакет участия</span>
-			</div>
-		</div>
-	</section>
-	<section class="invitation-video">
-		<div class="wrapper invitation-video__content">
-			<h2 class="title invitation-video__title">Посмотрите пригласительное видео,</h2>
-			<p class="invitation-video__text">
-				<svg class="icon invitation-video__text-line for-desktop"><use xlink:href="#invitation-video__text-line"></use></svg>
-				в котором Кирилл Тавониус расскажет важность участия в семинаре
-			</p>
-			<div class="video invitation-video__container">
-				<button type="button" class="play-btn invitation-play-btn video__play">
-					<svg class="icon play-btn-triangle"><use xlink:href="#icon-play"></use></svg>
-				</button>
-				<img src="https://i.ytimg.com/vi_webp/DmVJd5aLVnY/hqdefault.webp" alt="Посмотрите пригласительное видео" class="video__img">
-				<iframe data-play="https://www.youtube.com/embed/DmVJd5aLVnY?autoplay=1" frameborder="0" allowfullscreen allow="autoplay; encrypted-media" class="video__frame"></iframe>
-			</div>
-		</div>
-		<div class="invitation-video__wrist"></div>
-	</section>
-	<section class="seven">
-		<div class="wrapper">
-			<h2 class="title seven__title">
-				7 проблем, с которыми сталкиваются 
-				<mark class="seven__mark">
-					<span class="seven__mark-txt">все (без исключения)</span>
-				</mark> 
-				предприниматели, внедряя интернет-маркетинг в свой бизнес:
-			</h2>
-			<div class="seven__items">
-				<p class="seven__text">
-					<b class="text_orange">Нет целостного понимания</b> 
-					и инструкции, как работает интернет-маркетинг и что  конкретно нужно делать руководителю, а что делать не нужно
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 277.85 454.42" class="seven__line-svg for-tablet">
-						<path class="seven__text-line" d="M40.68.43s-183,381,237,453"/>
-					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.56 119.03" class="seven__line-svg for-desktop">
-						<path class="seven__text-line" d="M224.59,118.79s-51.5-203-224-76"/>
-					</svg>
-				</p>
-				<p class="seven__text">
-					<b class="text_orange">Отсутствует аналитика</b> 
-					и отслеживание эффективности действующей интернет-стратегии и ее рентабельности
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 277.85 454.42" class="seven__line-svg for-tablet">
-						<path class="seven__text-line" d="M40.68.43s-183,381,237,453"/>
-					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142.59 63.46" class="seven__line-svg for-desktop">
-						<path class="seven__text-line" d="M142.38,3.47S46.37-17.53.87,63"/>
-					</svg>
-				</p>
-				<p class="seven__text">
-					<b class="text_orange">Нет опыта в применении инструментов</b> 
-					интернет-маркетинга для увеличения лояльности клиентов и повторных продаж
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224.75 433.35" class="seven__line-svg for-tablet">
-						<path class="seven__text-line" d="M29.34.43s-138,286,195,432"/>
-					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142.59 63.46" class="seven__line-svg for-desktop">
-						<path class="seven__text-line" d="M142.38,3.47S46.37-17.53.87,63"/>
-					</svg>
-				</p>
-				<p class="seven__text">
-					В штате 
-					<b class="text_orange">нет “толкового” маркетолога</b>, 
-					который умеет эффективно осваивать маркетинговый бюджет и привлекать клиентов из интернета
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224.75 433.35" class="seven__line-svg for-tablet">
-						<path class="seven__text-line" d="M29.34.43s-138,286,195,432"/>
-					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82.47 53.24" class="seven__line-svg for-desktop">
-						<path class="seven__text-line" d="M.14,52.06s42.5,6,81.5-51.5"/>
-					</svg>
-				</p>
-				<p class="seven__text">
-					Нет понимания, 
-					<b class="text_orange">как выстроить грамотные коммуникации</b> 
-					с целевой аудиторией через интернет
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.2 372.95" class="seven__line-svg for-tablet">
-						<path class="seven__text-line" d="M27.36.41s-81,182,41,372"/>
-					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82.47 53.24" class="seven__line-svg for-desktop">
-						<path class="seven__text-line" d="M81.64.74s-42.5-6-81.5,51.5"/>
-					</svg>
-				</p>
-				<p class="seven__text">
-					Нет понимания, 
-					<b class="text_orange">что такое продающая упаковка бизнеса</b> 
-					— начиная от общения менеджера с клиентами, заканчивая дизайном сайта
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.2 372.95" class="seven__line-svg for-tablet">
-						<path class="seven__text-line" d="M27.36.41s-81,182,41,372"/>
-					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142.59 63.46" class="seven__line-svg for-desktop">
-						<path class="seven__text-line" d="M.87,60.53s96,21,141.51-59.53"/>
-					</svg>
-				</p>
-				<p class="seven__text">
-					<b class="text_orange">Не внедрены</b> 
-					подходящие под бизнес инструменты интернет-маркетинга
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.44 172.79" class="seven__line-svg for-tablet">
-						<path class="seven__text-line" d="M45.51.93s145,57-45,171"/>
-					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97.66 57.35" class="seven__line-svg for-desktop">
-						<path class="seven__text-line" d="M.93.37s14.5,36,96.5,56"/>
-					</svg>
-				</p>
-			</div>
-			<b class="seven__five">
-				И это 
-				<mark class="seven__mark">
-					<span class="seven__mark-txt">только 5%</span>
-				</mark>
-			</b>
-			<span class="seven__end-txt">от всех волнующих вас вопросов, которые мы разберем вместе с вами на семинаре</span>
-		</div>
-	</section>
-	<section class="after wrapper">
-		<h2 class="title after__title">После прохождения семинара, вы:</h2>
-		<div class="after__items">
-			<div class="after__item">
-				<img src="images/after__item-1.png" class="after__img">
-				<p class="after__text">Получите <strong>четкую пошаговую и рабочую стратегию интернет-маркетинга</strong> для своего бизнеса</p>
-				<svg class="after__arrow"><use xlink:href="#after__arrow"></use></svg>
-			</div>
-			<div class="after__item">
-				<img src="images/after__item-2.png" class="after__img">
-				<p class="after__text"><strong>Научитесь эффективно управлять интернет-маркетингом</strong> и отделом маркетинга, который отвечает за показатели продаж в вашем бизнесе</p>
-				<svg class="after__arrow"><use xlink:href="#after__arrow"></use></svg>
-			</div>
-			<div class="after__item">
-				<img src="images/after__item-3.png" class="after__img">
-				<p class="after__text">Узнаете и поймете, <strong>что должен делать руководитель лично</strong>, а что делать не должен</p>
-				<svg class="after__arrow"><use xlink:href="#after__arrow"></use></svg>
-			</div>
-			<div class="after__item">
-				<img src="images/after__item-4.png" class="after__img">
-				<p class="after__text">Откроете для себя <strong>новые и трендовые технологии</strong> для оптимизации бизнес-процессов</p>
-				<svg class="after__arrow"><use xlink:href="#after__arrow"></use></svg>
-			</div>
-			<div class="after__item">
-				<img src="images/after__item-5.png" class="after__img">
-				<p class="after__text">Откроете для себя <strong>новые каналы привлечения клиентов онлайн</strong></p>
-				<svg class="after__arrow"><use xlink:href="#after__arrow"></use></svg>
-			</div>
-			<div class="after__item">
-				<img src="images/after__item-6.png" class="after__img">
-				<p class="after__text">Выведите <strong>свой бизнес на “новый уровень”</strong> и дадите новый виток развития, грамотно используя интернет</p>
-			</div>
-		</div>
-		<a href="#plans" class="btn btn_red">Принять участие</a>
-	</section>
-	<section class="side">
-		<div class="wrapper clearfix">
-			<h2 class="title side__title">А какую сторону силы выберете вы?</h2>
-			<div class="side__bad">
-				<b class="side__item-title">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="icon side__icon side__bad-icon"><path d="M640,128,512,0,320,192,128,0,0,128,192,320,0,512,128,640,320,448,512,640,640,512,448,320Z"/></svg>
-					<svg class="side__scope side__scope_left side__bad-scope"><use xlink:href="#scope"></use></svg>
-					Традиционный<br>оффлайн-маркетинг
-					<svg class="side__scope side__bad-scope"><use xlink:href="#scope"></use></svg>
-				</b>
-				<ul>
-					<li class="side__item side__bad-item">Много рутинных задач и процессов каждый день, которые съедают до 60% времени руководителя</li>
-					<li class="side__item side__bad-item">Клиенты непонятно откуда и нужно напрягать клиентов, расспрашивая: “Откуда вы о нас узнали?”</li>
-					<li class="side__item side__bad-item">Прибыль не прогнозируема и не очевидна</li>
-					<li class="side__item side__bad-item">Масштаб компании растет за счет количества сотрудников, выполняющих задачи</li>
-				</ul>
-			</div>
-			<div class="side__good">
-				<b class="side__item-title">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 22" class="icon side__icon side__good-icon"><path d="M0,10,4,6l8,8L26,0l4,4L12,22Z"/></svg>
-					<svg class="side__scope side__scope_left side__good-scope"><use xlink:href="#scope"></use></svg>
-					Современный<br>интернет-маркетинг
-					<svg class="side__scope side__good-scope"><use xlink:href="#scope"></use></svg>
-				</b>
-				<ul>
-					<li class="side__item side__good-item">90% задач автоматизированы и снижена нагрузка на сотрудников</li>
-					<li class="side__item side__good-item">Сквозная отчетность о пути клиента от клика по рекламе до выручке в расчете на 1 клиента</li>
-					<li class="side__item side__good-item">Каждый месяц строится отчетность по эффективности и рентабельность каждого канала интернет-маркетинга</li>
-					<li class="side__item side__good-item">Масштаб компании растет за счет автоматизации бизнеса</li>
-				</ul>
-			</div>
-		</div>
-		<img src="images/side.png" class="side__darth-skywalker for-desktop">
-		<div class="side__sword-red for-desktop"></div>
-		<div class="side__sword-blue for-desktop"></div>
-	</section>
-	<section class="program">
-		<div class="clock program__clock for-desktop">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.76 138.61" class="clock__m" style="transform: rotate(-5deg)"><polygon fill="#c5c5c5" points="25.88 104.77 17.88 0 17.88 109.39 25.88 104.77"/><polygon fill="#f8f8f8" points="9.11 105.18 17.88 0 17.88 109.39 9.11 105.18"/><path fill="#a4a4a4" d="M35.76,120.75A17.85,17.85,0,0,1,17.9,138.61V102.89A17.85,17.85,0,0,1,35.76,120.75Z"/><path fill="#f8f8f8" d="M0,120.75a17.85,17.85,0,0,0,17.86,17.86V102.89A17.85,17.85,0,0,0,0,120.75Z"/><circle fill="#bbb" cx="17.86" cy="120.75" r="8.23"/></svg>
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.03 76.72" class="clock__h" style="transform: rotate(-65deg)"><polygon fill="#c5c5c5" points="13.53 56.72 13.5 0 23.64 54.3 13.53 56.72"/><polygon fill="#f8f8f8" points="13.53 56.72 13.5 0 3.19 54.5 13.53 56.72"/><path fill="#a4a4a4" d="M27,63.22a13.49,13.49,0,0,1-13.5,13.5v-27A13.49,13.49,0,0,1,27,63.22Z"/><path fill="#f8f8f8" d="M0,63.22a13.49,13.49,0,0,0,13.5,13.5v-27A13.49,13.49,0,0,0,0,63.22Z"/><circle fill="#bbb" cx="13.5" cy="63.22" r="6.22"/></svg>
-		</div>
-		<div class="wrapper program__wrapper">
-			<h2 class="title program__title">Программа семинара</h2>
-			<p class="subtitle program__subtitle">За 10 часов мы разберем с вами ключевые темы в интернет-маркетинге</p>
-			<div class="program__item">
-				<b class="program__item-title">Какие инструменты интернет-маркетинга нужны вашему бизнесу:</b>
-				<ul class="program__list">
-					<li class="program__list-item">Сайты и разработка сайтов</li>
-					<li class="program__list-item">SEO-продвижение сайтов</li>
-					<li class="program__list-item">Контекстная реклама</li>
-					<li class="program__list-item">SMM и продвижение в социальных сетях</li>
-					<li class="program__list-item">E-mail маркетинг</li>
-					<li class="program__list-item">Контент-маркетинг</li>
-					<li class="program__list-item">Агрегаторы</li>
-					<li class="program__list-item">CPA-сети</li>
-					<li class="program__list-item">Вирусный маркетинг</li>
-					<li class="program__list-item">Цифровой маркетинг</li>
-				</ul>
-				<div class="video program__video">
-					<button type="button" class="play-btn video__play">
-						<svg class="icon play-btn-triangle"><use xlink:href="#icon-play"></use></svg>
-					</button>
-					<img src="https://i.ytimg.com/vi_webp/XojD4LLH_3Y/maxresdefault.webp" alt="Какие инструменты интернет-маркетинга нужны вашему бизнесу" class="video__img">
-					<iframe data-play="https://www.youtube.com/embed/XojD4LLH_3Y?autoplay=1" frameborder="0" allowfullscreen allow="autoplay; encrypted-media" class="video__frame "></iframe>
-				</div>
-				<b class="program__resume">В результате:</b>
-				<p class="program__resume-txt">вы определите список эффективных инструментов для вашего бизнеса</p>
-			</div>
-			<div class="program__item">
-				<b class="program__item-title">Сквозная аналитика вашего бизнеса:</b>
-				<ul class="program__list">
-					<li class="program__list-item">Показатели: важные и промежуточные, неважные и мифы</li>
-					<li class="program__list-item">Системы аналитики и автоматизации</li>
-					<li class="program__list-item">Статистика посещаемости</li>
-					<li class="program__list-item">Коллтрекинг</li>
-					<li class="program__list-item">Автоставки</li>
-					<li class="program__list-item">Бид-менеджер</li>
-					<li class="program__list-item">Автоматизация контекстной рекламы</li>
-				</ul>
-				<div class="video program__video">
-					<button type="button" class="play-btn video__play">
-						<svg class="icon play-btn-triangle"><use xlink:href="#icon-play"></use></svg>
-					</button>
-					<img src="https://i.ytimg.com/vi_webp/yOOdX7eReyA/maxresdefault.webp" alt="Сквозная аналитика вашего бизнеса" class="video__img">
-					<iframe data-play="https://www.youtube.com/embed/yOOdX7eReyA?autoplay=1" frameborder="0" allowfullscreen allow="autoplay; encrypted-media" class="video__frame "></iframe>
-				</div>
-				<b class="program__resume">В результате:</b>
-				<p class="program__resume-txt">вы увидите уязвимые зоны и зоны роста вашего бизнеса</p>
-			</div>
-			<div class="program__item">
-				<b class="program__item-title">Что должен делать руководитель лично:</b>
-				<ul class="program__list">
-					<li class="program__list-item">Правильная постановка целей и задач</li>
-					<li class="program__list-item">Целевая аудитория и сегментация</li>
-					<li class="program__list-item">Позиционирование и УТП</li>
-					<li class="program__list-item">Построение плана интернет-маркетинга</li>
-				</ul>
-				<div class="video program__video">
-					<button type="button" class="play-btn video__play">
-						<svg class="icon play-btn-triangle"><use xlink:href="#icon-play"></use></svg>
-					</button>
-					<img src="https://i.ytimg.com/vi_webp/8e2yqFVxVK0/maxresdefault.webp" alt="Что должен делать руководитель лично" class="video__img">
-					<iframe data-play="https://www.youtube.com/embed/8e2yqFVxVK0?autoplay=1" frameborder="0" allowfullscreen allow="autoplay; encrypted-media" class="video__frame "></iframe>
-				</div>
-				<b class="program__resume">В результате:</b>
-				<p class="program__resume-txt">готовый план и стратегия интернет-маркетинга на следующие 6-12 месяцев</p>
-			</div>
-			<div class="program__item">
-				<b class="program__item-title">Работа с командой и отделом интернет-маркетинга:</b>
-				<ul class="program__list">
-					<li class="program__list-item">Кто нужен в команде</li>
-					<li class="program__list-item">HR, найм и обучение сотрудников</li>
-					<li class="program__list-item">Сотрудник в штате, подрядчик или фрилансер</li>
-					<li class="program__list-item">Управление процессом</li>
-					<li class="program__list-item">Расчет затрат</li>
-				</ul>
-				<div class="video program__video">
-					<button type="button" class="play-btn video__play">
-						<svg class="icon play-btn-triangle"><use xlink:href="#icon-play"></use></svg>
-					</button>
-					<img src="https://i.ytimg.com/vi_webp/Ck1KJVAnCc4/maxresdefault.webp" alt="Работа с командой и отделом интернет-маркетинга" class="video__img">
-					<iframe data-play="https://www.youtube.com/embed/Ck1KJVAnCc4?autoplay=1" frameborder="0" allowfullscreen allow="autoplay; encrypted-media" class="video__frame "></iframe>
-				</div>
-				<b class="program__resume">В результате:</b>
-				<p class="program__resume-txt">вы увидите уязвимые зоны и зоны роста вашего бизнеса</p>
-			</div>
-			<a href="#plans" class="btn btn_red">Принять участие</a>
-		</div>
-	</section>
-	<section class="terms">
-		<div class="wrapper terms__container">
-			<h2 class="title">Не бойтесь непонятных для вас терминов</h2>
-			<b class="terms__item">Яндекс. Метрика</b>
-			<b class="terms__item">SMM</b>
-			<b class="terms__item">контекстная реклама</b>
-			<b class="terms__item">Google Analytics</b>
-			<b class="terms__item">CRM</b>
-			<b class="terms__item">коллтрекинг</b>
-			<b class="terms__item">Конструктор сайтов</b>
-			<b class="terms__item">SEO</b>
-			<b class="terms__item">Телефония</b>
-			<b class="terms__item">CMS</b>
-			<b class="terms__item">Семантическое <br class="for-desktop">ядро</b>
-			<p class="terms__signature">
-				<b class="terms__signature-title">на семинаре</b>
-				<span class="terms__signature-txt">информация будет подаваться структурированно и понятным языком</span>
-			</p>
-		</div>
-	</section>
-	<section class="mc wrapper">
-		<div class="mc__title-container">
-			<span class="subtitle">Семинар ведет</span>
-			<h2 class="title mc__title">Кирилл Тавониус</h2>
-			<span class="subtitle">Директор и собственник Wide-Web</span>
-		</div>
-		<ul class="mc__list">
-			<li class="mc__list-item"><b class="text_red">200+ запущенных</b><br>интернет-проектов</li>
-			<li class="mc__list-item"><b class="text_red">10-летний опыт работы</b> с интернет-магазинами, развлекательными услугами, b2b-услугами, промышленным и телекоммуникационным рынком</li>
-			<li class="mc__list-item">Совместно с Финансовыми Партнерами разработал самую популярную CRM-систему для кредитных брокеров, которой пользуется <b class="text_red">300+ человек в 60 городах РФ</b></li>
-			<li class="mc__list-item">Вместе с командой привлекли <b class="text_red">3000+ лидов на кредиты за 1 месяц</b> и 400 лидов в месяц в большой спа-салон в Санкт-Петербурге</li>
-		</ul>
-		<div class="mc__watch">
-			<button type="button" class="play-btn mc__watch-btn">
-				<svg class="icon play-btn-triangle"><use xlink:href="#icon-play"></use></svg>
+	<section class="complex wrapper">
+		<h1 class="title complex__title">Строим комплексный интернет-маркетинг с расчётом окупаемости</h1>
+		<span class="subtitle complex__subtitle">с помощью <a href="" class="subtitle-link">продающих и современных сайтов</a>, целевой <a href="" class="subtitle-link">контекстной рекламы</a>, настоящего белого SEO, внедряя <a href="" class="subtitle-link">Битрикс24</a> и <a href="" class="subtitle-link">сквозную аналитику</a></span>
+		<div class="video complex__video">
+			<button type="button" class="play-btn video__play">
+				<svg class="icon play-btn-triangle"><use xlink:href="#play"></use></svg>
 			</button>
-			<b class="mc__watch-txt">Посмотрите 5-минутный видео-отчет с прошлого мероприятия в Гродно</b>
+			<img src="images/complex.png" alt="Кирилл Тавониус" class="video__img complex__video-img">
+			<span class="video__txt complex__video-txt">Подробнее в<br>3-х минутном видео</span>
+			<iframe data-play="https://www.youtube.com/embed/DmVJd5aLVnY?autoplay=1" frameborder="0" allowfullscreen allow="autoplay; encrypted-media" class="video__frame"></iframe>
 		</div>
+		<p class="complex__video-sign">Кирилл Тавониус, <b>со-основатель компании Wide-Web</b></p>
 	</section>
-	<section class="for-whom">
-		<div class="wrapper for-whom__wrapper">
-			<h2 class="title for-whom__title">Для кого наш семинар</h2>
-			<span class="for-whom__half-title">Собственники и<br>руководители</span><span class="for-whom__half-title">Узкие специалисты в сфере<br>интернет-маркетинга</span>
-			<ul class="for-whom__list">
-				<li class="for-whom__list-item">которые до сих пор используют оффлайн рекламу</li>
-				<li class="for-whom__list-item">у которых был опыт использования инструментов интернет-маркетинга, но не было должного результата</li>
-				<li class="for-whom__list-item">у которых уже есть поток клиентов из интернета, но нет сквозной аналитики и отчетности по всем каналам продаж</li>
-			</ul><ul class="for-whom__list">
-				<li class="for-whom__list-item">маркетологам компаний</li>
-				<li class="for-whom__list-item">руководителям отдела маркетинга</li>
-				<li class="for-whom__list-item">руководителям отдела продаж</li>
-			</ul>
-			<span class="subtitle for-whom__subtitle">А также для тех, кто работает в следующих направлениях и нишах:</span>
-			<div class="for-whom__directions">
-				<div class="for-whom__directions-item">Торговля и<br>e-commerce</div>
-				<div class="for-whom__directions-item">Производство и промышленность</div>
-				<div class="for-whom__directions-item">Услуги</div>
-				<div class="for-whom__directions-item">B2B</div>
-				<div class="for-whom__directions-item">Продажа<br>физ. товаров</div>
-				<div class="for-whom__directions-item">Образование<br>и курсы</div>
-			</div>
+	<section class="events wrapper">
+		<h2 class="title events__title">Развиваем рынок интернет-маркетинга</h2>
+		<div class="events__container">
+			<a href="" class="event">
+				<img src="images/event__img-1.jpg" class="event__img">
+				<mark class="event__cost event__cost_free">Бесплатно</mark>
+				<time class="event__date"><svg class="icon"><use xlink:href="#date"></use></svg> 19.09.2018</time>
+				<span class="event__description">Текст на 5-10 слов, подпись к названию</span>
+			</a>
+			<a href="" class="event">
+				<img src="images/event__img-2.jpg" class="event__img">
+				<mark class="event__cost">от 150 руб.</mark>
+				<time class="event__date"><svg class="icon"><use xlink:href="#date"></use></svg> 30.11.2018</time>
+				<span class="event__description">Текст на 5-10 слов, подпись к названию</span>
+			</a>
+			<a href="" class="event">
+				<img src="images/event__img-3.jpg" class="event__img">
+				<mark class="event__cost">от 600 руб.</mark>
+				<mark class="event__online">Онлайн</mark>
+				<time class="event__date"><svg class="icon"><use xlink:href="#date"></use></svg> 14.12.2018</time>
+				<span class="event__description">Текст на 5-10 слов, подпись к названию</span>
+			</a>
 		</div>
-		<a href="#plans" class="btn btn_red">Принять участие</a>
+		<button type="button" class="btn btn_green">Смотреть всё</button>
 	</section>
-	<section class="how wrapper">
-		<h2 class="title how__title">Как проходит обучение</h2>
-		<div class="how__items">
-			<div class="how__item">
-				<span class="how__item-txt">4 больших обучающих модуля (каждый длительностью 2 часа). В стоимость мероприятия включены 2 кофе-брейка и обед</span>
-			</div>
-			<div class="how__item">
-				<span class="how__item-txt">Семинар будет проходить в формате диалога с аудиторией и вы сможете задать интересующиевас вопросы</span>
-			</div>
-			<div class="how__item">
-				<span class="how__item-txt">Если вам не удалось прийти на мероприятие,то вы сможете посмотреть его в записи</span>
-			</div>
-		</div>
-	</section>
-	<section class="report">
-		<div class="wrapper">
-			<h2 class="title report__title">Посмотрите 5-минутный видео-отчет</h2>
-			<span class="subtitle report__subtitle">с прошлого мероприятия в Гродно</span>
-			<div class="video report__video">
-				<button type="button" class="play-btn invitation-play-btn video__play">
-					<svg class="icon play-btn-triangle"><use xlink:href="#icon-play"></use></svg>
-				</button>
-				<img src="https://i.ytimg.com/vi_webp/DmVJd5aLVnY/hqdefault.webp" alt="Посмотрите пригласительное видео" class="video__img">
-				<iframe data-play="https://www.youtube.com/embed/DmVJd5aLVnY?autoplay=1" frameborder="0" allowfullscreen allow="autoplay; encrypted-media" class="video__frame"></iframe>
-			</div>
-		</div>
-		<div class="report__hand for-desktop"></div>
-	</section>
-	<section class="besides">
-		<div class="wrapper">
-			<h2 class="title besides__title">Помимо обучения вас ждет:</h2>
-			<div class="besides__items">
-				<div class="besides__item">
-					<b class="besides__item-title">Нетворкинг</b>
-					<p>Новые знакомства и поиск новых связей – один из самых ценных компонентов в бизнесе</p>
-				</div>
-				<div class="besides__item">
-					<b class="besides__item-title">Перерывы и кофе-брейки</b>
-					<p>Легкий фуршет, напитки и общение для хорошего вечера.</p>
-				</div>
-				<div class="besides__item">
-					<b class="besides__item-title">Это не лекция, а диалог</b>
-					<p>Вы сможете лично пообщаться со спикером мероприятия и задать волнующие вас вопросы</p>
-				</div>
-				<div class="besides__item">
-					<b class="besides__item-title">Сообщество предпринимателей </b>
-					<p>Это мероприятие эксклюзивного уровня, где люди готовы выйти на новый уровень маркетинга.</p>
-				</div>
-			</div>
-			<a href="#plans" class="btn btn_red">Принять участие</a>
-		</div>
-		<div class="besides__leaf besides__leaf-1"></div>
-		<div class="besides__leaf besides__leaf-2"></div>
-		<div class="besides__leaf besides__leaf-3"></div>
-	</section>
-	<section class="reviews">
-		<div class="wrapper">
-			<h2 class="title reviews__title">Отзывы о нашем опыте:</h2>
-			<div class="video reviews__video">
-				<button type="button" class="play-btn video__play">
-					<svg class="icon play-btn-triangle"><use xlink:href="#icon-play"></use></svg>
-				</button>
-				<img src="https://i.ytimg.com/vi_webp/OrvAeTvZz3Y/hqdefault.webp" alt="Посмотрите пригласительное видео" class="video__img">
-				<iframe data-play="https://www.youtube.com/embed/OrvAeTvZz3Y?autoplay=1" frameborder="0" allowfullscreen allow="autoplay; encrypted-media" class="video__frame"></iframe>
-			</div>
-		</div>
-		<img src="images/reviews.jpg" class="reviews__item for-desktop">
-		<img src="images/reviews.jpg" class="reviews__item for-desktop">
-		<img src="images/reviews.jpg" class="reviews__item for-desktop">
-	</section>
-	<section class="hear">
-		<div class="wrapper">
-			<h2 class="title hear__title">Сейчас от каждого второго руководителя можно услышать:</h2>
-			<div class="hear__item">
-				<q class="hear__item-title">Всеми этими вопросами занимается подрядчик</q>
-				<p class="hear__item-txt">Как показывает практика, если руководитель не принимает участие в интернет-маркетинге  своей компании и полностью делегирует это на специалистов, то такой бизнес обречен на застой, потому что одним из ключевых звеньев в позиционировании бизнеса в интернете является видение руководителя, как должен быть представлен его продукт в интернете, каким его должны видеть клиенты.</p>
-			</div>
-			<div class="hear__item">
-				<q class="hear__item-title">Нас рекламируют дилеры, мы больше ездим по выставкам. Пока мы повременим с интернет-маркетингом.</q>
-				<p class="hear__item-txt">Замечательно, тогда вам нужно больше партнеров и вы можете научиться привлекать их через интернет, расширяя партнерскую сеть.</p>
-			</div>
-			<div class="hear__item">
-				<q class="hear__item-title">Интернет-маркетинг не работает. Мы уже работаем 20 лет без интернета и хорошо справляемся.</q>
-				<p class="hear__item-txt">Вы должны понимать, что, если раньше, когда интернета не было, задача офлайн-рекламы заключалась в увеличении продаж или усиления имиджа, то сейчас реклама должна рассказывать об интернет-контенте вашего продукта. Если раньше конверсия потенциальных покупателей в клиентов зачастую подразумевала множество звонков и предоставление информации, то сегодня процесс должен включать сбор информации в интернете и обеспечение ценности для клиента. Если раньше достаточно было показать название компании, то сегодня важны ее репутация в сети, рейтинги и обзоры. Физическое местоположение магазинов всегда было важно. Теперь не менее важно и присутствие в интернете.</p>
-			</div>
-			<div class="hear__item">
-				<q class="hear__item-title">Сейчас очень много информации в интернете</q>
-				<p class="hear__item-txt">Вы должны понимать, что, если раньше, когда интернета не было, задача офлайн-рекламы заключалась в увеличении продаж или усиления имиджа, то сейчас реклама должна рассказывать об интернет-контенте вашего продукта. Если раньше конверсия потенциальных покупателей в клиентов зачастую подразумевала множество звонков и предоставление информации, то сегодня процесс должен включать сбор информации в интернете и обеспечение ценности для клиента. Если раньше достаточно было показать название компании, то сегодня важны ее репутация в сети, рейтинги и обзоры. Физическое местоположение магазинов всегда было важно. Теперь не менее важно и присутствие в интернете.</p>
-			</div>
-		</div>
-	</section>
-	<section class="reasone wrapper clearfix">
-		<h2 class="title reasone__title">Еще одна причина, почему вам нужно быть на семинаре:</h2>
-		<img src="images/reasone__author.png" class="reasone__cite-author">
-		<b class="reasone__cite-title">— Билл Гейтс не шутил, когда сказал:</b>
-		<q class="reasone__cite">Если сейчас ваш бизнес вне Интернета - значит у вас нет бизнеса!</q>
-	</section>
-	<section class="trust">
-		<div class="wrapper">
-			<h2 class="title trust__title">Собственники, управленцы и сотрудники нам доверяют:</h2>
-			<div class="trust__items">
-				<img src="images/trust-1.png" class="trust__item">
-				<img src="images/trust-2.png" class="trust__item">
-				<img src="images/trust-3.png" class="trust__item">
-				<img src="images/trust-4.png" class="trust__item">
-				<img src="images/trust-5.png" class="trust__item">
-				<img src="images/trust-6.png" class="trust__item">
-				<img src="images/trust-7.png" class="trust__item">
-				<img src="images/trust-8.png" class="trust__item">
-				<img src="images/trust-9.png" class="trust__item">
-				<img src="images/trust-10.png" class="trust__item">
-				<img src="images/trust-1.png" class="trust__item">
-				<img src="images/trust-11.png" class="trust__item">
-				<img src="images/trust-4.png" class="trust__item">
-				<img src="images/trust-12.png" class="trust__item">
-				<img src="images/trust-3.png" class="trust__item">
-				<img src="images/trust-13.png" class="trust__item">
-			</div>
-		</div>
-	</section>
-	<section class="price">
-		<div class="wrapper">
-			<h2 class="title price__title">Сколько стоит и как стать участником</h2>
-			<span class="subtitle price__subtitle">В конференц-зале всего 40 мест и мероприятие сохраняет<br>формат закрытой встречи.</span>
-			<div class="price__question">
-				<span class="price__question-txt">И во сколько вы оцените минимум 1 часть информации из программы, внедрив которую вы сможете увеличить прибыль в бизнесе минимум в 2 раза?</span>
-				<b class="price__range">В 200 - 400 BYN?</b>
-			</div>
-		</div>
-		<div class="price__money"></div>
-	</section>
-	<section id="plans" class="plans wrapper">
-		<h2 class="title plans__title">Выбирайте удобный пакет участия:</h2>
-		<div class="plans__container">
-			<div class="plans__item clearfix">
-				<img src="images/plan__standart.png" class="plan__img">
-				<div class="plan__info">
-					<span class="plan__title">Пакет «Стандарт»</span>
-					<div class="plan__price">
-						<s class="plan__price-old">199</s>
-						<b class="plan__price-act">189 руб.</b>
-					</div>
-					<ul class="plan__list">
-						<li class="plan__list-item">Участие в семинаре</li>
-						<li class="plan__list-item">Сертификат по окончании обучения</li>
-					</ul>
-					<button type="button" class="btn btn_red" data-popup="popup-plans" title="Пакет «Стандарт»">Принять участие</button>
-				</div>
-			</div>
-			<div class="plans__item clearfix">
-				<img src="images/plan__extended.png" class="plan__img">
-				<div class="plan__info">
-					<span class="plan__title">Пакет «Расширенный»</span>
-					<div class="plan__price">
-						<s class="plan__price-old">199</s>
-						<b class="plan__price-act">189 руб.</b>
-					</div>
-					<ul class="plan__list">
-						<li class="plan__list-item">Участие в семинаре</li>
-						<li class="plan__list-item">Сертификат по окончании обучения</li>
-						<li class="plan__list-item">Скидка в 10% на другие наши курсы</li>
-						<li class="plan__list-item">1-часовой маркетинговый разбор вашего проекта</li>
-					</ul>
-					<button type="button" class="btn btn_red" data-popup="popup-plans" title="Пакет «Расширенный»">Принять участие</button>
-				</div>
-			</div>
-			<div class="plans__item clearfix">
-				<img src="images/plan__all-inclusive.png" class="plan__img">
-				<div class="plan__info">
-					<span class="plan__title">Пакет «Все включено»</span>
-					<div class="plan__price">
-						<s class="plan__price-old">199</s>
-						<b class="plan__price-act">189 руб.</b>
-					</div>
-					<ul class="plan__list">
-						<li class="plan__list-item">Участие в семинаре</li>
-						<li class="plan__list-item">Сертификат по окончании обучения</li>
-						<li class="plan__list-item">Скидка в 10% на другие наши курсы</li>
-						<li class="plan__list-item">1-часовой маркетинговый разбор вашего проекта</li>
-						<li class="plan__list-item">+1 сотрудник на семинаре</li>
-						<li class="plan__list-item">Видеозапись полного курса по интернет-маркетингу</li>
-					</ul>
-					<button type="button" class="btn btn_red" data-popup="popup-plans" title="Пакет «Все включено»">Принять участие</button>
-				</div>
-			</div>
-		</div>
-		<div class="plans__help">
-			<span class="plans__help-txt">Не знаете, что выбрать?</span>
-			<button type="button" class="btn btn_red">Нажмите сюда</button>
-		</div>
-	</section>
-	<section class="bonus wrapper">
-		<h2 class="title bonus__title">Бонусы для участников семинара</h2>
-		<img src="images/bonus.png" class="bonus__img">
-		<ul class="bonus__list">
-			<li class="bonus__list-item">Каждый слушатель получит сертификат о прохождении семинара</li>
-			<li class="bonus__list-item">У вас появится доступ к закрытому сообществу Школы Wide-Web для консультаций после завершения обучения</li>
-			<li class="bonus__list-item">Видеозапись</li>
-			<li class="bonus__list-item">Скидку 10% на курсы для себя (руководителя)</li>
-			<li class="bonus__list-item">Скидку 15% на курсы для тех кто пришёл с маркетологом</li>
-		</ul>
-	</section>
-	<footer class="footer">
-		<div class="location footer__location wrapper clearfix">
-			<h2 class="title location__title">Место проведения мероприятия:</h2>
-			<div class="location__preview">
-				<div class="owl-carousel location__slider">
-					<img src="images/location.jpg">
-					<img src="images/location.jpg">
-					<img src="images/location.jpg">
-				</div>
-				<span class="location__name">Конференц-зал «Пекин»</span>
-				<p class="location__text">Для нашего события мы выбрали современный многофункциональны конференц-зал на 160 человек, чтобы дать возможность посетить форум максимальному количеству предпринимателей Бреста. Регулярно здесь проходят научные конференции и семинары с организацией кофе-пауз.</p>
-			</div>
-			<div class="location__info">
-				<span class="location__info-item">
-					<svg class="icon"><use xlink:href="#icon-clock"></use></svg>
-					9:30 - 20:00
-				</span>
-				<a href="tel:+375162208866" class="location__info-item">
-					<svg class="icon"><use xlink:href="#icon-phone"></use></svg>
-					+375 (162) 20-88-66
+	<section class="pride wrapper">
+		<h2 class="title pride__title">Наша гордость</h2>
+		<div class="pride__container">
+			<div class="pride__item">
+				<a href="https://www.par4par.ru/" class="pride__item-link">
+					<img src="images/pride__img-1.jpg" class="pride__img">
+					<b class="ptide__item-title">Заголовок кейса в 1-2 строки, желательно текст одного объема для всех кейсов</b>
 				</a>
-				<a href="mailto:info@wide-web.by" class="location__info-item">
-					<svg class="icon"><use xlink:href="#icon-dog"></use></svg>
-					info@wide-web.by
+				<div class="pride__stats">
+					<div class="prire__stats-item">
+						<span class="pride__stats-name">Посещения:</span>
+						<b class="pride__stats-value">1348 лидов</b>
+					</div>
+					<div class="prire__stats-item">
+						<span class="pride__stats-name">Конверсия:</span>
+						<b class="pride__stats-value">2,18%</b>
+					</div>
+					<div class="prire__stats-item">
+						<span class="pride__stats-name">Прибыль:</span>
+						<b class="pride__stats-value">1 550 000 руб.</b>
+					</div>
+				</div>
+			</div>
+			<div class="pride__item">
+				<a href="https://perm.b2b.domru.ru/" class="pride__item-link">
+					<img src="images/pride__img-2.jpg" class="pride__img">
+					<b class="ptide__item-title">Заголовок кейса в 1-2 строки, желательно текст одного объема для всех кейсов</b>
 				</a>
-			</div><div class="location__about">
-				<span class="location__about-item">ООО "ВайдВэб"</span>
-				<span class="location__about-item">УНП 291080519</span>
-				<address class="location__about-item">224030, Республика Беларусь, г. Брест, ул. Карбышева 74, 3 этаж, пом. 9</address>
+				<div class="pride__stats">
+					<div class="prire__stats-item">
+						<span class="pride__stats-name">Посещения:</span>
+						<b class="pride__stats-value">1348 лидов</b>
+					</div>
+					<div class="prire__stats-item">
+						<span class="pride__stats-name">Конверсия:</span>
+						<b class="pride__stats-value">2,18%</b>
+					</div>
+					<div class="prire__stats-item">
+						<span class="pride__stats-name">Прибыль:</span>
+						<b class="pride__stats-value">1 550 000 руб.</b>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="location__map" id="map"></div>
-	</footer>
-	<div class="popup popup-plans">
-		<button type="button" class="popup__close-btn"><svg class="icon"><use xlink:href="#close"></use></svg></button>
-		<b class="poput__title">Забронируйте ваше участие прямо сейчас!</b>
-		<mark class="popup__insert"></mark>
-		<form class="popup__form">
-			<label class="popup__form-label">
-				<span class="popup__form-label-txt">Ваше имя и фамилия:</span>
-				<input class="popup__form-input" type="text" name="name" placeholder="Валерий">
-			</label>
-			<label class="popup__form-label">
-				<span class="popup__form-label-txt">Ваш Email:</span>
-				<input class="popup__form-input" type="text" name="mail" placeholder="maguylovalery@gmail.com">
-			</label>
-			<label class="popup__form-label">
-				<span class="popup__form-label-txt">Ваш телефон:</span>
-				<input class="popup__form-input" type="tel" name="tel" placeholder="+375 29 721-18-83">
-			</label>
-			<button type="submit" class="btn btn_red">Принять участие</button>
+		<button type="button" class="btn btn_green">Смотреть ещё</button>
+	</section>
+	<section class="application wrapper">
+		<h2 class="title application__title">Хотите такие же результаты?</h2>
+		<span class="subtitle application__subtitle">Оставьте заявку и получите бесплатную консультацию</span>
+		<form class="application__form">
+			<input type="text" name="name" placeholder="Ваше имя" class="application__input-name">
+			<input type="tel" name="tel" placeholder="Телефон" class="application__input-tel">
+			<button type="button" class="btn btn_yellow application__btn">Оставить заявку</button>
+			<span class="application__policy">Нажимая кнопку «Отправить», вы подтверждаете, что ознакомились с <a href="" class="application__policy-link">Условиями обработки персональных данных</a> и принимаете их.</span>
 		</form>
-	</div>
+	</section>
+	<section class="call-center wrapper">
+		<div class="call-center__banner">
+			<a href="tel:+375162208866" class="call-center__tel"><b>+375 (162) 20-88-66</b></a>
+			<div class="call-center__item">
+				<img src="images/call-center__item-img-1.png">
+				<b class="call-center__item-name">Наталья Борзикова</b>
+				<a href="mailto:" class="call-center__item-mail"><svg class="icon application__icon-mail"><use xlink:href="#mail"></use></svg> nabo@wide-web.spb.ru</a>
+			</div>
+			<div class="call-center__item">
+				<img src="images/call-center__item-img-2.png">
+				<b class="call-center__item-name">Наталья Герасимчук</b>
+				<a href="mailto:" class="call-center__item-mail"><svg class="icon application__icon-mail"><use xlink:href="#mail"></use></svg> nage@wide-web.spb.ru</a>
+			</div>
+		</div>
+	</section>
+	<footer class="footer wrapper">
+		2010 - 2018  ©  <a href="http://wide-web.by/">Wide-Web</a> - агентство комплексного интернет-маркетинга
+	</footer>
 	<div class="popup popup-feedback">
 		<button type="button" class="popup__close-btn"><svg class="icon"><use xlink:href="#close"></use></svg></button>
 		<b class="poput__title">Закажите обратный звонок прямо сейчас!</b>
@@ -649,21 +151,11 @@
 	</div>
 	<div class="overlay"></div>
 	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" hidden>
-		<symbol id="icon-hotel" viewBox="0 0 512 512"><path d="M154.52,145.73h-48a10,10,0,0,0-10,10v56a10,10,0,0,0,10,10h48a10,10,0,0,0,10-10v-56A10,10,0,0,0,154.52,145.73Zm-10,56h-28v-36h28Z"/><path d="M154.52,257.73h-48a10,10,0,0,0-10,10v56a10,10,0,0,0,10,10h48a10,10,0,0,0,10-10v-56A10,10,0,0,0,154.52,257.73Zm-10,56h-28v-36h28Z"/><path d="M154.52,369.73h-48a10,10,0,0,0-10,10v56a10,10,0,0,0,10,10h48a10,10,0,0,0,10-10v-56A10,10,0,0,0,154.52,369.73Zm-10,56h-28v-36h28Z"/><path d="M415.5,369.73h-48a10,10,0,0,0-10,10v56a10,10,0,0,0,10,10h48a10,10,0,0,0,10-10v-56A10,10,0,0,0,415.5,369.73Zm-10,56h-28v-36h28Z"/><path d="M241.51,145.73h-48a10,10,0,0,0-10,10v56a10,10,0,0,0,10,10h48a10,10,0,0,0,10-10v-56A10,10,0,0,0,241.51,145.73Zm-10,56h-28v-36h28Z"/><path d="M328.5,145.73h-48a10,10,0,0,0-10,10v56a10,10,0,0,0,10,10h48a10,10,0,0,0,10-10v-56A10,10,0,0,0,328.5,145.73Zm-10,56h-28v-36h28Z"/><path d="M241.51,257.73h-48a10,10,0,0,0-10,10v56a10,10,0,0,0,10,10h48a10,10,0,0,0,10-10v-56A10,10,0,0,0,241.51,257.73Zm-10,56h-28v-36h28Z"/><path d="M328.5,257.73h-48a10,10,0,0,0-10,10v56a10,10,0,0,0,10,10h48a10,10,0,0,0,10-10v-56A10,10,0,0,0,328.5,257.73Zm-10,56h-28v-36h28Z"/><path d="M415.5,145.73h-48a10,10,0,0,0-10,10v56a10,10,0,0,0,10,10h48a10,10,0,0,0,10-10v-56A10,10,0,0,0,415.5,145.73Zm-10,56h-28v-36h28Z"/><path d="M415.5,257.73h-48a10,10,0,0,0-10,10v56a10,10,0,0,0,10,10h48a10,10,0,0,0,10-10v-56A10,10,0,0,0,415.5,257.73Zm-10,56h-28v-36h28Z"/><path d="M502,492H464.49V104.06a10,10,0,0,0-10-10H399V58a10,10,0,0,0-10-10H334V10A10,10,0,0,0,324,0H188a10,10,0,0,0-10,10V48H123a10,10,0,0,0-10,10V94.06H57.51a10,10,0,0,0-10,10V492H10a10,10,0,0,0,0,20H502a10,10,0,0,0,0-20ZM198,20H314V48H198ZM298,492H228.81L298,422.81Zm0-97.41c-.22.19-.44.38-.65.59L214,478.52V436.14L278.14,372H298Zm-84,13.27V372h35.86ZM444.49,492H318V372h3.5a10,10,0,0,0,0-20h-131a10,10,0,0,0,0,20H194V492H67.51V114.06h111a10,10,0,1,0,0-20H133V68H379V94.06H257.52a10,10,0,1,0,0,20h187V492Z"/><path d="M224.58,97a10,10,0,1,0,2.93,7.07A10.08,10.08,0,0,0,224.58,97Z"/></symbol>
-		<symbol id="icon-wave" viewBox="0 0 405 28"><path d="M401,28c-10.77,0-16.18-6-21-11.3-4.38-4.86-7.85-8.7-15.13-8.7s-10.72,3.83-15.08,8.68C345,22,339.63,28,328.81,28s-16.24-6-21-11.32C303.43,11.83,300,8,292.72,8S282,11.83,277.65,16.68C272.87,22,267.46,28,256.63,28s-16.24-6-21-11.32C231.25,11.83,227.8,8,220.54,8s-10.71,3.83-15.07,8.68C200.69,22,195.28,28,184.45,28s-16.24-6-21-11.32C159.07,11.83,155.62,8,148.36,8s-10.71,3.83-15.07,8.68C128.51,22,123.1,28,112.27,28S96,22,91.25,16.68C86.89,11.83,83.44,8,76.18,8s-10.71,3.83-15.07,8.68C56.33,22,50.92,28,40.09,28S23.82,22,19,16.66C14.66,11.82,11.21,8,4,8A4,4,0,0,1,4,0C14.77,0,20.18,6,25,11.3c4.38,4.86,7.85,8.7,15.13,8.7s10.71-3.83,15.07-8.68C59.94,6,65.35,0,76.18,0s16.24,6,21,11.32C101.56,16.17,105,20,112.27,20s10.71-3.83,15.07-8.68C132.12,6,137.53,0,148.36,0s16.24,6,21,11.32c4.36,4.85,7.81,8.68,15.07,8.68s10.71-3.83,15.07-8.68C204.3,6,209.71,0,220.54,0s16.24,6,21,11.32c4.36,4.85,7.81,8.68,15.07,8.68s10.71-3.83,15.07-8.68C276.48,6,281.89,0,292.72,0s16.24,6,21,11.32c4.36,4.85,7.81,8.68,15.07,8.68s10.71-3.83,15.07-8.67C348.66,6,354.08,0,364.91,0S381.19,6,386,11.34c4.36,4.84,7.81,8.66,15,8.66a4,4,0,0,1,0,8Z"/></symbol>
-		<symbol id="choose-plan__arrow" viewBox="0 0 97.78 107.74"><rect x="1.72" y="-0.05" width="1.94" height="6.47" transform="translate(2.39 -0.97) rotate(36.11)"/><rect x="4.88" y="-0.53" width="1.94" height="6.47" transform="translate(0.22 5.84) rotate(-53.89)"/><rect x="3.73" y="2.79" width="1.94" height="6.47" transform="translate(-1.15 1.11) rotate(-12.05)"/><rect x="6.12" y="12.55" width="1.94" height="6.47" transform="translate(-3.14 1.83) rotate(-12.05)"/><rect x="9.21" y="23.72" width="1.94" height="6.47" transform="translate(-8.82 5.29) rotate(-20.57)"/><rect x="14.16" y="34.44" width="1.94" height="6.47" transform="translate(-14.16 9.56) rotate(-24.29)"/><rect x="20.24" y="45.88" width="1.94" height="6.47" transform="translate(-22.82 18.72) rotate(-32.03)"/><rect x="26.99" y="55.26" width="1.94" height="6.47" transform="translate(-26.77 23.73) rotate(-32.03)"/><rect x="34.06" y="64.41" width="1.94" height="6.47" transform="translate(-34.85 37.3) rotate(-39.15)"/><rect x="42.4" y="72.88" width="1.94" height="6.47" transform="translate(-40.14 49.62) rotate(-42.73)"/><rect x="51.28" y="80.57" width="1.94" height="6.47" transform="translate(-45.89 72.72) rotate(-51.62)"/><rect x="61.06" y="87.48" width="1.94" height="6.47" transform="translate(-47.13 103.37) rotate(-62.25)"/><rect x="71.47" y="93.33" width="1.94" height="6.47" transform="translate(-45.29 123.24) rotate(-65.89)"/><rect x="82.7" y="98.35" width="1.94" height="6.47" transform="translate(-41.61 141.9) rotate(-68.37)"/><rect x="93.45" y="102.41" width="1.94" height="6.47" transform="translate(-38.6 154.46) rotate(-68.37)"/></symbol>
-		<symbol id="icon-play" viewBox="0 0 62.77 70.6"><path d="M0,65,.32,5.53A5.56,5.56,0,0,1,8.68.76L60,30.78a5.56,5.56,0,0,1,0,9.62L8.31,69.87A5.56,5.56,0,0,1,0,65Z"/></symbol>
-		<symbol id="invitation-video__text-line" viewBox="0 0 193.8 380.11"><path d="M18.63,380.11q-1.05-2.83-2-5.67l2.83-1q1,2.81,2,5.62Z"/><path d="M12.79,362.81C11.61,358.92,10.5,355,9.48,351l2.9-.75c1,3.88,2.11,7.8,3.28,11.65ZM6.65,339.14c-.86-4-1.64-8-2.34-12l3-.51c.68,4,1.46,7.95,2.31,11.88ZM2.48,315.05c-.53-4-1-8.12-1.33-12.15l3-.27c.35,4,.8,8,1.32,12ZM.32,290.7c-.19-4.06-.3-8.17-.31-12.22H3c0,4,.12,8.08.31,12.1ZM3.2,266.34l-3-.11c.15-4.06.39-8.17.7-12.22l3,.23C3.58,258.26,3.34,262.33,3.2,266.34Zm1.9-24.15-3-.36c.49-4,1.06-8.11,1.72-12.11l3,.48C6.14,234.17,5.57,238.2,5.09,242.2ZM9,218.3,6,217.69c.82-4,1.73-8,2.71-11.93l2.91.73C10.7,210.39,9.79,214.36,9,218.3Zm5.85-23.49L12,194c1.14-3.89,2.38-7.81,3.69-11.66l2.84,1C17.2,187.07,16,191,14.84,194.81Zm7.77-22.92-2.8-1.08c1.46-3.79,3-7.59,4.63-11.31l2.75,1.19C25.6,164.37,24.05,168.13,22.61,171.88Zm9.63-22.2-2.7-1.31c1.77-3.66,3.63-7.32,5.55-10.89l2.64,1.42C35.83,142.44,34,146.06,32.24,149.68Zm11.42-21.33-2.58-1.52c2.06-3.5,4.22-7,6.42-10.4L50,118.06C47.83,121.43,45.69,124.9,43.65,128.36ZM56.78,108l-2.45-1.73c2.34-3.31,4.78-6.62,7.25-9.83L64,98.32C61.52,101.49,59.1,104.77,56.78,108ZM71.54,88.89,69.24,87c2.6-3.1,5.3-6.19,8-9.19l2.22,2C76.79,82.76,74.11,85.82,71.54,88.89ZM87.82,71l-2.13-2.11c2.85-2.87,5.8-5.73,8.77-8.49l2,2.2C93.56,65.36,90.64,68.19,87.82,71Zm17.7-16.44-1.95-2.28c3.08-2.63,6.26-5.23,9.44-7.73l1.85,2.36C111.72,49.41,108.57,52,105.52,54.59Zm19-14.91-1.75-2.43c3.3-2.37,6.69-4.71,10.07-6.93l1.65,2.51C131.14,35,127.78,37.34,124.52,39.69Zm20.21-13.3-1.54-2.57c3.47-2.09,7-4.13,10.61-6.07l1.44,2.63C151.7,22.3,148.17,24.32,144.73,26.38ZM166,14.8l-1.33-2.69c3.63-1.79,7.36-3.53,11.07-5.18l1.21,2.74C173.25,11.3,169.56,13,166,14.8Z"/><path d="M188.22,4.95l-1.1-2.79q2.8-1.1,5.63-2.16l1,2.81Q191,3.85,188.22,4.95Z"/></symbol>
-		<symbol id="after__arrow" viewBox="0 0 430.69 86.44"><path class="after__line" d="M.59,78.43c145.85-107.37,291.73-101.23,429.1,7"/><polyline points="418.09 85.08 429.69 85.41 429.69 74.08"/></symbol>
-		<symbol id="scope" viewBox="0 0 25.96 100"><polygon points="0 0 25.96 0 25.96 10 10.04 10 10 89.96 25.96 89.96 25.96 100 0 100 0 0"/></symbol>
-		<symbol id="icon-clock" viewBox="0 0 372.96 372.96"><path d="M186.48,0C83.49,0,0,83.49,0,186.48S83.49,373,186.48,373,373,289.47,373,186.48,289.42.13,186.48,0Zm8,356.56v-32.8a8,8,0,0,0-16,0v32.8A170.4,170.4,0,0,1,16.4,194.48H49.2a8,8,0,0,0,0-16H16.4A170.4,170.4,0,0,1,178.48,16.4V49.2a8,8,0,0,0,16,0V16.4A170.4,170.4,0,0,1,356.56,178.48h-32.8a8,8,0,0,0,0,16h32.88A170.4,170.4,0,0,1,194.48,356.56Z"/><path d="M270.88,260.88l-76.4-77.68V102.48a8,8,0,1,0-16,0v84a8,8,0,0,0,2.32,5.6l78.64,80a8,8,0,0,0,11.44-11.2Z"/></symbol>
-		<symbol id="icon-phone" viewBox="0 0 473.81 473.81"><path d="M374.46,293.51c-9.7-10.1-21.4-15.5-33.8-15.5s-24.1,5.3-34.2,15.4l-31.6,31.5c-2.6-1.4-5.2-2.7-7.7-4-3.6-1.8-7-3.5-9.9-5.3-29.6-18.8-56.5-43.3-82.3-75-12.5-15.8-20.9-29.1-27-42.6,8.2-7.5,15.8-15.3,23.2-22.8,2.8-2.8,5.6-5.7,8.4-8.5,21-21,21-48.2,0-69.2l-27.3-27.3c-3.1-3.1-6.3-6.3-9.3-9.5-6-6.2-12.3-12.6-18.8-18.6-9.7-9.6-21.3-14.7-33.5-14.7s-24,5.1-34,14.7l-.2.2-34,34.3a73.16,73.16,0,0,0-21.7,46.5c-2.4,29.2,6.2,56.4,12.8,74.2,16.2,43.7,40.4,84.2,76.5,127.6,43.8,52.3,96.5,93.6,156.7,122.7,23,10.9,53.7,23.8,88,26,2.1.1,4.3.2,6.3.2,23.1,0,42.5-8.3,57.7-24.8.1-.2.3-.3.4-.5,5.2-6.3,11.2-12,17.5-18.1,4.3-4.1,8.7-8.4,13-12.9,9.9-10.3,15.1-22.3,15.1-34.6s-5.3-24.3-15.4-34.3Zm35.8,105.3c-.1,0-.1.1,0,0-3.9,4.2-7.9,8-12.2,12.2a263,263,0,0,0-19.3,20c-10.1,10.8-22,15.9-37.6,15.9-1.5,0-3.1,0-4.6-.1-29.7-1.9-57.3-13.5-78-23.4C202,396,152.26,357.11,111,307.81c-34.1-41.1-56.9-79.1-72-119.9-9.3-24.9-12.7-44.3-11.2-62.6a45.9,45.9,0,0,1,13.8-29.7l34.1-34.1c4.9-4.6,10.1-7.1,15.2-7.1,6.3,0,11.4,3.8,14.6,7l.3.3c6.1,5.7,11.9,11.6,18,17.9,3.1,3.2,6.3,6.4,9.5,9.7l27.3,27.3c10.6,10.6,10.6,20.4,0,31-2.9,2.9-5.7,5.8-8.6,8.6-8.4,8.6-16.4,16.6-25.1,24.4-.2.2-.4.3-.5.5-8.6,8.6-7,17-5.2,22.7l.3.9c7.1,17.2,17.1,33.4,32.3,52.7l.1.1c27.6,34,56.7,60.5,88.8,80.8A136.54,136.54,0,0,0,255,345c3.6,1.8,7,3.5,9.9,5.3.4.2.8.5,1.2.7a21.68,21.68,0,0,0,9.9,2.5c8.3,0,13.5-5.2,15.2-6.9l34.2-34.2c3.4-3.4,8.8-7.5,15.1-7.5s11.3,3.9,14.4,7.3l.2.2,55.1,55.1C420.46,377.71,420.46,388.21,410.26,398.81Z"/><path d="M256.06,112.71a128.7,128.7,0,0,1,104.8,104.8,13.42,13.42,0,0,0,13.3,11.2,17.85,17.85,0,0,0,2.3-.2,13.51,13.51,0,0,0,11.1-15.6,155.62,155.62,0,0,0-126.8-126.8,13.57,13.57,0,0,0-15.6,11A13.35,13.35,0,0,0,256.06,112.71Z"/><path d="M473.26,209A256.25,256.25,0,0,0,264.46.21a13.48,13.48,0,1,0-4.4,26.6,228.88,228.88,0,0,1,186.6,186.6,13.42,13.42,0,0,0,13.3,11.2,17.85,17.85,0,0,0,2.3-.2A13.25,13.25,0,0,0,473.26,209Z"/></symbol>
-		<symbol id="icon-dog" viewBox="0 0 200.81 200.81"><path d="M100.41,0a100.41,100.41,0,0,0,0,200.82,7.5,7.5,0,0,0,0-15,85.41,85.41,0,1,1,85.41-85.41v23.23a15.73,15.73,0,0,1-31.46,0V100.41a54,54,0,1,0-12.74,34.77,30.72,30.72,0,0,0,59.2-11.54V100.41A100.52,100.52,0,0,0,100.41,0Zm0,139.36a39,39,0,1,1,39-39A39,39,0,0,1,100.41,139.36Z"/></symbol>
-		<symbol id="icon-left-arrow" viewBox="0 0 292.36 292.36"><path d="M223,5.42a17.93,17.93,0,0,0-25.7,0L69.38,133.33a17.93,17.93,0,0,0,0,25.69L197.28,286.93a18.28,18.28,0,0,0,31.12-12.85V18.27A17.56,17.56,0,0,0,223,5.42Z"/></symbol>
-		<symbol id="icon-right-arrow" viewBox="0 0 292.36 292.36"><path d="M69.38,286.94a17.93,17.93,0,0,0,25.7,0L223,159a17.93,17.93,0,0,0,0-25.69L95.08,5.43a17.92,17.92,0,0,0-25.69,0A17.55,17.55,0,0,0,64,18.27V274.09A17.56,17.56,0,0,0,69.38,286.94Z"/></symbol>
 		<symbol id="close" viewBox="0 0 357 357"><polygon points="357 35.7 321.3 0 178.5 142.8 35.7 0 0 35.7 142.8 178.5 0 321.3 35.7 357 178.5 214.2 321.3 357 357 321.3 214.2 178.5 357 35.7"/></symbol>
+		<symbol id="play" viewBox="0 0 62.77 70.6"><path d="M0,65,.32,5.53A5.56,5.56,0,0,1,8.68.76L60,30.78a5.56,5.56,0,0,1,0,9.62L8.31,69.87A5.56,5.56,0,0,1,0,65Z"/></symbol>
+		<symbol id="date" viewBox="0 0 384 426.67"><path d="M341.33,42.67H320V0H277.33V42.67H106.67V0H64V42.67H42.67A42.47,42.47,0,0,0,.21,85.33L0,384a42.66,42.66,0,0,0,42.67,42.67H341.33A42.66,42.66,0,0,0,384,384V85.33A42.66,42.66,0,0,0,341.33,42.67Zm0,341.33H42.67V149.33H341.33Z"/><polygon points="288.64 214.61 266.03 192 161.92 296.11 116.69 250.88 94.08 273.49 161.92 341.33 288.64 214.61"/></symbol>
+		<symbol id="mail" viewBox="0 0 512 390"><path d="M467,0H45A45.08,45.08,0,0,0,0,45V345a45.07,45.07,0,0,0,45,45H467a45.07,45.07,0,0,0,45-45V45A45.07,45.07,0,0,0,467,0Zm-6.21,30L257,233.83,51.36,30ZM30,338.79V51.07L174.48,194.31ZM51.21,360,195.78,215.43l50.66,50.22a15,15,0,0,0,21.17,0L317,216.21,460.79,360ZM482,338.79,338.21,195,482,51.21Z"/></symbol>
 	</svg>
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script src="script.js" defer></script>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>

@@ -22,6 +22,7 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^3.10.0",
     "postcss": "^7.0.2",
     "postcss-css-variables": "^0.9.0"
   }
