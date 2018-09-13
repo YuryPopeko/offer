@@ -104,11 +104,6 @@ var Popup = function Popup(btn) {
 document.querySelectorAll('[data-popup]').forEach(function (item) {
   return new Popup(item);
 });
-$('.owl-carousel').owlCarousel({
-  items: 1,
-  nav: true,
-  navText: ['<svg class="icon"><use xlink:href="#icon-left-arrow"></use></svg>', '<svg class="icon"><use xlink:href="#icon-right-arrow"></use></svg>']
-});
 var scrolled;
 document.addEventListener('scroll', function () {
   return scrolled = window.pageYOffset || document.documentElement.scrollTop;
@@ -174,3 +169,11 @@ function onScreen(elem) {
     btn.hidden = true;
   };
 })();
+
+if (document.querySelector('.owl-carousel')) {
+  $('.owl-carousel').owlCarousel({
+    items: 1,
+    nav: true,
+    navText: ['<svg class="icon"><use xlink:href="#icon-left-arrow"></use></svg>', '<svg class="icon"><use xlink:href="#icon-right-arrow"></use></svg>']
+  });
+}

@@ -101,7 +101,8 @@ body {
 	transition-property: opacity;
 	transition-duration: .35s
 }
-.btn:hover {
+.btn:hover,
+.play-btn:hover {
 	opacity: .8
 }
 .btn_green {
@@ -227,11 +228,8 @@ body {
 	font-size: 26px;
 	color: inherit;
 	vertical-align: middle;
-	margin-right: -.25;
+	margin-right: -.25em;
 	pointer-events: none
-}
-.play-btn:hover {
-	opacity: .8
 }
 .invitation-video__wrist {
 	width: 45vw;
@@ -1470,6 +1468,9 @@ body {
 .events__title {
 	margin-bottom: 30px
 }
+.event__link {
+	display: block
+}
 .event__img {
 	width: 100%;
 	margin-bottom: 20px
@@ -2441,7 +2442,7 @@ body {
 	.events {
 		padding-top: 100px
 	}
-	.event {
+	.events__item {
 		flex-basis: calc(100% / 3 - 15px);
 		margin-bottom: 50px
 	}

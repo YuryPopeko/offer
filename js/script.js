@@ -81,11 +81,6 @@ class Popup {
 	}}document.querySelectorAll('[data-popup]').forEach(item => new Popup(item));
 
 
-$('.owl-carousel').owlCarousel({
-	items: 1,
-	nav: true,
-	navText: ['<svg class="icon"><use xlink:href="#icon-left-arrow"></use></svg>', '<svg class="icon"><use xlink:href="#icon-right-arrow"></use></svg>']})
-
 
 let scrolled;
 document.addEventListener('scroll', () => scrolled = window.pageYOffset || document.documentElement.scrollTop)
@@ -165,3 +160,10 @@ function onScreen(elem) {
 		btn.hidden = true
 
 	}})()
+
+if (document.querySelector('.owl-carousel')) {
+	$('.owl-carousel').owlCarousel({
+		items: 1,
+		nav: true,
+		navText: ['<svg class="icon"><use xlink:href="#icon-left-arrow"></use></svg>', '<svg class="icon"><use xlink:href="#icon-right-arrow"></use></svg>']})
+}
