@@ -170,6 +170,33 @@ function onScreen(elem) {
   };
 })();
 
+(function () {
+  // accordion
+  document.addEventListener('click', function (e) {
+    var target = e.target;
+    if (target.closest('.accordion__btn')) toggleAccordion(target.closest('.accordion__btn'));
+  });
+
+  function toggleAccordion(accordionBtn) {
+    var accordion = accordionBtn.parentElement;
+    var accordionContent = accordion.querySelector('.accordion__content');
+    accordion.classList.toggle('accordion_active');
+
+    if (accordionContent.style.maxHeight) {
+      accordionContent.style.maxHeight = null;
+    } else {
+      accordionContent.style.maxHeight = "".concat(accordionContent.scrollHeight, "px");
+    }
+  }
+
+  var accordionActive = document.querySelectorAll('.accordion_active');
+  if (!accordionActive.length) return;
+  accordionActive.forEach(function (item) {
+    var accordionContent = item.querySelector('.accordion__content');
+    accordionContent.style.maxHeight = "".concat(accordionContent.scrollHeight, "px");
+  });
+})();
+
 if (document.querySelector('.owl-carousel')) {
   $('.owl-carousel').owlCarousel({
     items: 1,

@@ -159,7 +159,38 @@ function onScreen(elem) {
 		img.hidden = true;
 		btn.hidden = true
 
-	}})()
+	}})();
+
+
+(() => { // accordion
+
+	document.addEventListener('click', (e) => {
+		const target = e.target;
+		if (target.closest('.accordion__btn')) toggleAccordion(target.closest('.accordion__btn'))
+	});
+
+	function toggleAccordion(accordionBtn) {
+
+		const accordion = accordionBtn.parentElement;
+		const accordionContent = accordion.querySelector('.accordion__content');
+
+		accordion.classList.toggle('accordion_active');
+		if (accordionContent.style.maxHeight) {
+			accordionContent.style.maxHeight = null;
+		} else {
+			accordionContent.style.maxHeight = `${accordionContent.scrollHeight}px`;
+		} 
+
+	}
+
+	const accordionActive = document.querySelectorAll('.accordion_active');
+	if (!accordionActive.length) return;
+
+	accordionActive.forEach(item => {
+		const accordionContent = item.querySelector('.accordion__content');
+		accordionContent.style.maxHeight = `${accordionContent.scrollHeight}px`
+	})})();
+
 
 if (document.querySelector('.owl-carousel')) {
 	$('.owl-carousel').owlCarousel({

@@ -1315,13 +1315,9 @@ body {
 	padding: 40px;
 	text-align: center;
 	background-color: #596d98;
-	background-image: radial-gradient(at center -10%, transparent 12%, var(--line) 12%, var(--line) calc(12% + 1.4px), transparent calc(12% + 1.4px),
-																										transparent 25%, var(--line) 25%, var(--line) calc(25% + 1.4px), transparent calc(25% + 1.4px),
-																										transparent 37%, var(--line) 37%, var(--line) calc(37% + 1.4px), transparent calc(37% + 1.4px),
-																										transparent 50%, var(--line) 50%, var(--line) calc(50% + 1.4px), transparent calc(50% + 1.4px),
-																										transparent 62%, var(--line) 62%, var(--line) calc(62% + 1.4px), transparent calc(62% + 1.4px));
+	background-image: url(images/popup.png);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: 50% 90%;
 	background-size: 1500px auto;
 	color: var(--white);
 	box-shadow: 0 10px 40px 0 rgba(8, 10, 14, .25);
@@ -1337,8 +1333,8 @@ body {
 }
 .popup__close-btn {
 	position: absolute;
-	top: 24px;
-	right: 24px;
+	top: 17px;
+	right: 17px;
 	font-size: 20px;
 	background-color: transparent;
 	color: inherit
