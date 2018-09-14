@@ -146,9 +146,9 @@ function onScreen(elem) {
 		const btn = video.querySelector('.video__play'),
 					iframe = video.querySelector('iframe'),
 					img = video.querySelector('.video__img'),
-					hand = video.parentElement.parentElement.querySelector('.invitation-video__wrist') ||
+					hand = video.parentElement.parentElement.querySelector('.invite-video__wrist') ||
 								 video.parentElement.parentElement.querySelector('.report__hand'),
-					txtLine = video.parentElement.parentElement.querySelector('.invitation-video__txt-line'),
+					txtLine = video.parentElement.parentElement.querySelector('.invite-video__txt-line'),
 					txt = video.querySelector('.video__txt');
 
 		if(hand) hand.classList.add('away');

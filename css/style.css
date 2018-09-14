@@ -170,17 +170,17 @@ body {
 	display: inline-block;
 	width: 100px
 }
-.invitation-video {
+.invite-video {
 	padding-top: 75px;
 	padding-bottom: 135px;
 	position: relative;
 	overflow: hidden
 }
-.invitation-video__title {
+.invite-video__title {
 	text-align: left;
 	padding-left: 80px
 }
-.invitation-video__text {
+.invite-video__text {
 	font-size: 1.25em;
 	width: 480px;
 	padding-left: 200px;
@@ -190,7 +190,7 @@ body {
 	position: relative;
 	overflow: hidden
 }
-.invitation-video__container {
+.invite-video__container {
 	width: 480px;
 	height: 270px;
 	margin-right: auto;
@@ -233,10 +233,10 @@ body {
 	margin-right: -.25em;
 	pointer-events: none
 }
-.invitation-video__wrist {
+.invite-video__wrist {
 	width: 45vw;
 	height: 225px;
-	background-image: url("images/invitation-video__wrist.png");
+	background-image: url("images/invite-video__wrist.png");
 	background-repeat: no-repeat;
 	background-position: right 0;
 	background-size: contain;
@@ -1695,24 +1695,24 @@ body {
 	.choose-plan__img {
 		width: 150px
 	}
-	.invitation-video {
+	.invite-video {
 		padding-top: 150px;
 		padding-bottom: 180px;
-		background-image: url("images/iPad.png"), url("images/invitation-video__figures-desktop.png");
+		background-image: url("images/iPad.png"), url("images/invite-video__figures-desktop.png");
 		background-repeat: no-repeat, no-repeat;
 		background-position: 50% 437px, 50%, 50%;
 		background-size: auto, 90% auto
 	}
-	.invitation-video__title {
+	.invite-video__title {
 		padding-left: 450px
 	}
-	.invitation-video__text {
+	.invite-video__text {
 		width: 900px;
 		padding-left: 620px;
 		margin-bottom: 110px;
 		position: relative;
 	}
-	.invitation-video__txt-line {
+	.invite-video__txt-line {
 		font-size: 380px;
 		position: absolute;
 		top: 60%;
@@ -1720,18 +1720,18 @@ body {
 		z-index: 1;
 		color: var(--red)
 	}
-	.invitation-play-btn {
+	.invite-play-btn {
 		width: 180px;
 		height: 180px
 	}
-	.invitation-play-btn .play-btn-triangle {
+	.invite-play-btn .play-btn-triangle {
 		font-size: 50px
 	}
-	.invitation-video__container {
+	.invite-video__container {
 		width: 769px;
 		height: 576px
 	}
-	.invitation-video__wrist {
+	.invite-video__wrist {
 		height: 670px;
 		bottom: -200px
 	}
@@ -2513,12 +2513,12 @@ body {
 	.choose-plan__arrow {
 		margin-right: -70px
 	}
-	.invitation-video {
-		background-image: url("images/invitation-video__figures-tablet.png");
+	.invite-video {
+		background-image: url("images/invite-video__figures-tablet.png");
 		background-repeat: no-repeat;
 		background-position: 50%
 	}
-	.invitation-video__container {
+	.invite-video__container {
 		border-radius: 25px
 	}
 	.seven__text:nth-child(odd) .seven__line-svg {
