@@ -33,7 +33,8 @@ q:before, q:after {
 }
 button {
 	border: 0;
-	font-size: inherit
+	font-size: inherit;
+	cursor: pointer
 }
 a {
 	color: inherit;

@@ -197,7 +197,9 @@ body {
 	margin-left: auto
 }
 .video__img,
-.video__play {
+.video__play,
+.complex__video-btn,
+.owl-nav {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -880,7 +882,7 @@ body {
 	margin-left: auto;
 	box-shadow: 0 0 200px -15px #f0474b
 }
-.popup__video-report-frame {
+.popup__video-frame {
 	width: 100%;
 	height: 284px
 }
@@ -1230,12 +1232,6 @@ body {
 	border-radius: 5px
 }
 .owl-nav {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	margin: auto;
 	width: calc(100% - 40px);
 	height: 0;
 	display: flex;
@@ -1365,7 +1361,7 @@ body {
 	background-color: rgba(0,0,0,.6);
 	transition-delay: 0s
 }
-.poput__title {
+.popup__title {
 	display: inline-block;
 	margin-bottom: 20px;
 	font-size: 1.875em
@@ -1412,6 +1408,7 @@ body {
 	text-align: left
 }
 .complex__video {
+	position: relative;
 	width: 434px;
 	height: 220px;
 	border-radius: 10px;
@@ -1564,7 +1561,7 @@ body {
 	border-radius: 32px;
 	background-repeat: no-repeat;
 	background-position: 30px 50%;
-	background-size: 13px auto
+	background-size: 13px 13px
 }
 .application__input-name {
 	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDggNDA4Ij48cGF0aCBkPSJNMjA0LDIwNGM1Ni4xLDAsMTAyLTQ1LjksMTAyLTEwMlMyNjAuMSwwLDIwNCwwLDEwMiw0NS45LDEwMiwxMDIsMTQ3LjksMjA0LDIwNCwyMDRabTAsNTFDMTM1LjE1LDI1NSwwLDI4OC4xNSwwLDM1N3Y1MUg0MDhWMzU3QzQwOCwyODguMTUsMjcyLjg1LDI1NSwyMDQsMjU1WiIvPjwvc3ZnPg==)
@@ -2472,7 +2469,7 @@ body {
 	.application__input-name,
 	.application__input-tel,
 	.application__btn {
-		flex-basis: 300px
+		max-width: calc(100% / 3 - 24px)
 	}
 	.application__policy {
 		flex-basis: 600px;

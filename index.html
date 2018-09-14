@@ -25,13 +25,12 @@
 	<section class="complex wrapper">
 		<h1 class="title complex__title">Строим комплексный интернет-маркетинг с расчётом окупаемости</h1>
 		<span class="subtitle complex__subtitle">с помощью <a href="" class="subtitle-link">продающих и современных сайтов</a>, целевой <a href="" class="subtitle-link">контекстной рекламы</a>, настоящего белого SEO, внедряя <a href="" class="subtitle-link">Битрикс24</a> и <a href="" class="subtitle-link">сквозную аналитику</a></span>
-		<div class="video complex__video">
-			<button type="button" class="play-btn video__play">
+		<div class="complex__video">
+			<button type="button" class="play-btn complex__video-btn" data-popup="popup__video">
 				<svg class="icon play-btn-triangle"><use xlink:href="#play"></use></svg>
 			</button>
 			<img src="images/complex.png" alt="Кирилл Тавониус" class="video__img complex__video-img">
 			<span class="video__txt complex__video-txt">Подробнее в<br>3-х минутном видео</span>
-			<iframe data-play="https://www.youtube.com/embed/DmVJd5aLVnY?autoplay=1" frameborder="0" allowfullscreen allow="autoplay; encrypted-media" class="video__frame"></iframe>
 		</div>
 		<p class="complex__video-sign">Кирилл Тавониус, <b>со-основатель компании Wide-Web</b></p>
 	</section>
@@ -128,21 +127,21 @@
 			<div class="call-center__item">
 				<img src="images/call-center__item-img-1.png">
 				<b class="call-center__item-name">Наталья Борзикова</b>
-				<a href="mailto:" class="call-center__item-mail"><svg class="icon application__icon-mail"><use xlink:href="#mail"></use></svg> nabo@wide-web.spb.ru</a>
+				<a href="mailto:nabo@wide-web.spb.ru" class="call-center__item-mail"><svg class="icon application__icon-mail"><use xlink:href="#mail"></use></svg> nabo@wide-web.spb.ru</a>
 			</div>
 			<div class="call-center__item">
 				<img src="images/call-center__item-img-2.png">
 				<b class="call-center__item-name">Наталья Герасимчук</b>
-				<a href="mailto:" class="call-center__item-mail"><svg class="icon application__icon-mail"><use xlink:href="#mail"></use></svg> nage@wide-web.spb.ru</a>
+				<a href="mailto:nage@wide-web.spb.ru" class="call-center__item-mail"><svg class="icon application__icon-mail"><use xlink:href="#mail"></use></svg> nage@wide-web.spb.ru</a>
 			</div>
 		</div>
 	</section>
 	<footer class="footer wrapper">
-		2010 - 2018  ©  <a href="http://wide-web.by/">Wide-Web</a> - агентство комплексного интернет-маркетинга
+		<span>2010 - 2018  ©  <a href="http://wide-web.by/">Wide-Web</a> - агентство комплексного интернет-маркетинга</span>
 	</footer>
 	<div class="popup popup-feedback">
 		<button type="button" class="popup__close-btn"><svg class="icon"><use xlink:href="#close"></use></svg></button>
-		<b class="poput__title">Закажите обратный звонок прямо сейчас!</b>
+		<b class="popup__title">Закажите обратный звонок прямо сейчас!</b>
 		<form class="popup__form">
 			<label class="popup__form-label">
 				<span class="popup__form-label-txt">Ваше имя и фамилия:</span>
@@ -154,6 +153,10 @@
 			</label>
 			<button type="submit" class="btn btn_red">Заказать обратный звонок</button>
 		</form>
+	</div>
+	<div class="popup popup__video">
+		<button type="button" class="popup__close-btn"><svg class="icon"><use xlink:href="#close"></use></svg></button>
+		<iframe src="https://www.youtube.com/embed/DmVJd5aLVnY" frameborder="0" allowfullscreen allow="autoplay; encrypted-media" class="popup__video-frame"></iframe>
 	</div>
 	<div class="overlay"></div>
 	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" hidden>

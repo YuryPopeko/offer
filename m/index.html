@@ -20,13 +20,12 @@
 	<section class="complex">
 		<h1 class="title wrapper">Строим комплексный интернет-маркетинг с расчётом окупаемости</h1>
 		<span class="subtitle complex__subtitle wrapper">с помощью <a href="" class="subtitle-link">продающих и современных сайтов</a>, целевой <a href="" class="subtitle-link">контекстной рекламы</a>, настоящего белого SEO, внедряя <a href="" class="subtitle-link">Битрикс24</a> и <a href="" class="subtitle-link">сквозную аналитику</a></span>
-		<div class="video complex__video">
-			<button type="button" class="play-btn video__play">
+		<div class="complex__video">
+			<button type="button" class="play-btn complex__video-btn" data-popup="popup__video">
 				<svg class="icon play-btn-triangle"><use xlink:href="#play"></use></svg>
 			</button>
 			<img src="../images/complex.png" alt="Кирилл Тавониус" class="video__img complex__video-img">
 			<span class="video__txt complex__video-txt">Подробнее в<br>3-х минутном видео</span>
-			<iframe data-play="https://www.youtube.com/embed/DmVJd5aLVnY?autoplay=1" frameborder="0" allowfullscreen allow="autoplay; encrypted-media" class="video__frame"></iframe>
 		</div>
 		<p class="complex__video-sign wrapper">Кирилл Тавониус, <b>со-основатель компании<br>Wide-Web</b></p>
 	</section>
@@ -137,6 +136,11 @@
 	<footer class="footer wrapper">
 		<span>2010 - 2018  ©  <a href="http://wide-web.by/">Wide-Web</a> - агентство комплексного интернет-маркетинга</span>
 	</footer>
+	<div class="popup popup__video">
+		<button type="button" class="popup__close-btn"><svg class="icon"><use xlink:href="#close"></use></svg></button>
+		<iframe src="https://www.youtube.com/embed/DmVJd5aLVnY" frameborder="0" allowfullscreen allow="autoplay; encrypted-media" class="popup__video-frame"></iframe>
+	</div>
+	<div class="overlay"></div>
 	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" hidden>
 		<symbol id="close" viewBox="0 0 357 357"><polygon points="357 35.7 321.3 0 178.5 142.8 35.7 0 0 35.7 142.8 178.5 0 321.3 35.7 357 178.5 214.2 321.3 357 357 321.3 214.2 178.5 357 35.7"/></symbol>
 		<symbol id="play" viewBox="0 0 62.77 70.6"><path d="M0,65,.32,5.53A5.56,5.56,0,0,1,8.68.76L60,30.78a5.56,5.56,0,0,1,0,9.62L8.31,69.87A5.56,5.56,0,0,1,0,65Z"/></symbol>
