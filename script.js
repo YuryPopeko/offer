@@ -206,3 +206,34 @@ if (document.querySelector('.owl-carousel')) {
     navText: ['<svg class="icon"><use xlink:href="#icon-left-arrow"></use></svg>', '<svg class="icon"><use xlink:href="#icon-right-arrow"></use></svg>']
   });
 }
+
+(function () {
+  // input validation
+  $('input[type=tel]').mask('+375 (99) 999-99-99');
+  document.addEventListener('keypress', function (e) {
+    var target = e.target;
+    if (target.closest('input[type=text][name=name]')) charValidation(e, /[a-zа-яё ]/ig);
+  });
+
+  function charValidation(e, reg) {
+    if (!getChar(e).match(reg)) e.preventDefault();
+  }
+
+  function getChar(event) {
+    if (event.which == null) {
+      // IE
+      if (event.keyCode < 32) return null; // спец. символ
+
+      return String.fromCharCode(event.keyCode);
+    }
+
+    if (event.which != 0 && event.charCode != 0) {
+      // все кроме IE
+      if (event.which < 32) return null; // спец. символ
+
+      return String.fromCharCode(event.which); // остальные
+    }
+
+    return null; // спец. символ
+  }
+})();

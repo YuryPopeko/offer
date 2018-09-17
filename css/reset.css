@@ -46,3 +46,6 @@ small {
 mark {
 	color: inherit
 }
+input {
+	font: inherit
+}

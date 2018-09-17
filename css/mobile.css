@@ -66,9 +66,6 @@ body {
 	fill: currentColor;
 }
 .header {
-	position: sticky;
-	top: 0;
-	z-index: 2;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -97,6 +94,7 @@ body {
 	margin-bottom: 10px;
 	text-align: left;
 	font-size: 1.5em;
+	line-height: 1.083333;
 	font-weight: bold
 }
 .subtitle {
@@ -397,7 +395,6 @@ body {
 	justify-content: center
 }
 .popup {
-	--line: rgba(250, 249, 252, 0.2);
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -407,11 +404,7 @@ body {
 	border-radius: 15px;
 	text-align: center;
 	background-color: #596d98;
-	background-image: radial-gradient(at center -10%, transparent 12%, var(--line) 12%, var(--line) calc(12% + 1.4px), transparent calc(12% + 1.4px),
-																										transparent 25%, var(--line) 25%, var(--line) calc(25% + 1.4px), transparent calc(25% + 1.4px),
-																										transparent 37%, var(--line) 37%, var(--line) calc(37% + 1.4px), transparent calc(37% + 1.4px),
-																										transparent 50%, var(--line) 50%, var(--line) calc(50% + 1.4px), transparent calc(50% + 1.4px),
-																										transparent 62%, var(--line) 62%, var(--line) calc(62% + 1.4px), transparent calc(62% + 1.4px));
+	background-image: url(../images/popup.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 1500px auto;
@@ -429,8 +422,9 @@ body {
 }
 .popup__close-btn {
 	position: absolute;
-	top: 20px;
+	top: 10px;
 	right: 20px;
+	padding-right: 0;
 	background-color: transparent;
 	color: inherit
 }
@@ -452,9 +446,17 @@ body {
 	background-color: rgba(0,0,0,.6);
 	transition-delay: 0s
 }
+.popup__video {
+	height: 56.25vw;
+	padding: 0;
+	background-color: transparent
+}
 .popup__video-frame {
 	width: 100%;
-	min-height: 158px
+	height: 100%
+}
+.popup__video-close-btn {
+	top: -30px
 }
 .header__info {
 	display: flex;
