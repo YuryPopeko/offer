@@ -137,7 +137,8 @@ body {
 	border-bottom: 1px dashed var(--bright-blue);
 	color: var(--bright-blue)
 }
-.solve__icon-wave {
+.solve__wave,
+.course__wave {
 	width: 130px;
 	color: var(--green);
 	margin-bottom: 20px
@@ -1643,6 +1644,77 @@ body {
 	align-items: center;
 	justify-content: center
 }
+.course {
+	position: relative;
+	padding-top: 40px;
+	padding-bottom: 123px;
+	background-color: var(--gray);
+	background-image: url(images/course.png), url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgMzY2LjAxIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMzBweCI+PHBhdGggZD0iTTE2MCwzNTEsMTUsMjY3Vjk5TDE2MCwxNSwzMDUsOTlWMjY3WiIvPjwvc3ZnPg==);
+	background-repeat: no-repeat;
+	background-position: 125% 105%, 90% 100%;
+	background-size: 516px auto, 430px auto
+}
+.course__mark,
+.course__start {
+	font-size: .75em;
+	letter-spacing: 1px;
+	text-transform: uppercase
+}
+.course__mark {
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 30px;
+	border-radius: 3px;
+	padding: 12px;
+	font-weight: bold;
+	color: var(--white);
+	background-color: var(--green)
+}
+.course__date {
+	color: var(--dark-gray)
+}
+.course__title {
+	margin-bottom: 25px;
+	text-align: left
+}
+.course__duration {
+	width: 60px;
+	vertical-align: middle;
+	box-shadow: 0 13px 15px -3px var(--dark-gray)
+}
+.course__wave,
+.course__txt {
+	transform: translate(20px)
+}
+.course__txt {
+	width: 360px;
+	margin-bottom: 20px;
+	font-size: 1.25em
+}
+.course__look {
+	position: absolute;
+	top: 190px;
+	right: 64px;
+	text-align: center;
+	font-size: 1.125em
+}
+.course__look::before {
+	content: '';
+	position: absolute;
+	top: 20px;
+	left: 0;
+	width: 90px;
+	height: 90px;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	border-left: 2px solid var(--dark);
+	border-radius: 50%;
+	transform: rotate(-45deg)
+}
+.course__look-txt {
+	display: block;
+	text-align: left
+}
 
 @media all and (min-width: 1299px) {
 	:root {
@@ -1688,7 +1760,7 @@ body {
 		width: 700px;
 		margin-bottom: 35px
 	}
-	.solve__icon-wave,
+	.solve__wave,
 	.solve__text {
 		transform: translateX(45px)
 	}
@@ -2490,6 +2562,34 @@ body {
 	.call-center__item {
 		flex-basis: 45%
 	}
+	.course {
+		padding-top: 140px;
+		padding-bottom: 210px;
+		background-image: url(images/course.png), url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDY0My4xNCA3MzgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIzMHB4Ij48cGF0aCBkPSJNMzIxLjU3LDcyMywxNSw1NDZWMTkyTDMyMS41NywxNSw2MjguMTQsMTkyVjU0NloiLz48L3N2Zz4=);
+		background-position: 105% 105%, 70% 120%;
+		background-size: 980px auto, 600px auto
+	}
+	.course__mark,
+	.course__start {
+		font-size: 1em;
+	}
+	.course__duration {
+		width: 124px
+	}
+	.course__txt {
+		width: 520px
+	}
+	.course__look {
+		top: 190px;
+		right: 670px;
+		font-size: 1.5em
+	}
+	.course__look::before {
+		top: 30px;
+		left: 20px;
+		width: 100px;
+		height: 100px
+	}
 }
 
 @media all and (max-width: 1298px) {
@@ -2510,7 +2610,7 @@ body {
 	.header__info-tel {
 		font-size: 1.125em
 	}
-	.solve__icon-wave,
+	.solve__wave,
 	.solve__text {
 		transform: translateX(20px)
 	}

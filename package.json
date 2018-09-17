@@ -1,5 +1,5 @@
 {
-  "name": "offer",
+  "name": "wide-web",
   "version": "1.0.0",
   "description": "wide-web",
   "main": "index.thml",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YuryPopeko/offer.git"
+    "url": "git+https://github.com/YuryPopeko/wide-web.git"
   },
   "author": "YuryPopeko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/YuryPopeko/offer/issues"
+    "url": "https://github.com/YuryPopeko/wide-web/issues"
   },
-  "homepage": "https://github.com/YuryPopeko/offer#readme",
+  "homepage": "https://github.com/YuryPopeko/wide-web",
   "dependencies": {
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",

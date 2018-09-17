@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Курсы</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper header__container">
+			<a href="index.html" class="logo">
+				<img src="images/logo.png" class="logo-img">
+				<b>Wide-Web</b>
+			</a>
+			<div class="header__info">
+				<a href="tel:+375257112356" class="header__info-tel">
+					<b>+375 (25) 711-23-56</b>
+				</a>
+			</div>
+			<button type="button" class="btn btn_green" data-popup="popup-feedback">Обратный звонок</button>
+		</div>
+	</header>
+	<section class="course">
+		<div class="wrapper">
+			<mark class="course__mark">онлайн-курс</mark>
+			<b class="course__start">Старт потока: <time class="course__date">20 октября</time></b>
+			<h1 class="title course__title">Интернет-маркетолог<br>за <img class="course__duration" src="images/course__duration.png" alt="60"> дней</h1>
+			<svg class="icon course__wave"><use xlink:href="#wave"></use></svg>
+			<p class="course__txt">Всего за 2 месяца вы освоите востребованную профессию XXI века и начнете применять на практике современные и трендовые инструменты интернет-маркетинга.</p>
+			<a href="#plans" class="btn btn_red course__btn">Стать интернет-маркетологом</a>
+			<div class="course__look">
+				<span class="course__look-txt">Посмотрите короткое<br>презентационное видео</span>
+				<button type="button" class="play-btn course__play" data-popup="popup__video">
+					<svg class="icon play-btn-triangle"><use xlink:href="#play"></use></svg>
+				</button>
+			</div>
+		</div>
+	</section>
+	<div class="popup popup__video">
+		<button type="button" class="popup__close-btn popup__video-close-btn"><svg class="icon"><use xlink:href="#close"></use></svg></button>
+		<iframe src="https://www.youtube.com/embed/DmVJd5aLVnY" frameborder="0" allowfullscreen allow="autoplay; encrypted-media" class="popup__video-frame"></iframe>
+	</div>
+	<div class="popup popup-feedback">
+		<button type="button" class="popup__close-btn"><svg class="icon"><use xlink:href="#close"></use></svg></button>
+		<b class="popup__title">Закажите обратный звонок прямо сейчас!</b>
+		<form class="popup__form">
+			<label class="popup__form-label">
+				<span class="popup__form-label-txt">Ваше имя и фамилия:</span>
+				<input class="popup__form-input" type="text" name="name" placeholder="Валерий">
+			</label>
+			<label class="popup__form-label">
+				<span class="popup__form-label-txt">Ваш телефон:</span>
+				<input class="popup__form-input" type="tel" name="tel" placeholder="+375 29 721-18-83">
+			</label>
+			<button type="submit" class="btn btn_red">Заказать обратный звонок</button>
+		</form>
+	</div>
+	<div class="overlay"></div>
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" hidden>
+		<symbol id="wave" viewBox="0 0 405 28"><path d="M401,28c-10.77,0-16.18-6-21-11.3-4.38-4.86-7.85-8.7-15.13-8.7s-10.72,3.83-15.08,8.68C345,22,339.63,28,328.81,28s-16.24-6-21-11.32C303.43,11.83,300,8,292.72,8S282,11.83,277.65,16.68C272.87,22,267.46,28,256.63,28s-16.24-6-21-11.32C231.25,11.83,227.8,8,220.54,8s-10.71,3.83-15.07,8.68C200.69,22,195.28,28,184.45,28s-16.24-6-21-11.32C159.07,11.83,155.62,8,148.36,8s-10.71,3.83-15.07,8.68C128.51,22,123.1,28,112.27,28S96,22,91.25,16.68C86.89,11.83,83.44,8,76.18,8s-10.71,3.83-15.07,8.68C56.33,22,50.92,28,40.09,28S23.82,22,19,16.66C14.66,11.82,11.21,8,4,8A4,4,0,0,1,4,0C14.77,0,20.18,6,25,11.3c4.38,4.86,7.85,8.7,15.13,8.7s10.71-3.83,15.07-8.68C59.94,6,65.35,0,76.18,0s16.24,6,21,11.32C101.56,16.17,105,20,112.27,20s10.71-3.83,15.07-8.68C132.12,6,137.53,0,148.36,0s16.24,6,21,11.32c4.36,4.85,7.81,8.68,15.07,8.68s10.71-3.83,15.07-8.68C204.3,6,209.71,0,220.54,0s16.24,6,21,11.32c4.36,4.85,7.81,8.68,15.07,8.68s10.71-3.83,15.07-8.68C276.48,6,281.89,0,292.72,0s16.24,6,21,11.32c4.36,4.85,7.81,8.68,15.07,8.68s10.71-3.83,15.07-8.67C348.66,6,354.08,0,364.91,0S381.19,6,386,11.34c4.36,4.84,7.81,8.66,15,8.66a4,4,0,0,1,0,8Z"/></symbol>
+		<symbol id="close" viewBox="0 0 357 357"><polygon points="357 35.7 321.3 0 178.5 142.8 35.7 0 0 35.7 142.8 178.5 0 321.3 35.7 357 178.5 214.2 321.3 357 357 321.3 214.2 178.5 357 35.7"/></symbol>
+		<symbol id="play" viewBox="0 0 62.77 70.6"><path d="M0,65,.32,5.53A5.56,5.56,0,0,1,8.68.76L60,30.78a5.56,5.56,0,0,1,0,9.62L8.31,69.87A5.56,5.56,0,0,1,0,65Z"/></symbol>
+		<symbol id="date" viewBox="0 0 384 426.67"><path d="M341.33,42.67H320V0H277.33V42.67H106.67V0H64V42.67H42.67A42.47,42.47,0,0,0,.21,85.33L0,384a42.66,42.66,0,0,0,42.67,42.67H341.33A42.66,42.66,0,0,0,384,384V85.33A42.66,42.66,0,0,0,341.33,42.67Zm0,341.33H42.67V149.33H341.33Z"/><polygon points="288.64 214.61 266.03 192 161.92 296.11 116.69 250.88 94.08 273.49 161.92 341.33 288.64 214.61"/></symbol>
+		<symbol id="mail" viewBox="0 0 512 390"><path d="M467,0H45A45.08,45.08,0,0,0,0,45V345a45.07,45.07,0,0,0,45,45H467a45.07,45.07,0,0,0,45-45V45A45.07,45.07,0,0,0,467,0Zm-6.21,30L257,233.83,51.36,30ZM30,338.79V51.07L174.48,194.31ZM51.21,360,195.78,215.43l50.66,50.22a15,15,0,0,0,21.17,0L317,216.21,460.79,360ZM482,338.79,338.21,195,482,51.21Z"/></symbol>
+	</svg>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="script.js" defer></script>
+</body>
+</html>

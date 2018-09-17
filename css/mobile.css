@@ -14,7 +14,7 @@
 	--middle-gray: rgb(225,225,225);
 	--dark-gray: rgb(141,147,152);
 	--white: white;
-	--yellow: rgb(255, 194,44);
+	--yellow: rgb(255, 194,44)
 }
 @font-face {
 	font-family: 'Gilroy';
@@ -23,7 +23,7 @@
 			 url('../fonts/Gilroylight.woff') format('woff'),
 			 url('../fonts/Gilroylight.ttf') format('truetype');
 	font-weight: 300;
-	font-style: normal;
+	font-style: normal
 }
 @font-face {
 	font-family: 'Gilroy';
@@ -32,7 +32,7 @@
 			 url('../fonts/Gilroyextrabold.woff') format('woff'),
 			 url('../fonts/Gilroyextrabold.ttf') format('truetype');
 	font-weight: 800;
-	font-style: normal;
+	font-style: normal
 }
 *, *::before, *::after {
 	box-sizing: border-box
@@ -139,8 +139,8 @@ body {
 	height: 52px;
 	line-height: 52px;
 	border-radius: 26px;
-	padding-right: 35px;
-	padding-left: 35px;
+	padding-right: 25px;
+	padding-left: 25px;
 	color: var(--white);
 	font-weight: bold;
 	transition-property: opacity;
@@ -487,7 +487,8 @@ body {
 .plans__title {
 	text-align: center
 }
-.solve__icon-wave {
+.solve__wave,
+.course__wave {
 	width: 60px;
 	color: var(--green)
 }
@@ -795,4 +796,69 @@ body {
 .location__map {
 	width: 100%;
 	height: calc(100vh - 90px)
+}
+.course {
+	padding-top: 30px;
+	padding-bottom: 185px;
+	background-color: var(--gray);
+	text-align: center;
+	background-image: url(../images/course.png), url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgMzY2LjAxIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMzBweCI+PHBhdGggZD0iTTE2MCwzNTEsMTUsMjY3Vjk5TDE2MCwxNSwzMDUsOTlWMjY3WiIvPjwvc3ZnPg==);
+	background-repeat: no-repeat;
+	background-position: 50% 100%, 50% 105%;
+	background-size: 100% auto, calc(100% - 30px) auto
+}
+.course__mark,
+.course__start {
+	font-size: .75em;
+	letter-spacing: 1px;
+	text-transform: uppercase
+}
+.course__mark {
+	display: inline-block;
+	margin-bottom: 15px;
+	border-radius: 3px;
+	padding: 10px;
+	font-weight: bold;
+	color: var(--white);
+	background-color: var(--green)
+}
+.course__start {
+	display: block;
+	margin-bottom: 15px;
+}
+.course__date {
+	color: var(--dark-gray)
+}
+.course__title {
+	text-align: center
+}
+.course__duration {
+	width: 60px;
+	vertical-align: middle;
+	box-shadow: 0 13px 15px -3px var(--dark-gray)
+}
+.course__txt {
+	margin-bottom: 10px
+}
+.course__btn {
+	margin-bottom: 30px
+}
+.course__look {
+	position: relative;
+	display: block;
+	text-align: left;
+	margin-bottom: 15px
+}
+.course__look::before {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: 40px;
+	width: 90px;
+	height: 90px;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	border-left: 2px solid var(--dark);
+	border-radius: 50%;
+	transform: rotate(-45deg)
 }
