@@ -1,12 +1,12 @@
 const gulp = require('gulp');
 const babel = require('gulp-babel');
- 
+
 gulp.task('babel', () =>
 	gulp.src('js/script.js')
-		.pipe(babel({
-			presets: ['@babel/env']
-		}))
-		.pipe(gulp.dest('./'))
+	.pipe(babel({
+		presets: ['@babel/env']
+	}))
+	.pipe(gulp.dest('./'))
 );
 
 
@@ -29,7 +29,9 @@ gulp.task('css', () => {
 			browsers: ['last 2 versions'],
 			cascade: false
 		}))
-		.pipe(cleanCSS({compatibility: 'ie8'}))
+		.pipe(cleanCSS({
+			compatibility: 'ie8'
+		}))
 		.pipe(gulp.dest('./'))
 });
 

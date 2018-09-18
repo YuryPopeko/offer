@@ -116,14 +116,14 @@ function onScreen(elem) {
 }
 
 (function () {
-  // seven lines
-  var firstSevenItem = document.querySelector('.seven__items');
-  if (!firstSevenItem) return;
+  // lines moving
+  var lines = document.getElementById('move-lines');
+  if (!lines) return;
   document.addEventListener('scroll', function () {
-    if (onScreen(firstSevenItem)) {
-      document.querySelectorAll('.seven__text-line').forEach(function (item) {
+    if (onScreen(lines)) {
+      document.querySelectorAll('.text-line').forEach(function (item) {
         try {
-          item.classList.add('seven__text-line_move');
+          item.classList.add('text-line_move');
         } catch (e) {}
       });
     }
@@ -199,11 +199,29 @@ function onScreen(elem) {
   });
 })();
 
-if (document.querySelector('.owl-carousel')) {
-  $('.owl-carousel').owlCarousel({
+if (document.querySelector('.offer-footer .owl-carousel')) {
+  $('.offer-footer .owl-carousel').owlCarousel({
     items: 1,
     nav: true,
-    navText: ['<svg class="icon"><use xlink:href="#icon-left-arrow"></use></svg>', '<svg class="icon"><use xlink:href="#icon-right-arrow"></use></svg>']
+    navText: ['<svg class="icon"><use xlink:href="#left-arrow"></use></svg>', '<svg class="icon"><use xlink:href="#right-arrow"></use></svg>']
+  });
+}
+
+if (document.querySelector('.ex-students .owl-carousel')) {
+  $('.ex-students .owl-carousel').owlCarousel({
+    items: 1,
+    dots: false,
+    nav: true,
+    navText: ['<svg class="icon"><use xlink:href="#left-arrow"></use></svg>', '<svg class="icon"><use xlink:href="#right-arrow"></use></svg>']
+  });
+}
+
+if (document.querySelector('.trust .owl-carousel')) {
+  $('.trust .owl-carousel').owlCarousel({
+    items: 1,
+    dots: false,
+    nav: true,
+    navText: ['<svg class="icon"><use xlink:href="#left-arrow"></use></svg>', '<svg class="icon"><use xlink:href="#right-arrow"></use></svg>']
   });
 }
 
@@ -235,5 +253,30 @@ if (document.querySelector('.owl-carousel')) {
     }
 
     return null; // спец. символ
+  }
+})();
+
+(function () {
+  document.addEventListener('click', function (e) {
+    var target = e.target;
+    if (target.closest('button[data-tab]')) toggleTab(target.closest('button[data-tab]'));
+  });
+
+  function toggleTab(btn) {
+    var dataTab = btn.dataset.tab.split(':');
+    var open = dataTab.pop(),
+        //вкладка
+    group = dataTab[0];
+
+    if (btn.classList.contains('open')) {
+      btn.classList.remove('open');
+      document.querySelector("[data-tab^=".concat(group, "].open")).classList.remove('open');
+    } else {
+      document.querySelectorAll("[data-tab^=".concat(group, "].open")).forEach(function (item) {
+        return item.classList.remove('open');
+      });
+      document.querySelector("[data-tab*=".concat(open, "]:not(button)")).classList.toggle('open');
+      btn.classList.toggle('open');
+    }
   }
 })();
