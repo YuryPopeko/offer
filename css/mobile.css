@@ -550,6 +550,9 @@ body {
 .accordion:last-of-type {
 	border-bottom: 1px solid var(--middle-gray)
 }
+.accordion:last-of-type {
+	margin-bottom: 20px
+}
 .program__list {
 	list-style: disc;
 	padding-left: 18px;
@@ -569,9 +572,6 @@ body {
 .program__video {
 	height: 164px;
 	border-radius: 10px
-}
-.accordion:last-of-type {
-	margin-bottom: 20px
 }
 .mc {
 	padding-top: 30px;
@@ -1154,4 +1154,49 @@ body {
 }
 .course-plans__item-cost {
 	font-size: 1.25em
+}
+.course-faq {
+	padding-top: 30px;
+	padding-bottom: 40px;
+	background-color: var(--white)
+}
+.course-footer {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: var(--pale-violet);
+	color: var(--white)
+}
+.course-footer__title {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 1.125em
+}
+.footer__line {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+	height: 1px;
+	background-color: var(--gray)
+}
+.course-footer__list-item:not(:last-of-type) {
+	margin-bottom: 10px
+}
+.footer-social {
+	padding-top: 10px;
+	padding-bottom: 10px
+}
+.footer-social__item {
+	display: inline-flex;
+	width: 55px;
+	height: 55px;
+	border: 1px solid var(--white);
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center
+}
+.footer-social__item:not(:last-of-type) {
+	margin-right: 10px
+}
+.footer__copyright {
+	text-align: center
 }

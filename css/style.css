@@ -2041,6 +2041,104 @@ body {
 	display: block;
 	font-size: 1.5em
 }
+.course-faq {
+	max-width: 980px;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	background-color: var(--white)
+}
+.course-faq__title {
+	margin-bottom: 40px
+}
+.accordion,
+.accordion__btn {
+	text-align: left
+}
+.accordion:not(:last-of-type) {
+	margin-bottom: 20px
+}
+.accordion__content {
+	max-height: 0;
+	overflow: hidden;
+	transition-property: max-height;
+	transition-duration: .2s;
+	transition-timing-function: ease-in-out
+}
+.accordion__content-container {
+	padding: 10px 15px 15px
+}
+.accordion__btn_active::after {
+	transform: rotate(180deg)
+}
+.accordion__btn {
+	width: 100%;
+	position: relative;
+	padding: 15px 50px 15px 15px;
+	border: 1px solid var(--middle-gray);
+	background-color: var(--gray)
+}
+.accordion__arr-down {
+	position: absolute;
+	top: 0;
+	right: 15px;
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto
+}
+.course-footer {
+	padding-top: 40px;
+	padding-bottom: 30px;
+	background-color: var(--pale-violet);
+	color: var(--white)
+}
+.course-footer__title {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 1.125em
+}
+.footer__line {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+	height: 1px;
+	background-color: var(--gray)
+}
+.course-footer__list-item:not(:last-of-type) {
+	margin-bottom: 10px
+}
+.footer-social {
+	padding-top: 10px;
+	padding-bottom: 10px
+}
+.footer-social__item {
+	display: inline-flex;
+	width: 55px;
+	height: 55px;
+	border: 1px solid var(--white);
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	transition-property: background-color, color;
+	transition-duration: .35s
+}
+.footer-social__item:hover {
+	background-color: var(--white);
+	color: var(--pale-violet)
+}
+.footer-social__item:not(:last-of-type) {
+	margin-right: 10px
+}
+.footer__copyright {
+	text-align: center
+}
+.footer__half-left {
+	width: 50%;
+	float: left
+}
+.footer__half-right {
+	width: 50%;
+	float: right
+}
 
 @media all and (min-width: 1299px) {
 	:root {
@@ -3072,6 +3170,11 @@ body {
 	}
 	.course-plans__item:first-of-type {
 		margin-right: 20px
+	}
+	.footer__copyright {
+		max-width: 900px;
+		margin-right: auto;
+		margin-left: auto
 	}
 }
 
