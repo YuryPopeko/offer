@@ -2117,8 +2117,8 @@ body {
 	font-size: 1.125em
 }
 .footer__line {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	flex-basis: 100%;
+	margin-bottom: 15px;
 	border: 0;
 	height: 1px;
 	background-color: var(--gray)
@@ -2127,8 +2127,11 @@ body {
 	margin-bottom: 10px
 }
 .footer-social {
-	padding-top: 10px;
 	padding-bottom: 10px
+}
+.footer-social__title {
+	display: block;
+	margin-bottom: 10px
 }
 .footer-social__item {
 	display: inline-flex;
@@ -2151,14 +2154,16 @@ body {
 .footer__copyright {
 	text-align: center
 }
-.footer__half-left {
-	width: 50%;
-	float: left
+.course-footer__content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between
 }
-.footer__half-right {
-	width: 50%;
-	float: right
+.footer__block {
+	flex-basis: calc(100% / 3);
+	margin-bottom: 15px
 }
+
 
 @media all and (min-width: 1299px) {
 	:root {
@@ -3196,6 +3201,12 @@ body {
 		margin-right: auto;
 		margin-left: auto
 	}
+	.footer__block {
+		margin-bottom: 80px
+	}
+	.footer__line {
+		margin-bottom: 30px
+	}
 }
 
 @media all and (max-width: 1298px) {
@@ -3367,5 +3378,16 @@ body {
 	}
 	.teacher__item:first-of-type {
 		margin-right: 40px
+	}
+	.footer__block,
+	.footer-social,
+	.footer__phones {
+		flex-basis: 50%
+	}
+	.footer__contacts {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-basis: 100%
 	}
 }
