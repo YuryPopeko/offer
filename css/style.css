@@ -1999,6 +1999,7 @@ body {
 	margin-bottom: 30px
 }
 .course-plans__item {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	min-height: 570px;
@@ -2009,10 +2010,29 @@ body {
 	box-shadow: 0 10px 70px 0 rgba(0,0,0,.15)
 }
 .course-plans__lite {
-	background-image: url(images/course-plans__lite.png), url("images/course-plans__lite-side.jpg")
+	background-image: url(images/course-plans__lite.png)
 }
-.course-plans__vip {
-	background-image: url(images/course-plans__vip.png), url("images/course-plans__vip-side.jpg")
+.course-plans__item::before {
+	position: absolute;
+	bottom: 0;
+	left: 150px;
+	width: 570px;
+	height: 150px;
+	text-align: center;
+	line-height: 150px;
+	font-size: 4.375em;
+	font-weight: bold;
+	color: var(--white);
+	transform: rotate(-90deg);
+	transform-origin: left bottom 0
+}
+.course-plans__lite::before {
+	content: 'Пакет «Lite»';
+	background-image: url("images/course-plans__lite-side.jpg")
+}
+.course-plans__vip::before {
+	content: 'Пакет «VIP»';
+	background-image: url("images/course-plans__vip-side.jpg")
 }
 .course-plans__item:not(:last-of-type) {
 	margin-bottom: 30px
