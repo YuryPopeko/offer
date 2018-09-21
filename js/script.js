@@ -216,6 +216,7 @@ if (document.querySelector('.offer-footer .owl-carousel')) {
 if (document.querySelector('.ex-students .owl-carousel')) {
 	$('.ex-students .owl-carousel').owlCarousel({
 		items: 1,
+		loop: true,
 		dots: false,
 		nav: true,
 		navText: ['<svg class="icon"><use xlink:href="#left-arrow"></use></svg>', '<svg class="icon"><use xlink:href="#right-arrow"></use></svg>']
