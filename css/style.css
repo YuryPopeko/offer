@@ -2225,7 +2225,7 @@ body {
 		padding-bottom: 180px;
 		background-image: url("images/iPad.png"), url("images/invite-video__figures-desktop.png");
 		background-repeat: no-repeat, no-repeat;
-		background-position: 50% 437px, 50%, 50%;
+		background-position: 50% 425px, 50%, 50%;
 		background-size: auto, 90% auto
 	}
 	.invite-video__title {
