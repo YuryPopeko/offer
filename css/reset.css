@@ -33,7 +33,9 @@ q:before, q:after {
 }
 button {
 	border: 0;
+	padding: 0;
 	font: inherit;
+	background-color: transparent;
 	cursor: pointer
 }
 a {
@@ -47,5 +49,6 @@ mark {
 	color: inherit
 }
 input {
-	font: inherit
+	font: inherit;
+	border: 0
 }

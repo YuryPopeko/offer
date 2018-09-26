@@ -2733,25 +2733,6 @@ body {
 		margin-right: auto;
 		margin-left: auto
 	}
-	.reviews__item {
-		position: absolute;
-		box-shadow: -2px -2px 20px -5px var(--dark)
-	}
-	.reviews__item:first-of-type {
-		top: 105px;
-		left: 120px;
-		transform: rotate(30deg)
-	}
-	.reviews__item:nth-of-type(2) {
-		top: 300px;
-		right: 0;
-		transform: rotate(-30deg)
-	}
-	.reviews__item:last-of-type {
-		bottom: -210px;
-		left: -100px;
-		transform: rotate(-40deg)
-	}
 	.hear {
 		padding-top: 110px;
 		padding-bottom: 100px
