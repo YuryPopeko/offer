@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Блог</title>
+	<title>Главная</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" type="text/css" href="../css/mobile.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<header class="header">
-		<div class="header__panel wrapper">
+		<div class="wrapper header__container">
 			<a href="index.html" class="logo">
-				<img src="../images/logo.png" class="logo-img">
+				<img src="images/logo.png" class="logo-img">
 				<b>Wide-Web</b>
 			</a>
-			<a href="tel:+375257112356" class="header__info-tel">
-				<b>+375 (25) 711-23-56</b>
-			</a>
+			<div class="header__info">
+				<a href="tel:+375257112356" class="header__info-tel">
+					<b>+375 (25) 711-23-56</b>
+				</a>
+			</div>
+			<button type="button" class="btn btn_green" data-popup="popup-feedback">Обратный звонок</button>
 		</div>
 		<div class="header__panel wrapper">
-			<button type="button" class="hamburger"></button>
-			<nav class="menu wrapper">
+			<nav class="menu">
 				<a href="index.html" class="menu__item">Главная</a>
 				<a href="" class="menu__item">Услуги</a>
 				<a href="" class="menu__item">Обучение</a>
@@ -31,13 +33,12 @@
 			</nav>
 			<form class="search-form">
 				<input type="search" class="search-field" placeholder="Что ищем?">
-				<button type="button" class="search-btn"></button>
 			</form>
 		</div>
 	</header>
 	<section class="blog-welcome wrapper">
-		<h1 class="title">Добро пожаловать в блог о ”белом” интернет-маркетинге</h1>
-		<p>Здесь собран 10-летний опыт команды Wide-Web в интернет-маркетинге — кейсы, экспертные статьи и видео-контент</p>
+		<h1 class="title blog-welcome__title">Добро пожаловать в блог о "белом" интернет-маркетинге</h1>
+		<p class="blog-welcome__txt">Здесь собран 10-летний опыт команды Wide-Web в интернет-маркетинге — кейсы, экспертные статьи и видео-контент</p>
 	</section>
 	<section class="blog-content">
 		<div class="blog__tabs wrapper">
@@ -207,44 +208,66 @@
 			</div>
 		</div>
 	</section>
-	<footer class="course-footer wrapper">
-		<b class="course-footer__title">Юридическая информация</b>
-		<span>ООО «ВайдВэб»<br>УНП 291080519<br>224030, Республика Беларусь,<br>г.Брест, ул.Карбышева 74, 3 этаж,<br>пом. 9</span>
-		<hr class="footer__line">
-		<ul class="course-footer__list">
-			<li class="course-footer__list-item">
-				<svg class="icon"><use xlink:href="#check"></use></svg>
-				<a href="">Политика конфиденциальности</a>
-			</li>
-			<li class="course-footer__list-item">
-				<svg class="icon"><use xlink:href="#check"></use></svg>
-				<a href="">Отказ от ответственности</a>
-			</li>
-			<li class="course-footer__list-item">
-				<svg class="icon"><use xlink:href="#check"></use></svg>
-				<a href="">Согласие с рассылкой</a>
-			</li>
-			<li class="course-footer__list-item">
-				<svg class="icon"><use xlink:href="#check"></use></svg>
-				<a href="">Политика возврата</a>
-			</li>
-			<li class="course-footer__list-item">
-				<svg class="icon"><use xlink:href="#check"></use></svg>
-				<a href="">Публичный договор</a>
-			</li>
-		</ul>
-		<hr class="footer__line">
-		<span>Присоединяйтесь к нам в соц.сетях:</span>
-		<div class="footer-social">
-			<a href="https://vk.com/wide_web" class="footer-social__item"><svg class="icon"><use xlink:href="#vk"></use></svg></a>
-			<a href="https://www.facebook.com/WideWebLtd/" class="footer-social__item"><svg class="icon"><use xlink:href="#facebook"></use></svg></a>
-			<a href="https://www.youtube.com/channel/UCrucMk2bpgAjV6oPjWXPvMg" class="footer-social__item"><svg class="icon"><use xlink:href="#youtube"></use></svg></a>
+	<footer class="course-footer">
+		<div class="wrapper course-footer__content">
+			<div class="footer__block">
+				<b class="course-footer__title">Юридическая информация</b>
+				<span>ООО «ВайдВэб»<br>УНП 291080519<br>224030, Республика Беларусь,<br>г.Брест, ул.Карбышева 74, 3 этаж,<br>пом. 9</span>
+			</div>
+			<ul class="course-footer__list footer__block">
+				<li class="course-footer__list-item">
+					<svg class="icon"><use xlink:href="#check"></use></svg>
+					<a href="">Политика конфиденциальности</a>
+				</li>
+				<li class="course-footer__list-item">
+					<svg class="icon"><use xlink:href="#check"></use></svg>
+					<a href="">Отказ от ответственности</a>
+				</li>
+				<li class="course-footer__list-item">
+					<svg class="icon"><use xlink:href="#check"></use></svg>
+					<a href="">Согласие с рассылкой</a>
+				</li>
+				<li class="course-footer__list-item">
+					<svg class="icon"><use xlink:href="#check"></use></svg>
+					<a href="">Политика возврата</a>
+				</li>
+				<li class="course-footer__list-item">
+					<svg class="icon"><use xlink:href="#check"></use></svg>
+					<a href="">Публичный договор</a>
+				</li>
+			</ul>
+			<hr class="footer__line for-tablet">
+			<div class="footer__block footer__contacts">
+				<div class="footer-social">
+					<span class="footer-social__title">Присоединяйтесь к нам в соц.сетях:</span>
+					<a href="https://vk.com/wide_web" class="footer-social__item"><svg class="icon"><use xlink:href="#vk"></use></svg></a>
+					<a href="https://www.facebook.com/WideWebLtd/" class="footer-social__item"><svg class="icon"><use xlink:href="#facebook"></use></svg></a>
+					<a href="https://www.youtube.com/channel/UCrucMk2bpgAjV6oPjWXPvMg" class="footer-social__item"><svg class="icon"><use xlink:href="#youtube"></use></svg></a>
+				</div>
+				<div class="footer__phones">
+					<a href="tel:+78123095351"><b>+7 (812) 309-53-51</b> (Россия)</a><br>
+					<a href="tel:+375162208866"><b>+375 162 20-88-66</b> (Беларусь)</a>
+				</div>
+			</div>
+			<hr class="footer__line">
+			<p class="footer__copyright">© Wide Web. Все права защищены. Любое копирование материалов разрешено  только с согласия правообладателей. По всем вопросам обращайтесь: info@wide-web.by</p>
 		</div>
-		<a href="tel:+78123095351"><b>+7 (812) 309-53-51</b> (Россия)</a><br>
-		<a href="tel:+375162208866"><b>+375 162 20-88-66</b> (Беларусь)</a>
-		<hr class="footer__line">
-		<p class="footer__copyright">© Wide Web. Все права защищены. Любое копирование материалов разрешено  только с согласия правообладателей. По всем вопросам обращайтесь:<br>info@wide-web.by</p>
 	</footer>
+	<div class="popup popup-feedback">
+		<button type="button" class="popup__close-btn"><svg class="icon"><use xlink:href="#close"></use></svg></button>
+		<b class="popup__title">Закажите обратный звонок прямо сейчас!</b>
+		<form class="popup__form">
+			<label class="popup__form-label">
+				<span class="popup__form-label-txt">Ваше имя и фамилия:</span>
+				<input class="popup__form-input" type="text" name="name" placeholder="Валерий">
+			</label>
+			<label class="popup__form-label">
+				<span class="popup__form-label-txt">Ваш телефон:</span>
+				<input class="popup__form-input" type="tel" name="tel" placeholder="+375 29 721-18-83">
+			</label>
+			<button type="submit" class="btn btn_red">Заказать обратный звонок</button>
+		</form>
+	</div>
 	<div class="popup popup__video">
 		<button type="button" class="popup__close-btn popup__video-close-btn"><svg class="icon"><use xlink:href="#close"></use></svg></button>
 		<iframe src="https://www.youtube.com/embed/DmVJd5aLVnY" frameborder="0" allowfullscreen allow="autoplay; encrypted-media" class="popup__video-frame"></iframe>
@@ -261,8 +284,9 @@
 		<symbol id="youtube" viewBox="0 0 310 218.17"><path d="M297.92,18.73C286.73,5.43,266.07,0,226.61,0H83.39C43,0,22,5.78,10.87,19.94,0,33.75,0,54.09,0,82.25v53.67c0,54.55,12.9,82.25,83.39,82.25H226.61c34.22,0,53.18-4.79,65.44-16.53,12.58-12,17.95-31.69,17.95-65.72V82.25C310,52.55,309.16,32.09,297.92,18.73ZM199,116.49l-65,34a10,10,0,0,1-14.63-8.86V73.86A10,10,0,0,1,134,65l65,33.77a10,10,0,0,1,0,17.74Z"/></symbol>
 		<symbol id="check" viewBox="0 0 488.88 396.28"><polygon points="143.29 293.76 50.84 201.3 0 252.14 122.01 374.15 122.15 374.01 144.42 396.28 488.88 51.83 437.06 0 143.29 293.76"/></symbol>
 	</svg>
-	<script src="../js/jquery-3.3.1.min.js"></script>
-	<script src="../js/owl.carousel.min.js"></script>
-	<script src="../js/script.js" defer></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="script.js" defer></script>
 </body>
 </html>

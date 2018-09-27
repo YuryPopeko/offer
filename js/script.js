@@ -230,11 +230,19 @@ if (document.querySelector('.trust .owl-carousel')) {
 		navText: ['<svg class="icon"><use xlink:href="#left-arrow"></use></svg>', '<svg class="icon"><use xlink:href="#right-arrow"></use></svg>']
 	})
 }
+if (document.querySelector('.events__container.owl-carousel')) {
+	$('.events__container.owl-carousel').owlCarousel({
+		items: 1,
+		dots: false,
+		nav: true,
+		navText: ['<svg class="icon"><use xlink:href="#left-arrow"></use></svg>', '<svg class="icon"><use xlink:href="#right-arrow"></use></svg>']
+	})
+}
 
 
 (() => { // input validation
-
-	$('input[type=tel]').mask('+375 (99) 999-99-99');
+	
+	if(document.querySelector('input[type=tel]')) $('input[type=tel]').mask('+375 (99) 999-99-99');
 
 	document.addEventListener('keypress', e => {
 		const target = e.target;
@@ -302,7 +310,7 @@ if (document.querySelector('.trust .owl-carousel')) {
 })();
 
 
-(() => {
+(() => { // search
 	const searchBtn = document.querySelector('.search-btn');
 	if(!searchBtn) return;
 	searchBtn.addEventListener('click', () => searchBtn.parentElement.querySelector('.search-field').classList.toggle('search-field_open'))
