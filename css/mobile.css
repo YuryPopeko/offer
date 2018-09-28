@@ -117,6 +117,28 @@ body {
 	position: relative;
 	overflow: hidden
 }
+.video__time {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	display: flex;
+	align-items: center;
+	background-color: rgba(0,0,0,.5);
+	color: var(--white);
+	line-height: 2
+}
+.video__time::before {
+	content: '';
+	margin-right: .5em;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5Ny4xNiA5Ny4xNiIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik00OC41OCwwQTQ4LjU4LDQ4LjU4LDAsMSwwLDk3LjE2LDQ4LjU4LDQ4LjY0LDQ4LjY0LDAsMCwwLDQ4LjU4LDBabTAsODYuODJBMzguMjQsMzguMjQsMCwxLDEsODYuODIsNDguNTgsMzguMjksMzguMjksMCwwLDEsNDguNTgsODYuODJaIi8+PHBhdGggZD0iTTczLjksNDcuMDhINTIuMDdWMjAuODNhNCw0LDAsMCwwLTgsMFY1MS4wOGE0LDQsMCwwLDAsNCw0SDczLjlhNCw0LDAsMCwwLDAtOFoiLz48L3N2Zz4=);
+	background-repeat: no-repeat;
+	background-size: contain
+}
 .complex__video {
 	position: relative;
 	width: 100%;
@@ -1285,7 +1307,8 @@ body {
 	padding-bottom: 20px;
 	color: var(--white);
 	background-image: url(../images/blog__welcome.jpg);
-	background-size: 100%;
+	background-position: center;
+	background-size: cover;
 }
 .blog-content {
 	padding-top: 40px;
@@ -1338,7 +1361,8 @@ input:checked + .blog__filter-item {
 	padding-bottom: 20px;
 	background-color: var(--white)
 }
-.post-preview__img {
+.post-preview__img,
+.post-preview__video {
 	width: 100%;
 	margin-bottom: 10px
 }

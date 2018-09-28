@@ -226,9 +226,30 @@ if (document.querySelector('.trust .owl-carousel')) {
   });
 }
 
+if (document.querySelector('.events__container.owl-carousel')) {
+  $('.events__container.owl-carousel').owlCarousel({
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 2,
+        margin: 34
+      },
+      1298: {
+        items: 3,
+        margin: 38
+      }
+    },
+    nav: true,
+    navText: ['<svg class="icon"><use xlink:href="#left-arrow"></use></svg>', '<svg class="icon"><use xlink:href="#right-arrow"></use></svg>'],
+    dots: false
+  });
+}
+
 (function () {
   // input validation
-  $('input[type=tel]').mask('+375 (99) 999-99-99');
+  if (document.querySelector('input[type=tel]')) $('input[type=tel]').mask('+375 (99) 999-99-99');
   document.addEventListener('keypress', function (e) {
     var target = e.target;
     if (target.closest('input[type=text][name=name]')) charValidation(e, /[a-zа-яё ]/ig);
@@ -258,6 +279,7 @@ if (document.querySelector('.trust .owl-carousel')) {
 })();
 
 (function () {
+  // tabs
   document.addEventListener('click', function (e) {
     var target = e.target;
     if (target.closest('button[data-tab]')) toggleTab(target.closest('button[data-tab]'));
@@ -280,4 +302,29 @@ if (document.querySelector('.trust .owl-carousel')) {
       btn.classList.toggle('open');
     }
   }
+})();
+
+(function () {
+  // hamburger + menu
+  var hamburger = document.querySelector('.hamburger'),
+      menu = document.querySelector('.menu');
+  if (!hamburger) return;
+  hamburger.addEventListener('click', function () {
+    this.classList.toggle('hamburger_open');
+
+    if (menu.style.maxHeight) {
+      menu.style.maxHeight = null;
+    } else {
+      menu.style.maxHeight = "".concat(menu.scrollHeight, "px");
+    }
+  });
+})();
+
+(function () {
+  // search
+  var searchBtn = document.querySelector('.search-btn');
+  if (!searchBtn) return;
+  searchBtn.addEventListener('click', function () {
+    return searchBtn.parentElement.querySelector('.search-field').classList.toggle('search-field_open');
+  });
 })();

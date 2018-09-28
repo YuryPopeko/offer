@@ -232,13 +232,25 @@ if (document.querySelector('.trust .owl-carousel')) {
 }
 if (document.querySelector('.events__container.owl-carousel')) {
 	$('.events__container.owl-carousel').owlCarousel({
-		items: 1,
-		dots: false,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			768: {
+				items: 2,
+				margin: 34,
+				
+			},
+			1298: {
+				items: 3,
+				margin: 38
+			}
+		},
 		nav: true,
-		navText: ['<svg class="icon"><use xlink:href="#left-arrow"></use></svg>', '<svg class="icon"><use xlink:href="#right-arrow"></use></svg>']
+		navText: ['<svg class="icon"><use xlink:href="#left-arrow"></use></svg>', '<svg class="icon"><use xlink:href="#right-arrow"></use></svg>'],
+		dots: false
 	})
 }
-
 
 (() => { // input validation
 	

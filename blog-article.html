@@ -21,6 +21,7 @@
 			</div>
 			<button type="button" class="btn btn_green" data-popup="popup-feedback">Обратный звонок</button>
 		</div>
+		<hr>
 		<div class="header__panel wrapper">
 			<nav class="menu">
 				<a href="index.html" class="menu__item">Главная</a>
@@ -36,19 +37,20 @@
 			</form>
 		</div>
 	</header>
-	<section class="blog-welcome wrapper">
-		<h1 class="title blog-welcome__title">Добро пожаловать в блог о "белом" интернет-маркетинге</h1>
-		<p class="blog-welcome__txt">Здесь собран 10-летний опыт команды Wide-Web в интернет-маркетинге — кейсы, экспертные статьи и видео-контент</p>
+	<section class="blog-welcome">
+		<h1 class="title blog-welcome__title wrapper">Добро пожаловать в блог о "белом"<br>интернет-маркетинге</h1>
+		<p class="blog-welcome__txt wrapper">Здесь собран 10-летний опыт команды Wide-Web в интернет-маркетинге —<br>кейсы, экспертные статьи и видео-контент</p>
 	</section>
 	<section class="blog-content">
 		<div class="blog__tabs wrapper">
-			<a href="" class="blog__tab open">Статьи</a>
-			<a href="" class="blog__tab">Видео</a>
+			<a class="blog__tab open">Статьи</a>
+			<a href="blog-video.html" class="blog__tab">Видео</a>
 			<a href="" class="blog__tab">Кейсы</a>
 		</div>
-		<div class="blog__filter wrapper">
-			<span>Выбрать раздел:</span>
-			<form class="blog__filter-list">
+		<div class="wrapper">
+			<div class="blog__filter">
+				<form class="blog__filter-list">
+					<span class="blog__filter-choose">Выбрать раздел:</span>
 					<input type="checkbox" id="seo" value="SEO" hidden checked>
 					<label class="blog__filter-item" for="seo">SEO</label>
 					<input type="checkbox" id="smm" value="SMM" hidden checked>
@@ -65,146 +67,142 @@
 					<label class="blog__filter-item" for="develop">Разработка</label>
 					<input type="checkbox" id="other" value="Другое" hidden>
 					<label class="blog__filter-item" for="other">Другое</label>
-			</form>
-		</div>
-		<div class="post-preview">
-			<a href="post.html">
-				<img src="../images/post__img-1.jpg" alt="post preview image" class="post-preview__img">
-				<b class="post-preview__title wrapper">Сквозная многоканальная аналитика контент-маркетинга</b>
-			</a>
-			<div class="wrapper">
-				<div class="post-preview__meta">
-					<time datetime="01.08.2018" class="post-preview__date">01 августа 2018</time>
-					<span class="post-preview__user">Иван Гузюк</span>
-				</div>
-				<a href="post.html" class="post-preview__txt">Как нарисовать продающий дизайн для вашего бизнеса и начать доставать иллюстрациями деньги из клиентов (17 взрывных лайфхаков для продающего дизайна)</a>
-				<div class="post-preview__stat">
-					<span class="post-preview__stat-view">3 175</span>
-					<span class="post-preview__stat-share">263</span>
-					<span class="post-preview__stat-comment">12</span>
-				</div>
-				<hr>
+				</form>
 			</div>
-		</div>
-		<div class="post-preview">
-			<a href="post.html">
-				<img src="../images/post__img-2.jpg" alt="post preview image" class="post-preview__img">
-				<b class="post-preview__title wrapper">Лучшие аккаунты по маркетингу в Instagram</b>
-			</a>
-			<div class="wrapper">
-				<div class="post-preview__meta">
-					<time datetime="01.08.2018" class="post-preview__date">01 августа 2018</time>
-					<span class="post-preview__user">Иван Гузюк</span>
+			<div class="post__previews">
+				<div class="post-preview clearfix">
+					<a href="post.html" class="post-preview__link post-preview__link-img">
+						<img src="images/post__img-1.jpg" alt="post preview image" class="post-preview__img">
+					</a>
+					<a href="post.html" class="post-preview__link">
+						<b class="post-preview__title ">Сквозная многоканальная аналитика контент-маркетинга</b>
+					</a>
+					<div class="post-preview__meta">
+						<time datetime="01.08.2018" class="post-preview__date">01 августа 2018</time>
+						<span class="post-preview__user">Иван Гузюк</span>
+					</div>
+					<a href="post.html" class="post-preview__txt">Как нарисовать продающий дизайн для вашего бизнеса и начать доставать иллюстрациями деньги из клиентов (17 взрывных лайфхаков для продающего дизайна)</a>
+					<div class="post-preview__stat">
+						<span class="post-preview__stat-view">3 175</span>
+						<span class="post-preview__stat-share">263</span>
+						<span class="post-preview__stat-comment">12</span>
+					</div>
+					<hr>
 				</div>
-				<a href="post.html" class="post-preview__txt">Как нарисовать продающий дизайн для вашего бизнеса и начать доставать иллюстрациями деньги из клиентов (17 взрывных лайфхаков для продающего дизайна)</a>
-				<div class="post-preview__stat">
-					<span class="post-preview__stat-view">3 175</span>
-					<span class="post-preview__stat-share">263</span>
-					<span class="post-preview__stat-comment">12</span>
+				<div class="post-preview clearfix">
+					<a href="post.html" class="post-preview__link post-preview__link-img">
+						<img src="images/post__img-2.jpg" alt="post preview image" class="post-preview__img">
+					</a>
+					<a href="post.html" class="post-preview__link">
+						<b class="post-preview__title ">Лучшие аккаунты по маркетингу в Instagram</b>
+					</a>
+					<div class="post-preview__meta">
+						<time datetime="01.08.2018" class="post-preview__date">01 августа 2018</time>
+						<span class="post-preview__user">Иван Гузюк</span>
+					</div>
+					<a href="post.html" class="post-preview__txt">Как нарисовать продающий дизайн для вашего бизнеса и начать доставать иллюстрациями деньги из клиентов (17 взрывных лайфхаков для продающего дизайна)</a>
+					<div class="post-preview__stat">
+						<span class="post-preview__stat-view">3 175</span>
+						<span class="post-preview__stat-share">263</span>
+						<span class="post-preview__stat-comment">12</span>
+					</div>
+					<hr>
 				</div>
-				<hr>
-			</div>
-		</div>
-		<div class="post-preview">
-			<a href="post.html">
-				<img src="../images/post__img-3.jpg" alt="post preview image" class="post-preview__img">
-				<b class="post-preview__title wrapper">20 крутых приемов, от которых ваш дизайн будет максимальн...</b>
-			</a>
-			<div class="wrapper">
-				<div class="post-preview__meta">
-					<time datetime="01.08.2018" class="post-preview__date">01 августа 2018</time>
-					<span class="post-preview__user">Иван Гузюк</span>
+				<div class="post-preview clearfix">
+					<a href="post.html" class="post-preview__link post-preview__link-img">
+						<img src="images/post__img-3.jpg" alt="post preview image" class="post-preview__img">
+					</a>
+					<a href="post.html" class="post-preview__link">
+						<b class="post-preview__title ">20 крутых приемов, от которых ваш дизайн будет максимальн...</b>
+					</a>
+					<div class="post-preview__meta">
+						<time datetime="01.08.2018" class="post-preview__date">01 августа 2018</time>
+						<span class="post-preview__user">Иван Гузюк</span>
+					</div>
+					<a href="post.html" class="post-preview__txt">Как нарисовать продающий дизайн для вашего бизнеса и начать доставать иллюстрациями деньги из клиентов (17 взрывных лайфхаков для продающего дизайна)</a>
+					<div class="post-preview__stat">
+						<span class="post-preview__stat-view">3 175</span>
+						<span class="post-preview__stat-share">263</span>
+						<span class="post-preview__stat-comment">12</span>
+					</div>
+					<hr>
 				</div>
-				<a href="post.html" class="post-preview__txt">Как нарисовать продающий дизайн для вашего бизнеса и начать доставать иллюстрациями деньги из клиентов (17 взрывных лайфхаков для продающего дизайна)</a>
-				<div class="post-preview__stat">
-					<span class="post-preview__stat-view">3 175</span>
-					<span class="post-preview__stat-share">263</span>
-					<span class="post-preview__stat-comment">12</span>
+				<div class="post-preview clearfix">
+					<a href="post.html" class="post-preview__link post-preview__link-img">
+						<img src="images/post__img-4.jpg" alt="post preview image" class="post-preview__img">
+					</a>
+					<a href="post.html" class="post-preview__link">
+						<b class="post-preview__title ">5 сильных приемов, которые помогут вам увеличить прибыл...</b>
+					</a>
+					<div class="post-preview__meta">
+						<time datetime="01.08.2018" class="post-preview__date">01 августа 2018</time>
+						<span class="post-preview__user">Иван Гузюк</span>
+					</div>
+					<a href="post.html" class="post-preview__txt">Как нарисовать продающий дизайн для вашего бизнеса и начать доставать иллюстрациями деньги из клиентов (17 взрывных лайфхаков для продающего дизайна)</a>
+					<div class="post-preview__stat">
+						<span class="post-preview__stat-view">3 175</span>
+						<span class="post-preview__stat-share">263</span>
+						<span class="post-preview__stat-comment">12</span>
+					</div>
+					<hr>
 				</div>
-				<hr>
-			</div>
-		</div>
-		<div class="post-preview">
-			<a href="post.html">
-				<img src="../images/post__img-4.jpg" alt="post preview image" class="post-preview__img">
-				<b class="post-preview__title wrapper">5 сильных приемов, которые помогут вам увеличить прибыл...</b>
-			</a>
-			<div class="wrapper">
-				<div class="post-preview__meta">
-					<time datetime="01.08.2018" class="post-preview__date">01 августа 2018</time>
-					<span class="post-preview__user">Иван Гузюк</span>
+				<div class="post-preview clearfix">
+					<a href="post.html" class="post-preview__link post-preview__link-img">
+						<img src="images/post__img-5.jpg" alt="post preview image" class="post-preview__img">
+					</a>
+					<a href="post.html" class="post-preview__link">
+						<b class="post-preview__title">Редизайн Youtube: Какие решения оказались лучше пред...</b>
+					</a>
+					<div class="post-preview__meta">
+						<time datetime="01.08.2018" class="post-preview__date">01 августа 2018</time>
+						<span class="post-preview__user">Иван Гузюк</span>
+					</div>
+					<a href="post.html" class="post-preview__txt">Как нарисовать продающий дизайн для вашего бизнеса и начать доставать иллюстрациями деньги из клиентов (17 взрывных лайфхаков для продающего дизайна)</a>
+					<div class="post-preview__stat">
+						<span class="post-preview__stat-view">3 175</span>
+						<span class="post-preview__stat-share">263</span>
+						<span class="post-preview__stat-comment">12</span>
+					</div>
+					<hr>
 				</div>
-				<a href="post.html" class="post-preview__txt">Как нарисовать продающий дизайн для вашего бизнеса и начать доставать иллюстрациями деньги из клиентов (17 взрывных лайфхаков для продающего дизайна)</a>
-				<div class="post-preview__stat">
-					<span class="post-preview__stat-view">3 175</span>
-					<span class="post-preview__stat-share">263</span>
-					<span class="post-preview__stat-comment">12</span>
+				<div class="pagination clearfix">
+					<a href="" class="prev"></a>
+					<a href="">1</a>
+					<a>2</a>
+					<a href="">3</a>
+					<a href="" class="next"></a>
+					<a href="" class="last">Последняя страница</a>
 				</div>
-				<hr>
-			</div>
-		</div>
-		<div class="post-preview">
-			<a href="post.html">
-				<img src="../images/post__img-5.jpg" alt="post preview image" class="post-preview__img">
-				<b class="post-preview__title wrapper">Редизайн Youtube: Какие решения оказались лучше пред...</b>
-			</a>
-			<div class="wrapper">
-				<div class="post-preview__meta">
-					<time datetime="01.08.2018" class="post-preview__date">01 августа 2018</time>
-					<span class="post-preview__user">Иван Гузюк</span>
-				</div>
-				<a href="post.html" class="post-preview__txt">Как нарисовать продающий дизайн для вашего бизнеса и начать доставать иллюстрациями деньги из клиентов (17 взрывных лайфхаков для продающего дизайна)</a>
-				<div class="post-preview__stat">
-					<span class="post-preview__stat-view">3 175</span>
-					<span class="post-preview__stat-share">263</span>
-					<span class="post-preview__stat-comment">12</span>
-				</div>
-				<hr>
-			</div>
-		</div>
-		<div class="wrapper">
-			<div class="pagination clearfix">
-				<a href="" class="prev"></a>
-				<a href="">1</a>
-				<a>2</a>
-				<a href="">3</a>
-				<a href="" class="next"></a>
 			</div>
 		</div>
 	</section>
-	<section class="events">
-		<h2 class="title wrapper">Развиваем рынок интернет-маркетинга</h2>
+	<section class="events wrapper">
+		<h2 class="title events__title">Ждём на наших событиях</h2>
 		<div class="events__container owl-carousel">
 			<div class="events__item">
 				<a href="" class="event__link">
-					<img src="../images/event__img-1.jpg" class="event__img">
+					<img src="images/event__img-3.jpg" class="event__img">
 				</a>
-				<div class="wrapper">
-					<mark class="event__cost event__cost_free">Бесплатно</mark>
-					<time class="event__date"><svg class="icon"><use xlink:href="#date"></use></svg> 19.09.2018</time>
-					<span class="event__description">Бесплатный форум в Бресте по интернет-маркетингу</span>
-				</div>
+				<mark class="event__cost">от 600 руб.</mark>
+				<mark class="event__online">Онлайн</mark>
+				<time class="event__date"><svg class="icon"><use xlink:href="#date"></use></svg> 14.12.2018</time>
+				<span class="event__description">Практический онлайн-курс по интернет-маркетингу</span>
 			</div>
 			<div class="events__item">
 				<a href="" class="event__link">
-					<img src="../images/event__img-2.jpg" class="event__img">
+					<img src="images/event__img-1.jpg" class="event__img">
 				</a>
-				<div class="wrapper">
-					<mark class="event__cost">от 150 руб.</mark>
-					<time class="event__date"><svg class="icon"><use xlink:href="#date"></use></svg> 30.11.2018</time>
-					<span class="event__description">Семинар для руководителей в Минске</span>
-				</div>
+				<mark class="event__cost event__cost_free">Бесплатно</mark>
+				<time class="event__date"><svg class="icon"><use xlink:href="#date"></use></svg> 19.09.2018</time>
+				<span class="event__description">Бесплатный форум в Бресте по интернет-маркетингу</span>
 			</div>
 			<div class="events__item">
 				<a href="" class="event__link">
-					<img src="../images/event__img-3.jpg" class="event__img">
+					<img src="images/event__img-2.jpg" class="event__img">
 				</a>
-				<div class="wrapper">
-					<mark class="event__cost">от 600 руб.</mark>
-					<mark class="event__online">Онлайн</mark>
-					<time class="event__date"><svg class="icon"><use xlink:href="#date"></use></svg> 14.12.2018</time>
-					<span class="event__description">Практический онлайн-курс по интернет-маркетингу</span>
-				</div>
+				<mark class="event__cost">от 150 руб.</mark>
+				<time class="event__date"><svg class="icon"><use xlink:href="#date"></use></svg> 30.11.2018</time>
+				<span class="event__description">Семинар для руководителей в Минске</span>
 			</div>
 		</div>
 	</section>
