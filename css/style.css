@@ -2191,17 +2191,13 @@ body {
 	align-items: center
 }
 .search-field {
-	width: 50px;
 	height: 50px;
 	padding-right: 35px;
 	border-radius: 25px;
 	background-color: var(--middle-gray);
 	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OTAgNDkwIiBmaWxsPSJyZ2IoMzgsMzQsMzMpIj48cGF0aCBkPSJNNDg0LDQ1NS4yLDM2Ni4yLDMzNy40QTIwNS43NywyMDUuNzcsMCwwLDAsNDEzLDIwNi41QzQxMyw5Mi41LDMyMC41LDAsMjA2LjUsMFMwLDkyLjUsMCwyMDYuNSw5Mi40LDQxMywyMDYuNSw0MTNhMjA1LjQxLDIwNS40MSwwLDAsMCwxMzAuOC00Ni43TDQ1NS4xLDQ4NEEyMC40LDIwLjQsMCwwLDAsNDg0LDQ1NS4yWk0yMDYuNSwzNzEuOUMxMTUuMiwzNzEuOSw0MSwyOTcuNyw0MSwyMDYuNVMxMTUuMiw0MSwyMDYuNSw0MSwzNzIsMTE1LjMsMzcyLDIwNi41LDI5Ny43LDM3MS45LDIwNi41LDM3MS45WiIvPjwvc3ZnPg==);
 	background-repeat: no-repeat;
-	background-position: 15px center;
 	background-size: 20px;
-	transition-property: width, background-position;
-	transition-duration: .2s
 }
 .search-field:focus {
 	width: 300px;
@@ -3511,6 +3507,14 @@ hr {
 	.events__container.owl-carousel .owl-nav button {
     transform: translateY(-190%)
 	}
+	.menu {
+		width: calc(100% - 400px)
+	}
+	.search-field {
+		width: 300px;
+		padding-left: 25px;
+		background-position: 265px center
+	}
 }
 
 @media all and (max-width: 1298px) {
@@ -3693,5 +3697,16 @@ hr {
 		justify-content: space-between;
 		align-items: center;
 		flex-basis: 100%
+	}
+	.search-field {
+		width: 50px;
+		background-position: 15px center;
+		transition-property: width, background-position;
+		transition-duration: .2s
+	}
+	.search-field:focus {
+		width: 300px;
+		padding-left: 25px;
+		background-position-x: 265px
 	}
 }

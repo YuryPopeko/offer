@@ -1495,3 +1495,26 @@ hr {
 	background-color: rgba(0,0,0,.2)!important;
   transform: translateY(-140%)
 }
+.author {
+	height: 74px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-content: start;
+	justify-content: center;
+	background-color: var(--gray)
+}
+.author__img {
+	margin-right: 15px;
+	width: 48px;
+}
+.author__name {
+	text-decoration: underline;
+	color: var(--bright-blue);
+}
+.post__date {
+	font-size: .875em;
+	color: var(--dark-gray)
+}
