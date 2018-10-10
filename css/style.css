@@ -15,7 +15,7 @@
 	--middle-gray: rgb(225,225,225);
 	--dark-gray: rgb(141,147,152);
 	--white: white;
-	--yellow: rgb(255, 194,44);
+	--yellow: rgb(255,194,44);
 }
 @font-face {
 	font-family: 'Gilroy';
@@ -26,6 +26,12 @@
 @font-face {
 	font-family: 'Gilroy';
 	src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), url('fonts/Gilroyextrabold.woff2') format('woff2'), url('fonts/Gilroyextrabold.woff') format('woff'), url('fonts/Gilroyextrabold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto Black';
+	src: local('Roboto Black'), local('Roboto-Black'), url('fonts/Roboto-Black.woff') format('woff'), url('fonts/Roboto-Black.ttf') format('truetype');
 	font-weight: 800;
 	font-style: normal;
 }
@@ -83,8 +89,7 @@ body {
 	display: flex
 }
 .header__info-tel {
-	font-family: Roboto;
-	font-weight: bold
+	font-family: "Roboto Black"
 }
 .header__info-address {
 	text-transform: uppercase
@@ -142,6 +147,9 @@ body {
 	margin-left: auto;
 	font-size: 1.25em;
 	text-align: center
+}
+.main-page__title + .subtitle {
+	font-size: 1.75em
 }
 .subtitle-link {
 	border-bottom: 1px dashed var(--bright-blue);
@@ -2686,6 +2694,26 @@ hr {
 	text-align: center;
 	font-size: .875em
 }
+.main-page__title {
+	font-size: 2.875em
+}
+.main-page__play-btn {
+	position: absolute;
+	top: 45px;
+	left: 60%;
+	width: 60px;
+	height: 60px;
+	background-color: var(--white);
+	box-shadow: 0 0 0 6px rgba(255,255,255,.5);
+	color: #fec062;
+}
+.main-page__play-btn .play-btn-triangle {
+	font-size: 15px;
+	text-shadow: 1px 3px 1px #fec062
+}
+.event__description {
+	font-family: Roboto
+}
 
 @media all and (min-width: 1299px) {
 	:root {
@@ -2704,7 +2732,7 @@ hr {
 	}
 	.header__info {
 		justify-content: space-between;
-		flex-basis: 655px
+		flex-basis: 740px
 	}
 	.header__info-tel {
 		font-size: 1.375em
@@ -3438,7 +3466,7 @@ hr {
 	.complex {
 		padding-top: 100px;
 		flex-direction: column;
-		height: 430px
+		height: 460px
 	}
 	.complex__title,
 	.complex__subtitle {
@@ -3799,6 +3827,9 @@ hr {
 	.ten-thousand__txt {
 		width: auto;
 		text-align: center
+	}
+	.main-page__title {
+		font-size: 3.75em
 	}
 }
 
